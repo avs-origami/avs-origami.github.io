@@ -24,7 +24,8 @@
     </SPAN>
     <p>
         |-------------------------|&nbsp;&nbsp;,_____,<br>
-        | YETI OS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;| . . |<br>
+        | YETI OS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;| . . |<br>
         |-------------------------|&nbsp;&nbsp;| ._, |<br>
         | A bit-sized linux&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;|-----|<br>
         | distro for RPi zero&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| / ,&nbsp;&nbsp;&nbsp;, \<br>
@@ -32,7 +33,77 @@
         |=~=~=~=~=~=~=~=~=~=~=~=~=|&nbsp;&nbsp;'--^--'<br>
         <br>
         This is the webpage for Yeti OS. For general information on building and installing,
-        see <a class="on" href="https://github.com/AVS-Origami/yeti">the github repo</a>
+		see <a class="on" href="https://github.com/AVS-Origami/yeti">the github repo</a><br><br>
+
+=== INSTALLED PACKAGES<br>
+======================
+<br><br>
+Yeti OS comes with the following packages installed:
+<br><br>
+- musl<br>
+- binutils<br>
+- gcc<br>
+- busybox<br>
+- linux<br>
+- ypm<br>
+- make<br>
+- wpa_supplicant
+<br><br>
+None of the binaries are stripped during the build process. Stripping binaries can reduce the<br>
+size of the final system. Additionally, any binaries beginning with `armv6zk-linux-musleabihf-`<br>
+can be safely removed. These are binaries used in cross-compilation and are not useful on the final system.<br>
+<br><br>
+=== PACKAGE MAANGEMENT<br>
+======================
+<br><br>
+<a class="on" href="ypm.html">The Yeti Package Manager (YPM)</a> is used for package management and is built into the system by the<br>
+build script. However, you can use any package manager with Yeti.
+<br><br>
+=== FILESYSTEM<br>
+==============
+<br><br>
+The filesystem is slightly different than on other linux systems and is based on the Static Linux<br>
+filesystem (https://sta.li/filesystem). The directories are as follows:
+<br><br>
+/bin - executables<br>
+/dev - devices<br>
+/etc - system config and packages<br>
+/home - user dirs<br>
+/include - headers<br>
+/lib - libraries<br>
+/opt - weird packages<br>
+/proc - proc files<br>
+/run - run files<br>
+/sbin -&#62; bin<br>
+/share - share stuff<br>
+/sys - sys files<br>
+/usr -&#62; /<br>
+/var - var stuff
+<br><br>
+This could change in future. Fewer directories = simpler system.
+<br><br>
+If new directories or files start popping up in / it's probably because they were going to be<br>
+installed to /usr. If you want you can make /usr a directory instead of symlinking to / but this was<br>
+done for simplicity (who needs FOUR bin directories, TWO lib directories, and TWO include directories?)
+<br><br>
+=== RESOURCES<br>
+=============
+<br><br>
+Resources used throughout this project:
+<br><br>
+- Linux From Scratch (https://www.linuxfromscratch.org)<br>
+- Cross Linux From Scratch (https://clfs.org)<br>
+- Mussel (https://github.com/firasuke/mussel)<br>
+- Diy Linux Guide (https://github.com/AgentD/diy-linux-guide)<br>
+- PiLFS (https://intestinate.com/pilfs)<br>
+- Static Linux (https://sta.li)<br>
+
+
+<PRE style="font-family: Cozette"><font size="2">
+</PRE></font>
+
+        
+
     </p></font>
 </body>
 </html>
