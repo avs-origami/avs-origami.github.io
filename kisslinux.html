@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <style>
+        @font-face {
+            font-family: Cozette;
+            src: url('CozetteVector.ttf');
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>AVS Origami</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+</head>
+
+<body style="font-family: Cozette">
+    <font size="2">
+        <SPAN STYLE="text-decoration:overline">
+            <a class="on" href="index.html">| Home | </a>
+            <a class="off" href="yeti.html">Yeti OS | </a>
+            <a class="off" href="ypm.html">YPM | </a>
+            <a class="off" href="turtle.html">Turtle | </a>
+            <a class="off" href="ubar.html">Ubar | </a>
+            <a class="off" href="game.html">Game |</a>
+        </SPAN>
+        <p>
+            I have recently tried installing KISS Linux, and as the guide
+            is a bit old, I've run into some<br> issues along the way. I thought
+            that I would make a complete guide to installing KISS from<br> the
+            community repos, with the fixes I've had to use.
+            <br><br>
+            Section numbers in this guide correspond to the sections at
+            <a class="off" href="https://kisslinux.org/install">
+                https://kisslinux.org/install
+            </a>.
+            <br><br>
+            === [001] Installing<br>
+            ====================
+            <br><br>
+            This assumes that you have partitioned your hard disk and mounted it to /mnt. For a
+            guide on<br> partitioning see
+            <a class="off" href="https://nixos.org/manual/nixos/stable/#partit">
+                https://nixos.org/manual/nixos/stable/#partit
+            </a>.
+            <br><br>
+            Download and unpack the tarball as usual:
+            <br><br>
+            &nbsp;&nbsp; ver=23.04.30<br>
+            &nbsp;&nbsp; url=https://codeberg.org/kiss-community/repo/releases/download/$ver<br>
+            &nbsp;&nbsp; file=kiss-chroot-$ver.tar.xz<br>
+            &nbsp;&nbsp; curl -fLO $url/$file<br>
+            &nbsp;&nbsp; cd /mnt && tar xf $OLDPWD/$file<br>
+            &nbsp;&nbsp; /mnt/bin/kiss-chroot /mnt<br>
+            <br><br>
+            === [007] Repositories<br>
+            ======================
+            <br><br>
+            Clone the repos (It doesn't matter where, I use /) and set KISS_PATH:
+            <br><br>
+            &nbsp;&nbsp; git clone https://codeberg.org/kiss-community/repo.git<br>
+            &nbsp;&nbsp; echo "export KISS_PATH=/repo/core:/repo/extra:/repo/wayland" >> 
+            /etc/profile<br>
+            &nbsp;&nbsp; source /etc/profile<br>
+            <br><br>
+            Enable signature verification:
+            <br><br>
+            &nbsp;&nbsp; cd /repo<br>
+            &nbsp;&nbsp; git config gpg.ssh.allowedSignersFile .allowed_signers<br>
+            &nbsp;&nbsp; git config merge.verifySignatures true<br>
+            <br><br>
+            === [014] Rebuild the system<br>
+            ============================
+            <br><br>
+            Set the compiler flags (it may be helpful to add these lines to /etc/profile):
+            <br><br>
+            &nbsp;&nbsp; export CFLAGS="-O3 -pipe -march=native"<br>
+            &nbsp;&nbsp; export CXXFLAGS="$CFLAGS"<br>
+            &nbsp;&nbsp; export MAKEFLAGS="-j$(nproc)"<br>
+            <br><br>
+            Update the packages:
+            <br><br>
+            &nbsp;&nbsp; kiss update<br>
+            &nbsp;&nbsp; cd /var/db/kiss/installed && kiss b *<br>
+            <br><br>
+            === [018] Kernel<br>
+            ================
+            <br><br>
+            This can be annoying to get right. A good way to tell what to include in the kernel is
+            to<br> run `lsmod` and `lspci` from the live environment.
+        </p>
+    </font>
+</body>
+
+</html>
