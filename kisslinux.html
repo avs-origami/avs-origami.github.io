@@ -201,16 +201,17 @@
             &nbsp;&nbsp; unset CFLAGS CXXFLAGS<br>
             &nbsp;&nbsp; kiss b grub<br>
             &nbsp;&nbsp; grub-install --target=i386-pc /dev/sdX<br>
-            &nbsp;&nbsp; grub-mkconfig -o /boot/grub/grub.cfg<
+            &nbsp;&nbsp; grub-mkconfig -o /boot/grub/grub.cfg
             <br><br>
             If on UEFI:
             <br><br>
+            &nbsp;&nbsp; kiss b efivar
             &nbsp;&nbsp; unset CFLAGS CXXFLAGS<br>
-            &nbsp;&nbsp; kiss b grub efivar efibootmgr<br>
+            &nbsp;&nbsp; kiss b grub efibootmgr<br>
             &nbsp;&nbsp; grub-install --target=x86_64-efi \<br>
             &nbsp;&nbsp;&nbsp;&nbsp; --efi-directory=/boot \<br>
             &nbsp;&nbsp;&nbsp;&nbsp; --bootloader-id=GRUB<br>
-            &nbsp;&nbsp; grub-mkconfig -o /boot/grub/grub.cfg<
+            &nbsp;&nbsp; grub-mkconfig -o /boot/grub/grub.cfg
             <br><br>
             Re-set the compiler flags, and install some extra software:
             <br><br>
