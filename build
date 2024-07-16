@@ -1,0 +1,24 @@
+#!/bin/sh -e
+
+parse() {
+    # Transform plain-text input into HTML and insert it into the template.
+    # Right now this only does some URL transformations.
+
+    # [text](url)
+    sed -E 's\[ *([[:alnum:] \&\;\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+-]) *\] *\( *([^ ]+) *"([^"]+)"\)<a href="\2" title="\3">\1<\/a>g' |
+    sed -E 's\[ *([[:alnum:] \&\;\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]+) *\] *\( *([^ ]+) *\)<a href="\2">\1<\/a>g' |
+    # ![image](url)
+    sed -E 's!\[ *([[:alnum:] \&\;\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]) *\] *\( *([^ ]+) *\)<img src="\2" alt="\1">g' |
+    sed ':a $!{N; ba}; s\n\\ng'
+}
+
+for dir in site/*/; do
+    mkdir -pv docs/$(basename $dir)
+done
+
+for file in $(find site -type f -name "*.md"); do
+    output=$(parse < $file)
+    f=${file%.*}
+    cp template.html docs/${f#site/}.html
+    sed -i "s(CONTENT)$output" docs/${f#site/}.html
+done
