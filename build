@@ -19,6 +19,11 @@ done
 for file in $(find site -type f -name "*.md"); do
     output=$(parse < $file)
     f=${file%.*}
-    cp template.html docs/${f#site/}.html
-    sed -i "s(CONTENT)$output" docs/${f#site/}.html
+    base=${f#site/}
+    name=${base%/index}
+    home=${name/index/home}
+    uppername=${home^}
+    cp template.html docs/$base.html
+    sed -i "s(CONTENT)$output" docs/$base.html
+    sed -i "s(TITLE)$uppername" docs/$base.html
 done
