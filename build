@@ -35,4 +35,4 @@ for file in $(find site -type f -name "*.md"); do
     sed -i "s(TITLE)$home" docs/$base.html
 done
 
-cp site/favicon.ico docs/favicon.ico
+cp site/favicon.png docs/favicon.png

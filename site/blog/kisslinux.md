@@ -13,7 +13,8 @@ https://kisslinux.github.io/install.
 ====================
 
 This assumes that you have partitioned your hard disk and mounted it to /mnt.
-For a guide on partitioning see https://nixos.org/manual/nixos/stable/#partit.
+For a guide on partitioning see
+https://nixos.org/manual/nixos/stable/#sec-installation-manual-partitioning
 
 Download and unpack the tarball as usual:
 
