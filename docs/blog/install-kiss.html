@@ -8,66 +8,60 @@
 <meta charset=utf-8>
 <meta name=Description content="A personal website">
 <meta name=viewport content="width=device-width,initial-scale=1">
+<a id="top"></a>
 
 <!-- The top banner with navigation links. -->
 
-<div class="banner"><div class=t><pre style="text-align:center;">
+<div class=container><div class="banner"><div class=t><pre style="text-align:center;">
 
-<table style="font-size:16px;margin:0 auto;"><tr>
-    <td><a href=/><img src="/home.png"></img></a></td>
+<table style="font-size:16px;font-weight:600;margin:0 auto;"><tr>
+    <td><a href=/><img src="/img/home.png"></img></a></td>
     <td><a href=/ style="color:#cb4b16">HOME</a></td>
-    <td><a href=/blog>BLOG</a></td>
     <td><a href=/projects>PROJECTS</a></td>
+    <td><a href=/blog>BLOG</a></td>
     <td><a href=/origami>ORIGAMI</a></td>
     <td><a href=/bonsai>BONSAI</a></td>
     <td><a href=/music>MUSIC</a></td>
     <td><a href=/pixart>PIXEL ART</a></td>
-    <td><a href=https://tincan-linux.github.io>TIN CAN LINUX</a></td>
+    <td><a href=https://tincan-linux.github.io target="_blank" rel="noopener noreferrer">TIN CAN LINUX</a></td>
     <td><a href=/wikis>WIKIS</a></td>
-    <td><a href=/about>ABOUT</a></td>
-    <td><a href=https://github.com/avs-origami>GITHUB</a></td>
-    <td><a href=https://github.com/avs-origami><img src="/octo.png"></img></a></td>
+    <td><a href=/about.html>ABOUT</a></td>
+    <td><a href=https://github.com/avs-origami target="_blank" rel="noopener noreferrer">GITHUB</a></td>
+    <td><a href=https://github.com/avs-origami target="_blank" rel="noopener noreferrer"><img src="/img/octo.png"></img></a></td>
 </tr></table>
 </pre></div></div>
 
 <!-- The rest of the body, creating a smaller side column and a larger main column. -->
 
-<div style="display:table;margin:16px auto"><div class=c>
-<pre style="top:96px;position:sticky;user-select:none;padding-right:96px;text-align:center">
-
+<div style="display:table;margin:16px auto;min-height:100%;"><div class="c sidebox">
+<pre style="text-align: center;position: sticky;" class="prebox">
 @========================================@
 
-<img src="/me.png" class="pfp"></img>
+<img src="/img/me.jpg" class="pfp"></img>
 
+Adithya V. Sastry
 
+Robotics + Origami
+Linux worshipper
+Lover of all things tiny
 
-Put some brief stuff here. Catchphrase
-and things like that.
-
-blah blah
-
-more stuff idk fill this up
-
-Q W E R T Y U I O P
-A S D F G H J K L
-Z X C V B N M
+"Insert personal quote here"
 
 @========================================@
-
 </pre></div>
-<div class=c><pre>
-
-
+<div class=c><pre class="prebox">
 Installing Kiss Linux                                                 01/14/2024
 --------------------------------------------------------------------------------
 
-I recently tried installing Kiss Linux, and as the guide is a bit old, I've run
-into some issues along the way. I thought that I would make a complete guide to
-installing KISS from the community repos, with the additional steps and
-resources I've had to use.
+I recently tried installing Kiss Linux, and as the guide hasn't been updated in
+a bit, I've run into some issues along the way. I thought that I would make a
+post with some annotations to the original Kiss Linux installation guide that
+talks a bit about my experience installing the distribution from the community
+repositories.
 
 Section numbers in this guide correspond to the sections at
 <a href=https://kisslinux.github.io/install.>https://kisslinux.github.io/install.</a>
+
 
 === [001] Installing
 ====================
@@ -122,7 +116,7 @@ Update the packages:
 === [018] Kernel
 ================
 
-Download and unpack the kernel sources to somewhere you remember:
+Download and unpack the kernel sources to somewhere you remember, such as ~:
 
    curl -fLO <a href=https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.tar.xz>https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.tar.xz</a>
    tar xvf linux-6.7.tar.xz
@@ -137,7 +131,8 @@ Make a default kernel config, then start menuconfig to customize the options:
 
 
 The kernel configuration can be hard to get right, and missing something here
-will probably be the reason that Kiss doesn't boot. Some tips:
+will probably be the reason that Kiss doesn't boot. I personally struggled the
+most with this step of the process. Here are some tips:
 
 Running `make localyesconfig` from an Arch Linux live ISO can help to enable
 some options that you might need; however, you will likely need to configure the
@@ -153,8 +148,9 @@ reveal kernel options that need to be enabled.
 
 After configuring through menuconfig, run
 `grep 'FB' .config && grep 'FRAMEBUFFER' .config` in order to ensure that you
-have all the framebuffer drivers enabled. At a minimum, the following
-framebuffer drivers should be enabled for any system:
+have all the framebuffer drivers enabled. These are a bunch of framebuffer
+drivers that I enabled. You may need some combination of these - play around and
+see what works for you:
 
     CONFIG_SYSFB
     CONFIG_SYSFB_SIMPLEFB
@@ -173,7 +169,11 @@ Additionally, <a href="https://wiki.gentoo.org/wiki/Handbook:AMD64/Installation/
 configuration. You may be able to find a dedicated page for installing Gentoo
 on your specific computer, like <a href="https://wiki.gentoo.org/wiki/Framework_Laptop_13">this one I found for the Framework Laptop</a>.
 
-Finally, if you're still having issues, ask on the IRC or check <a href="https://libera.irclog.whitequark.org/kisslinux/">the logs</a>.
+You might also need some additional firmware not included in the kernel, such as
+Intel Ucode drivers 
+
+Finally, if you're still having issues, ask on the IRC (#kisslinux), check
+<a href="https://libera.irclog.whitequark.org/kisslinux/">the logs</a>, or ask on Reddit at <a href="https://reddit.com/r/kisslinux">r/kisslinux</a>.
 
 With the kernel configured, continue to building it:
 
@@ -182,9 +182,8 @@ With the kernel configured, continue to building it:
    sed '/&lt;stdlib.h>/a #include &lt;linux/stddef.h>' \
    tools/objtool/arch/x86/decode.c > _
    mv -f _ tools/objtool/arch/x86/decode.c
-   sed -i 's/=m/=y/g' .config
+   sed -i 's/=m/=y/g' .config  # Change modules to baked-in
    make
-   make INSTALL_MOD_STRIP=1 modules_install
    make install
    mkdir -pv /boot/EFI/kiss
    cp arch/x86/boot/bzImage /boot/EFI/kiss/bzImage.efi
@@ -192,9 +191,18 @@ With the kernel configured, continue to building it:
    mv /boot/System.map /boot/System.map-6.7
 
 
+Something I found that you probably want to do is change all modules to baked-in
+so that you don't have to worry about loading all the correct modules at boot.
+Normally this might be handled by the initramfs, but Kiss doesn't use one so
+I have found it's just easier without kernel modules. The command to do this is
+part of the list of commands shown above, but if you know what you're doing and
+want kernel modules, it's not strictly required.
+
 Especially if you expect to have problems in the kernel configuration, it may be
-worthwile to (semi) automate this process with an extension to the Kiss package
-manager. Add the following to /bin/kiss-kernel:
+worthwile to (semi) automate the process of building the kernel with a shell
+script. Interestingly enough, the Kiss package manager supports creating
+extensions by naming a binary kiss-[ext], and I found it nice to create the
+kernel update script as a kiss extension. Add this to /bin/kiss-kernel:
 
    #!/bin/sh -e
    # Rebuild the kernel
@@ -233,11 +241,11 @@ Then make it executable:
 
 Now you can update the kernel by running `kiss kernel 6.7` as root.
 
-Disclaimer: I feel compelled to say this because of a misconception this might
-cause. I created this script because I was constantly changing the kernel config
-and rebuilding it during the install process. If you've figured out a kernel
-config that works well and don't plan to change it, you should consider
-package the kernel (see <a href=https://kisslinux.github.io/package-system).>https://kisslinux.github.io/package-system).</a>
+Disclaimer: I created this script because I was constantly changing the kernel
+config and rebuilding it during the install process. If you've figured out a
+kernel config that works well and don't plan to change it, you should consider
+packaging the kernel instead (see <a href=https://kisslinux.github.io/package-system>https://kisslinux.github.io/package-system</a>).
+
 
 === [029] Making the system bootable & finishing touches
 ========================================================
@@ -246,7 +254,7 @@ Install the init system:
 
    kiss b baseinit
 
-Create /etc/fstab (apparently, not strictly required):
+Create /etc/fstab (apparently, this isn't strictly required):
 
    cat > /etc/fstab &lt;&lt; "EOF"
    # Begin /etc/fstab
@@ -271,7 +279,7 @@ Create /etc/fstab (apparently, not strictly required):
 
 Install GRUB if using BIOS:
 
-   unset CFLAGS CXXFLAGS
+   unset CFLAGS CXXFLAGS   # Grub doesn't compile with flags like -march=native
    kiss b grub
    grub-install --target=i386-pc /dev/sdX
    grub-mkconfig -o /boot/grub/grub.cfg
@@ -301,10 +309,20 @@ For further information, these sites may be useful:
 <a href=https://kisslinux.github.io>https://kisslinux.github.io</a>
 <a href=https://kisscommunity.org>https://kisscommunity.org</a>
 <a href=https://github.com/kiss-community/awesome-kiss>https://github.com/kiss-community/awesome-kiss</a>
+</pre></div><div class=p><pre style="padding-left:12ch;"></pre></div></div>
+<pre>
 
 
-________________________________________________________________________________
+</pre>
+<footer><div class="footer"><div class="t"></div>
+<div class=tt><pre>
 
-AVS Origami (C) 2024
+AVS Origami (C) 2023-2024
 
-</pre></div><div class=p><pre style="padding-left:96px;"></pre></div></div>
+</pre></div>
+<div class=tt style="text-align:right;"><pre style="text-align:right;">
+
+<a href="#top"><img src=/img/snail.png style="float: right;"></a>
+
+</pre></div><div class="t"></div>
+</div></footer></div>

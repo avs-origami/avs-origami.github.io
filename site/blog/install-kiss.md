@@ -1,13 +1,15 @@
 Installing Kiss Linux                                                 01/14/2024
 --------------------------------------------------------------------------------
 
-I recently tried installing Kiss Linux, and as the guide is a bit old, I've run
-into some issues along the way. I thought that I would make a complete guide to
-installing KISS from the community repos, with the additional steps and
-resources I've had to use.
+I recently tried installing Kiss Linux, and as the guide hasn't been updated in
+a bit, I've run into some issues along the way. I thought that I would make a
+post with some annotations to the original Kiss Linux installation guide that
+talks a bit about my experience installing the distribution from the community
+repositories.
 
 Section numbers in this guide correspond to the sections at
 https://kisslinux.github.io/install.
+
 
 === [001] Installing
 ====================
@@ -62,7 +64,7 @@ Update the packages:
 === [018] Kernel
 ================
 
-Download and unpack the kernel sources to somewhere you remember:
+Download and unpack the kernel sources to somewhere you remember, such as ~:
 
    curl -fLO https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.7.tar.xz
    tar xvf linux-6.7.tar.xz
@@ -77,7 +79,8 @@ Make a default kernel config, then start menuconfig to customize the options:
 
 
 The kernel configuration can be hard to get right, and missing something here
-will probably be the reason that Kiss doesn't boot. Some tips:
+will probably be the reason that Kiss doesn't boot. I personally struggled the
+most with this step of the process. Here are some tips:
 
 Running `make localyesconfig` from an Arch Linux live ISO can help to enable
 some options that you might need; however, you will likely need to configure the
@@ -93,8 +96,9 @@ reveal kernel options that need to be enabled.
 
 After configuring through menuconfig, run
 `grep 'FB' .config \&\& grep 'FRAMEBUFFER' .config` in order to ensure that you
-have all the framebuffer drivers enabled. At a minimum, the following
-framebuffer drivers should be enabled for any system:
+have all the framebuffer drivers enabled. These are a bunch of framebuffer
+drivers that I enabled. You may need some combination of these - play around and
+see what works for you:
 
     CONFIG_SYSFB
     CONFIG_SYSFB_SIMPLEFB
@@ -113,7 +117,11 @@ Additionally, [this Gentoo Wiki page](https://wiki.gentoo.org/wiki/Handbook:AMD6
 configuration. You may be able to find a dedicated page for installing Gentoo
 on your specific computer, like [this one I found for the Framework Laptop](https://wiki.gentoo.org/wiki/Framework_Laptop_13).
 
-Finally, if you're still having issues, ask on the IRC or check [the logs](https://libera.irclog.whitequark.org/kisslinux/).
+You might also need some additional firmware not included in the kernel, such as
+Intel Ucode drivers 
+
+Finally, if you're still having issues, ask on the IRC (#kisslinux), check
+[the logs](https://libera.irclog.whitequark.org/kisslinux/), or ask on Reddit at [r/kisslinux](https://reddit.com/r/kisslinux).
 
 With the kernel configured, continue to building it:
 
@@ -122,9 +130,8 @@ With the kernel configured, continue to building it:
    sed '/<stdlib.h>/a #include <linux/stddef.h>' \\
    tools/objtool/arch/x86/decode.c > _
    mv -f _ tools/objtool/arch/x86/decode.c
-   sed -i 's/=m/=y/g' .config
+   sed -i 's/=m/=y/g' .config  # Change modules to baked-in
    make
-   make INSTALL_MOD_STRIP=1 modules_install
    make install
    mkdir -pv /boot/EFI/kiss
    cp arch/x86/boot/bzImage /boot/EFI/kiss/bzImage.efi
@@ -132,9 +139,18 @@ With the kernel configured, continue to building it:
    mv /boot/System.map /boot/System.map-6.7
 
 
+Something I found that you probably want to do is change all modules to baked-in
+so that you don't have to worry about loading all the correct modules at boot.
+Normally this might be handled by the initramfs, but Kiss doesn't use one so
+I have found it's just easier without kernel modules. The command to do this is
+part of the list of commands shown above, but if you know what you're doing and
+want kernel modules, it's not strictly required.
+
 Especially if you expect to have problems in the kernel configuration, it may be
-worthwile to (semi) automate this process with an extension to the Kiss package
-manager. Add the following to /bin/kiss-kernel:
+worthwile to (semi) automate the process of building the kernel with a shell
+script. Interestingly enough, the Kiss package manager supports creating
+extensions by naming a binary kiss-[ext], and I found it nice to create the
+kernel update script as a kiss extension. Add this to /bin/kiss-kernel:
 
    #!/bin/sh -e
    # Rebuild the kernel
@@ -173,11 +189,11 @@ Then make it executable:
 
 Now you can update the kernel by running `kiss kernel 6.7` as root.
 
-Disclaimer: I feel compelled to say this because of a misconception this might
-cause. I created this script because I was constantly changing the kernel config
-and rebuilding it during the install process. If you've figured out a kernel
-config that works well and don't plan to change it, you should consider
-package the kernel (see https://kisslinux.github.io/package-system).
+Disclaimer: I created this script because I was constantly changing the kernel
+config and rebuilding it during the install process. If you've figured out a
+kernel config that works well and don't plan to change it, you should consider
+packaging the kernel instead (see [https://kisslinux.github.io/package-system]).
+
 
 === [029] Making the system bootable \& finishing touches
 ========================================================
@@ -186,7 +202,7 @@ Install the init system:
 
    kiss b baseinit
 
-Create /etc/fstab (apparently, not strictly required):
+Create /etc/fstab (apparently, this isn't strictly required):
 
    cat > /etc/fstab << "EOF"
    # Begin /etc/fstab
@@ -211,7 +227,7 @@ Create /etc/fstab (apparently, not strictly required):
 
 Install GRUB if using BIOS:
 
-   unset CFLAGS CXXFLAGS
+   unset CFLAGS CXXFLAGS   # Grub doesn't compile with flags like -march=native
    kiss b grub
    grub-install --target=i386-pc /dev/sdX
    grub-mkconfig -o /boot/grub/grub.cfg

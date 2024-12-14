@@ -6,14 +6,26 @@ parse() {
     # Replace < with &lt;
     sed 's<\\\&lt;g' |
 
-    # [text](url)
-    sed -E 's\[ *([[:alnum:] \&\;\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+-]) *\] *\( *([^ ]+) *"([^"]+)"\)<a href="\2" title="\3">\1<\/a>g' |
-    sed -E 's\[ *([[:alnum:] \&\;\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]+) *\] *\( *([^ ]+) *\)<a href="\2">\1<\/a>g' |
-    # ![image](url)
+    # ?[text](url): open link in new tab
+    sed -E 's\?\[ *([[:alnum:] \&\;\.\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]+) *\] *\( *([^ ]+) *\)<a href="\2" target="_blank" rel="noopener noreferrer">\1<\/a>g' |
+    # ![image](src)(url)
+    sed -E 's!\[ *([[:alnum:] \&\;\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]) *\] *\( *([^ ]+) *\) *\( *([^ ]+) *\)<a href="\3"><img src="\2" alt="\1"><\/a>g' |
+    # ![image](src)
     sed -E 's!\[ *([[:alnum:] \&\;\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]) *\] *\( *([^ ]+) *\)<img src="\2" alt="\1">g' |
+    # [text](url)
+    sed -E 's\[ *([[:alnum:] \&\;\.\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+-]) *\] *\( *([^ ]+) *"([^"]+)"\)<a href="\2" title="\3">\1<\/a>g' |
+    sed -E 's\[ *([[:alnum:] \&\;\.\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]+) *\] *\( *([^ ]+) *\)<a href="\2">\1<\/a>g' |
+    # ?[url]: open in new tab
+    sed -E "s([^\"\'\>=])(\?\[)(http[s]?://[^[:space:]]*)(\])\1<a href=\3 target=\"_blank\" rel=\"noopener noreferrer\">\3</a>g" |
+    # [url]
+    sed -E "s([^\"\'\>=])(\[)(http[s]?://[^[:space:]]*)(\])\1<a href=\3>\3</a>g" |
     # url
     sed -E "s([^\"\'\>=])(http[s]?://[^[:space:]]*)\1<a href=\2>\2</a>g" |
     sed -E "s^(http[s]?://[^[:space:]]*)<a href=\1>\1</a>g" |
+    # $[section]
+    sed -E 's\$\[ *([[:alnum:] \&\;\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]) *\]<span id=\1>\[<a class=t href=#\1>\1</a>\]</span>g' |
+    # include html files with $[ file.html
+    sed 's\$\[ cat e' |
 
     # Hacky fix for sed \n errors
     sed ':a $!{N; ba}; s\n\\ng'
@@ -37,4 +49,4 @@ done
 
 cp style.css docs/
 cp site/favicon.png docs/favicon.png
-cp -R img/* docs/
+cp -R img docs/

@@ -8,62 +8,96 @@
 <meta charset=utf-8>
 <meta name=Description content="A personal website">
 <meta name=viewport content="width=device-width,initial-scale=1">
+<a id="top"></a>
 
 <!-- The top banner with navigation links. -->
 
-<div class="banner"><div class=t><pre style="text-align:center;">
+<div class=container><div class="banner"><div class=t><pre style="text-align:center;">
 
-<table style="font-size:16px;margin:0 auto;"><tr>
-    <td><a href=/><img src="/home.png"></img></a></td>
+<table style="font-size:16px;font-weight:600;margin:0 auto;"><tr>
+    <td><a href=/><img src="/img/home.png"></img></a></td>
     <td><a href=/ style="color:#cb4b16">HOME</a></td>
-    <td><a href=/blog>BLOG</a></td>
     <td><a href=/projects>PROJECTS</a></td>
+    <td><a href=/blog>BLOG</a></td>
     <td><a href=/origami>ORIGAMI</a></td>
     <td><a href=/bonsai>BONSAI</a></td>
     <td><a href=/music>MUSIC</a></td>
     <td><a href=/pixart>PIXEL ART</a></td>
-    <td><a href=https://tincan-linux.github.io>TIN CAN LINUX</a></td>
+    <td><a href=https://tincan-linux.github.io target="_blank" rel="noopener noreferrer">TIN CAN LINUX</a></td>
     <td><a href=/wikis>WIKIS</a></td>
-    <td><a href=/about>ABOUT</a></td>
-    <td><a href=https://github.com/avs-origami>GITHUB</a></td>
-    <td><a href=https://github.com/avs-origami><img src="/octo.png"></img></a></td>
+    <td><a href=/about.html>ABOUT</a></td>
+    <td><a href=https://github.com/avs-origami target="_blank" rel="noopener noreferrer">GITHUB</a></td>
+    <td><a href=https://github.com/avs-origami target="_blank" rel="noopener noreferrer"><img src="/img/octo.png"></img></a></td>
 </tr></table>
 </pre></div></div>
 
 <!-- The rest of the body, creating a smaller side column and a larger main column. -->
 
-<div style="display:table;margin:16px auto"><div class=c>
-<pre style="top:96px;position:sticky;user-select:none;padding-right:96px;text-align:center">
-
+<div style="display:table;margin:16px auto;min-height:100%;"><div class="c sidebox">
+<pre style="text-align: center;position: sticky;" class="prebox">
 @========================================@
 
-<img src="/me.png" class="pfp"></img>
+<img src="/img/me.jpg" class="pfp"></img>
 
+Adithya V. Sastry
 
+Robotics + Origami
+Linux worshipper
+Lover of all things tiny
 
-Put some brief stuff here. Catchphrase
-and things like that.
-
-blah blah
-
-more stuff idk fill this up
-
-Q W E R T Y U I O P
-A S D F G H J K L
-Z X C V B N M
+"Insert personal quote here"
 
 @========================================@
-
 </pre></div>
-<div class=c><pre>
-
-
+<div class=c><pre class="prebox">
 A personal website.                                                          [~]
 --------------------------------------------------------------------------------
 
+My name is Adithya V. Sastry, and I am a high school student in the Knoxville
+area pursuing advanced research opportunities in the fields of robotics and
+computer science. My primary area of interest is in applying origami to design
+tiny autonomous robots that take inspiration from the adaptations of insects.
+Other than that, I am also interested in robotic exploration algorithms, machine
+learning, and operating systems (specifically Linux).
 
-________________________________________________________________________________
+My current research involves the use of reinforcement learning to prune dynamic
+graphs that are used as part of robotic exploration algorithms, in order to
+reduce the amount of information that must be stored and thereby improve the
+performance of exploration. <a href="/projects/robot-graph-pruning.html">Read more about it here</a>.
 
-AVS Origami (C) 2024
+Besides these academic interests, I have been an avid origami enthusiast since a
+young age. I've folded hundreds of models and also designed a few of my own.
 
-</pre></div><div class=p><pre style="padding-left:96px;"></pre></div></div>
+
+About this site
+===============
+
+This website is primarily meant to be a place to showcase my projects, write
+about my interests and hobbies, and collect my various thoughts in one place.
+
+The site itself is built using 'sed' magic to insert plaintext / markdown-ish
+documents into an HTML template using &lt;pre> tags to preserve formatting. I
+borrowed the idea from the <a href="https://github.com/kisslinux/kisslinux.github.io">Kiss Linux website</a>, and it works quite nicely.
+
+
+Contact
+=======
+
+You can reach me over email at <a href="mailto:avs.origami@gmail.com">avs.origami@gmail.com</a>.
+</pre></div><div class=p><pre style="padding-left:12ch;"></pre></div></div>
+<pre>
+
+
+</pre>
+<footer><div class="footer"><div class="t"></div>
+<div class=tt><pre>
+
+AVS Origami (C) 2023-2024
+
+</pre></div>
+<div class=tt style="text-align:right;"><pre style="text-align:right;">
+
+<a href="#top"><img src=/img/snail.png style="float: right;"></a>
+
+</pre></div><div class="t"></div>
+</div></footer></div>

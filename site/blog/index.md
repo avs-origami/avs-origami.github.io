@@ -2,30 +2,31 @@ When I just need to write down my thoughts.                             [~/blog]
 --------------------------------------------------------------------------------
 
 
-  | [Installing Kiss Linux](/blog/install-kiss.html) (01/14/2024)
-  |
-  | My journey into building and installing Kiss Linux for the first time 
+    [Installing Kiss Linux](install-kiss.html) (01/14/2024)
+
+    This post talks a bit about my journey into installing Kiss Linux for
+    the first time in the form of an annotated installation guide.
+
+    [>>> Read more](install-kiss.html)
+
+    ________________________________________________________________________
 
 
+    Another blog post (xx/xx/2024)
 
-  | Another post
-  |
-  | big long giant description goes here to fill space
+    This post talks a bit about my journey into installing Kiss Linux for
+    the first time and also serves as an annotated installation guide.
 
+    >>> Read more
 
-
-  | Another post
-  |
-  | big long giant description goes here to fill space
-  
+    ________________________________________________________________________
 
 
-  | Another post
-  |
-  | big long giant description goes here to fill space
-  
+    Another blog post (xx/xx/2024)
 
+    This post talks a bit about my journey into installing Kiss Linux for
+    the first time and also serves as an annotated installation guide.
 
-  | Another post
-  |
-  | big long giant description goes here to fill space
+    >>> Read more
+
+    ________________________________________________________________________
