@@ -10,9 +10,11 @@
 <meta name=viewport content="width=device-width,initial-scale=1">
 <a id="top"></a>
 
-<!-- The top banner with navigation links. -->
+<!-- Flex container. -->
+<div class=container>
 
-<div class=container><div class="banner"><div class=t><pre style="text-align:center;">
+<!-- The top banner with navigation links. -->
+<div class="banner"><div class=t><pre style="text-align:center;">
 
 <table style="font-size:16px;font-weight:600;margin:0 auto;"><tr>
     <td><a href=/><img src="/img/home.png"></img></a></td>
@@ -31,13 +33,14 @@
 </tr></table>
 </pre></div></div>
 
-<!-- The rest of the body, creating a smaller side column and a larger main column. -->
+<!-- Main body table div. -->
+<div style="display:table;margin:16px auto;min-height:100%;position:relative;top:128px;">
 
-<div style="display:table;margin:16px auto;min-height:100%;"><div class="c sidebox">
-<pre style="text-align: center;position: sticky;" class="prebox">
+<!-- The left column with picture and quick info. -->
+<div class=p style="padding-right:12ch;"><pre class=prebox style="position:sticky">
 @========================================@
 
-<img src="/img/me.jpg" class="pfp"></img>
+<img src="/img/me.jpg" class=pfp></img>
 
 Adithya V. Sastry
 
@@ -49,7 +52,9 @@ Lover of all things tiny
 
 @========================================@
 </pre></div>
-<div class=c><pre class="prebox">
+
+<!-- The main body text. -->
+<div class=c><pre class=prebox>
 Wiki pages for some mini projects.                                     [~/wikis]
 --------------------------------------------------------------------------------
 
@@ -57,20 +62,42 @@ Wiki pages for some mini projects.                                     [~/wikis]
   - <a href="/wikis/ubar">Ubar</a>: tiny status bar for xorg
   - <a href="/wikis/yeti">Yeti OS</a>: bit sized linux distro for the RPi Zero
   - <a href="/wikis/ypm">YPM</a>: bit sized rusty package manager
-</pre></div><div class=p><pre style="padding-left:12ch;"></pre></div></div>
-<pre>
+</pre></div>
 
+<!-- Invisible right column so that the body is centered. -->
+<div class=p><pre style="padding-left:12ch;"></pre></div>
 
-</pre>
-<footer><div class="footer"><div class="t"></div>
+<!-- End main body table div. -->
+</div>
+
+<!-- Fill remaining space if any left. -->
+<main></main>
+
+<!-- Footer. -->
+<footer><div class=footer>
+
+<!-- Left spacer. -->
+<div class=t></div>
+
+<!-- Left side footer text. -->
 <div class=tt><pre>
 
 AVS Origami (C) 2023-2024
 
 </pre></div>
+
+<!-- Right side footer text. -->
 <div class=tt style="text-align:right;"><pre style="text-align:right;">
 
 <a href="#top"><img src=/img/snail.png style="float: right;"></a>
 
-</pre></div><div class="t"></div>
-</div></footer></div>
+</pre></div>
+
+<!-- Right spacer. -->
+<div class=t></div>
+
+<!-- End footer. -->
+</div></footer>
+
+<!-- End container. -->
+</div>
