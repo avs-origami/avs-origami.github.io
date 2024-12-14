@@ -257,3 +257,5 @@ For further information, these sites may be useful:
 https://kisslinux.github.io
 https://kisscommunity.org
 https://github.com/kiss-community/awesome-kiss
+
+[<<< Go back](/blog)

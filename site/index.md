@@ -1,20 +1,21 @@
-A personal website.                                                          [~]
+Heart on my sleeve - a place for my thoughts.                                [~]
 --------------------------------------------------------------------------------
 
-My name is Adithya V. Sastry, and I am a high school student in the Knoxville
-area pursuing advanced research opportunities in the fields of robotics and
-computer science. My primary area of interest is in applying origami to design
-tiny autonomous robots that take inspiration from the adaptations of insects.
-Other than that, I am also interested in robotic exploration algorithms, machine
-learning, and operating systems (specifically Linux).
+My name is Adithya V. Sastry. I am a high school student in the Knoxville area
+pursuing research in the fields of robotics and computer science. My primary
+area of interest is in applying origami to design tiny autonomous robots that
+take inspiration from the morphology of insects. I am also interested in robotic
+exploration algorithms, machine learning, and operating systems (specifically
+Linux).
 
 My current research involves the use of reinforcement learning to prune dynamic
 graphs that are used as part of robotic exploration algorithms, in order to
 reduce the amount of information that must be stored and thereby improve the
 performance of exploration. [Read more about it here](/projects/robot-graph-pruning.html).
 
-Besides these academic interests, I have been an avid origami enthusiast since a
-young age. I've folded hundreds of models and also designed a few of my own.
+Besides these academic interests, I have been an avid origami enthusiast since
+kindergarten. I've folded hundreds of models and also designed a few of my own.
+I have also 
 
 
 About this site

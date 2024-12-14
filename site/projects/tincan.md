@@ -41,15 +41,15 @@ browsing. It also has a small base of around 10-20 users.
 ================
 
 I have wanted to make my own Linux distribution ever since I discovered Linux
-From Scratch a few years back. The first time I tried it, I was eventually able
-to work through the build process, but much to my dismay it wouldn't boot. Since
-then I've revisited the idea on and off, with further attempts to make my LFS
-boot, exploring Kiss Linux, and taking on the simpler task of making a minimal
-distro for the Raspberry Pi Zero based on Cross-LFS Embedded. Though the process
-has been slow, taking on these little projects and spending more time actively
-using Linux has helped me gain a better understanding of how it works, and so
-when I decided to try again with making a custom distribution, it actually
-panned out, and this is the result.
+From Scratch (LFS) a few years back. The first time I tried it, I was eventually
+able to work through the build process, but much to my dismay it wouldn't boot.
+Since then I've revisited the idea on and off, with further attempts to make my
+LFS boot, exploring Kiss Linux, and taking on the simpler task of making a
+minimal distro for the Raspberry Pi Zero based on Cross-LFS Embedded. Though the
+process has been slow, taking on these little projects and spending more time
+actively using Linux has helped me gain a better understanding of how it works.
+So, when I decided to try again with making a custom distribution, it actually
+panned out, and Tin Can is the result.
 
 I primarily started doing this just for the fun of it. This project has been a
 nice thing to have going on the side, to occasionally fall back on when I'm
@@ -81,3 +81,5 @@ the choice of display server protocol and work on further simplifying the file
 system layout. I also have plans to make some changes to which packages are
 included (change OpenSSL to BearSSL, bison to byacc, flex to reflex, etc) and
 try removing more dependencies.
+
+[<<< Go back](/projects)

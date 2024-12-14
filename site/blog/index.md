@@ -1,4 +1,4 @@
-When I just need to write down my thoughts.                             [~/blog]
+When I just need to write my thoughts about a topic.                    [~/blog]
 --------------------------------------------------------------------------------
 
 
@@ -9,24 +9,3 @@ When I just need to write down my thoughts.                             [~/blog]
 
     [>>> Read more](install-kiss.html)
 
-    ________________________________________________________________________
-
-
-    Another blog post (xx/xx/2024)
-
-    This post talks a bit about my journey into installing Kiss Linux for
-    the first time and also serves as an annotated installation guide.
-
-    >>> Read more
-
-    ________________________________________________________________________
-
-
-    Another blog post (xx/xx/2024)
-
-    This post talks a bit about my journey into installing Kiss Linux for
-    the first time and also serves as an annotated installation guide.
-
-    >>> Read more
-
-    ________________________________________________________________________
