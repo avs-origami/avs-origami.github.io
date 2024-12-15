@@ -121,6 +121,7 @@ th, td {
     background-color: #fdfaf6;
     filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.1));
     border-radius: 6px 6px;
+    font-size: 16px;
 
     a {
         text-decoration: none;
@@ -161,9 +162,12 @@ main {
     color: #d33682;
 }
 
-@media(max-width:999px) {
-    .c {
-        display: block;
-        font-size: 1.94vw;
+@media (max-width: 1689.98px) {
+    body {
+        font-size: 11px;
+    }
+
+    .banner {
+        font-size: 13px;
     }
 }
