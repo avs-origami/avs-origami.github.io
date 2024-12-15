@@ -4,7 +4,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
     <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
-<title>AVS Origami - about</title>
+<title>AVS Origami - wikis/ubar</title>
 <meta charset=utf-8>
 <meta name=Description content="A personal website">
 <meta name=viewport content="width=device-width,initial-scale=1">
@@ -36,11 +36,10 @@
 
 <!-- The left column with picture and quick info. -->
 <div class=p style="padding-right:12ch"><pre class=prebox style="text-align:center;">
-@========================================@
 
-<img src="/img/me.jpg" class=pfp></img>
+<img src="/img/me.jpg" class=pfp>
 
-Adithya V. Sastry
+<b>Adithya V. Sastry</b>
 
 Robotics + Origami
 Creator of <a href=/projects/tincan.html>Tin Can Linux</a>
@@ -53,16 +52,57 @@ you sleep."</i>
 
 -- Dr. APJ Abdul Kalam
 
-@========================================@
 </pre></div>
 
 <!-- The main body text. -->
 <div class=c><pre class=prebox>
+|-----------------------------|
+| UBAR: micro-sized statusbar |
+|-----------------------------|
 
+A micro-sized statusbar for linux.
+
+- Incredibly minimal (only 103 lines with comments)
+- Depends only on xlib and libxft
+- Configured entirely in code
+
+=== BUILDING
+============
+
+1. Edit `config.h`
+2. Run `make`
+3. Move `ubar` to your bin directory
+
+=== SHOWING INFO
+================
+
+The information that is shown on the bar is determined by running two shell
+scripts which can be set in `config.h`. Examples are provided in the repository
+at `bar_left.sh` and `bar_right.sh`.
 </pre></div>
 
 <!-- Invisible right column so that the body is centered. -->
-<div class=p style="padding-left:12ch"><pre class=invbox></pre></div>
+<div class=p style="padding-left:12ch"><pre class=prebox>
+<div class=ctr>==============   Updates   ==============</div>
+
+News - 12/01/2024
+<a href=https://github.com/avs-origami/arc/releases/tag/v0.0.4 target="_blank" rel="noopener noreferrer">Arc: first release candidate is here</a>
+
+
+News - 11/28/2024
+<a href=https://github.com/tincan-linux target="_blank" rel="noopener noreferrer">Tin Can Linux: 16 followers and 11 stars
+on GitHub</a>
+
+
+News - 11/07/2024
+<a href=https://github.com/avs-origami/arc target="_blank" rel="noopener noreferrer">Arc: a tiny Rusty package manager for
+Linux</a>
+
+
+Post - 01/14/2024
+<a href=/blog/install-kiss.html>Installing Kiss Linux</a>
+
+</pre></div>
 
 <!-- End main body table div. -->
 </div>
@@ -86,7 +126,7 @@ AVS Origami (C) 2023-2024
 <!-- Right side footer text. -->
 <div class=tt style="text-align:right;"><pre style="text-align:right;">
 
-<a href="#top"><img src=/img/snail.png style="float:right;"></a>
+<a href="#top">Back to top</a>
 
 </pre></div>
 

@@ -1,5 +1,5 @@
-Transforming a simple piece of paper into art.                       [~/origami]
---------------------------------------------------------------------------------
+**[Transforming a simple piece of paper into art.                       [~/origami]
+--------------------------------------------------------------------------------]**
 
 I picked up origami at a really early age, and since then I've folded hundreds
 of models and designed a few of my own. On this page, I've posted some pictures

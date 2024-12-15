@@ -9,6 +9,10 @@ parse() {
     # center text in between #[ and ]#
     sed -E 's#\[<pre style="text-align:center">g' |
     sed -E 's\]#<\/pre>g' |
+    # **[ bold
+    sed -E 's\*\*\[<b>g' |
+    # ]** end bold
+    sed -E 's\]\*\*<\/b>g' |
     # *[ italics
     sed -E 's\*\[<i>g' |
     # ]* end italics

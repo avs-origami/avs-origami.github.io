@@ -1,12 +1,12 @@
-My current and past major projects.                                 [~/projects]
---------------------------------------------------------------------------------
+**[My current and past major projects.                                 [~/projects]
+--------------------------------------------------------------------------------]**
 
 This page is a catalog of major projects that I have taken up, both current and
 past. I am still updating this page with more of my past projects.
 
 
-Current Projects
---------------------------------------------------------------------------------
+    **[Current Projects
+    ------------------------------------------------------------------------]**
 
 
     [Improving Robotic Exploration Algorithms Using Reinforcement Learning](/projects/robot-graph-pruning.html)
@@ -34,8 +34,8 @@ Current Projects
 
 
 
-Past Projects
---------------------------------------------------------------------------------
+    **[Past Projects
+    ------------------------------------------------------------------------]**
 
 
     [Pion: Custom Arduino Design](/projects/pion.html)
@@ -57,4 +57,38 @@ Past Projects
     the environment requiring further exploration.
 
     [>>> Read more](/projects/robot-exploration-rrt.html)
+
+    ________________________________________________________________________
+
+
+
+    **[Mini Projects
+    ------------------------------------------------------------------------]**
+
+
+    [Yeti OS: Bit-Sized Linux Distro for the Raspberry Pi Zero](/wikis/yeti)
+
+    This was one of my experiments in developing a custom Linux distribution
+    that eventually led me to create Tin Can Linux.
+
+    [>>> Read more](/wikis/yeti)
+
+    ________________________________________________________________________
+
+
+    [Turtle: Tiny Xorg Window Manager in Rust](/wikis/turtle)
+
+    This was an experiment in creating a custom window manager that I made
+    while playing around with Kiss Linux.
+
+    [>>> Read more](/wikis/turtle)
+
+    ________________________________________________________________________
+
+
+    [Ubar: Tiny Status Bar for Xorg](/wikis/ubar)
+
+    I made this 100-ish line C++ program to go along with Turtle.
+
+    [>>> Read more](/wikis/ubar)
 

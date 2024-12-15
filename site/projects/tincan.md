@@ -1,5 +1,5 @@
-Tin Can Linux: A Custom Linux Distribution                     07/2024 - present
---------------------------------------------------------------------------------
+**[Tin Can Linux: A Custom Linux Distribution                     07/2024 - present
+--------------------------------------------------------------------------------]**
 
 This summer I began working on a custom Linux package manager, and soon after
 began to design a custom distribution using this package manager. This is a
@@ -34,7 +34,7 @@ from Xorg to Wayland, and shrinking the footprint of the distro.
 
 Tin Can is still in its initial stages; however, at the moment it is reasonably
 stable, and I am able to use it for simpler tasks like programming and web
-browsing. It also has a small base of around 10-20 users.
+browsing. It also has a small base of around 10 users.
 
 
 === How and Why?
@@ -48,8 +48,8 @@ LFS boot, exploring Kiss Linux, and taking on the simpler task of making a
 minimal distro for the Raspberry Pi Zero based on Cross-LFS Embedded. Though the
 process has been slow, taking on these little projects and spending more time
 actively using Linux has helped me gain a better understanding of how it works.
-So, when I decided to try again with making a custom distribution, it actually
-panned out, and Tin Can is the result.
+So, when I decided to try my hand at making a custom distribution again, it
+actually panned out, and Tin Can is the result.
 
 I primarily started doing this just for the fun of it. This project has been a
 nice thing to have going on the side, to occasionally fall back on when I'm

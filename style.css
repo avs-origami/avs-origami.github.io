@@ -40,6 +40,10 @@ i {
     color: #859900;
 }
 
+b {
+    color: #6c71c4;
+}
+
 th, td {
     padding-left: 32px;
     padding-right: 32px;
@@ -134,6 +138,11 @@ th, td {
     background-color: #fdfaf6;
     filter: drop-shadow(-2px -2px 3px rgba(0, 0, 0, 0.1));
     border-radius: 6px 6px;
+
+    a {
+        text-decoration: none;
+        font-style: italic;
+    }
 }
 
 .container {
@@ -145,6 +154,11 @@ th, td {
 main {
     min-height: 192px;
     flex: 1;
+}
+
+.ctr {
+    text-align: center;
+    color: #d33682;
 }
 
 @media(max-width:999px) {
