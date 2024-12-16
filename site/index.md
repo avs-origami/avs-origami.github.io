@@ -13,9 +13,10 @@ graphs that are used as part of robotic exploration algorithms, in order to
 reduce the amount of information that must be stored and thereby improve the
 performance of exploration. [Read more about it here](/projects/robot-graph-pruning.html).
 
-Besides these academic interests, I have been an avid origami enthusiast since
-kindergarten. I've folded hundreds of models and also designed a few of my own.
-I have also 
+Besides these academic interests, I have been an avid origami enthusiast for
+over ten years. I've folded hundreds of models and also designed a few of my
+own. I have also recently picked up bonsai. You can check out some of my
+creations via the tabs at the top.
 
 
 About this site
@@ -32,4 +33,4 @@ borrowed the idea from the [Kiss Linux website](https://github.com/kisslinux/kis
 Contact
 =======
 
-You can reach me over email at [avs.origami@gmail.com](mailto:avs.origami@gmail.com).  !![snail](/img/snail.png)
+You can reach me over email at [avs.origami@gmail.com](mailto:avs.origami@gmail.com).  !![snail](/img/snail.png)(mailto:avs.origami@gmail.com)
