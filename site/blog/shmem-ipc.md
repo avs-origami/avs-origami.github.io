@@ -32,6 +32,8 @@ Start by creating a new project the usual way:
 You will also need to modify Cargo.toml to include the two crates previously
 mentioned and create separate client and server binaries:
 
+--------------------------------------------------------------------------------
+
 ```[[package]
 name = "shmem-test"
 version = "0.1.0"
@@ -49,6 +51,8 @@ path = "src/client.rs"
 [[bin]]
 name = "server"
 path = "src/server.rs"]```
+--------------------------------------------------------------------------------
+
 
 **[Basic Server-Client Interaction
 -------------------------------]**
@@ -57,6 +61,8 @@ Let's modify the example from the shmem-ipc repo to use sockets and passfd
 instead of dbus.
 
 Starting with server.rs:
+
+--------------------------------------------------------------------------------
 
 ```[use std::fs::{self, File};
 use std::os::unix::io::AsRawFd;
@@ -153,8 +159,12 @@ fn main() -> Result<()> {
         }
     }
 }]```
+--------------------------------------------------------------------------------
+
 
 And client.rs:
+
+--------------------------------------------------------------------------------
 
 ```[use std::fs::File;
 use std::os::unix::net::UnixStream;
@@ -214,6 +224,8 @@ fn main() -> Result<()> {
         sleep(Duration::from_millis(1000));
     }
 }]```
+--------------------------------------------------------------------------------
+
 
 If you open two terminals and run these commands in separate terminals (starting
 the server first), you should see some things start to happen.
@@ -270,3 +282,4 @@ the server first), you should see some things start to happen.
 
 
 Cool!
+

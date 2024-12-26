@@ -23,16 +23,20 @@ pre {
     overflow-x: hidden;
 }
 
+code {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+    overflow-x: scroll;
+}
+
 img {
     display: block;
     max-width: 80ch;
     border-radius: 6px 6px;
     margin-left: auto;
     margin-right: auto;
-}
-
-code {
-    font-size: 12px; 
 }
 
 a {
@@ -56,13 +60,6 @@ th, td {
     padding-left: 32px;
     padding-right: 32px;
     vertical-align: middle;
-}
-
-.code {
-    border-radius: 6px 6px;
-    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.1));
-    margin-left: 2ch;
-    margin-right: 2ch;
 }
 
 .blur {
