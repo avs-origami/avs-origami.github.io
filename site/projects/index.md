@@ -17,7 +17,7 @@ past. I am still updating this page with more of my past projects.
 
     [>>> Read more](/projects/robot-graph-pruning.html)
 
-    ________________________________________________________________________
+    _[________________________________________________________________________]_
 
 
     [Tin Can Linux](/projects/tincan.html)
@@ -29,8 +29,6 @@ past. I am still updating this page with more of my past projects.
 
     [>>> Read more](/projects/tincan.html)
     ?[>>> Official website](https://tincan-linux.github.io/)
-
-    ________________________________________________________________________
 
 
 
@@ -46,7 +44,7 @@ past. I am still updating this page with more of my past projects.
 
     [>>> Read more](/projects/pion.html)
 
-    ________________________________________________________________________
+    _[________________________________________________________________________]_
 
 
     [Frontier-Based Approach Utilizing the RRT Algorithm for Autonomous](/projects/robot-exploration-rrt.html)
@@ -57,8 +55,6 @@ past. I am still updating this page with more of my past projects.
     the environment requiring further exploration.
 
     [>>> Read more](/projects/robot-exploration-rrt.html)
-
-    ________________________________________________________________________
 
 
 
@@ -72,8 +68,9 @@ past. I am still updating this page with more of my past projects.
     that eventually led me to create Tin Can Linux.
 
     [>>> Read more](/wikis/yeti)
+    [>>> Repository](https://github.com/avs-origami/yeti)
 
-    ________________________________________________________________________
+    _[________________________________________________________________________]_
 
 
     [Turtle: Tiny Xorg Window Manager in Rust](/wikis/turtle)
@@ -82,8 +79,9 @@ past. I am still updating this page with more of my past projects.
     while playing around with Kiss Linux.
 
     [>>> Read more](/wikis/turtle)
+    [>>> Repository](https://github.com/avs-origami/turtle)
 
-    ________________________________________________________________________
+    _[________________________________________________________________________]_
 
 
     [Ubar: Tiny Status Bar for Xorg](/wikis/ubar)
@@ -91,4 +89,5 @@ past. I am still updating this page with more of my past projects.
     I made this 100-ish line C++ program to go along with Turtle.
 
     [>>> Read more](/wikis/ubar)
+    [>>> Repository](https://github.com/avs-origami/ubar)
 

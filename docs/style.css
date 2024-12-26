@@ -11,7 +11,7 @@ body {
     background-image: url(img/background.png);
     background-repeat: no-repeat;
     background-size: cover;
-    color: #586e75;
+    color: #073642;
     min-height: 100vh;
 }
 
@@ -44,6 +44,10 @@ b {
     color: #6c71c4;
 }
 
+em {
+    color: #93a1a1;
+}
+
 th, td {
     padding-left: 32px;
     padding-right: 32px;
@@ -51,7 +55,7 @@ th, td {
 }
 
 .blur {
-    background: #fdfaf6ea;     
+    background: #fdfaf6f8;     
     height: 100%;
     width: 100%;
 }
