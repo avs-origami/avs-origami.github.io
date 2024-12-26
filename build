@@ -21,6 +21,10 @@ parse() {
     sed -E 's_\[<em>g' |
     # ]_ end light
     sed -E 's\]_<\/em>g' |
+    # ```[ code
+    sed -E 's```\[<div class=code><code>g' |
+    # ]``` end code
+    sed -E 's\]```<\/code><\/div>g' |
     # #![text](url): video
     sed -E 's#!\[ *([[:alnum:] \&\;\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]) *\] *\( *([^ ]+) *\)<video width="640" height="480" controls><source src="\2" type="\1"><\/video>g' |
     # ?[text](url): open link in new tab

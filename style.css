@@ -31,6 +31,10 @@ img {
     margin-right: auto;
 }
 
+code {
+    font-size: 12px; 
+}
+
 a {
     /* text-decoration: none; */
     color: #2aa198;
@@ -52,6 +56,13 @@ th, td {
     padding-left: 32px;
     padding-right: 32px;
     vertical-align: middle;
+}
+
+.code {
+    border-radius: 6px 6px;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.1));
+    margin-left: 2ch;
+    margin-right: 2ch;
 }
 
 .blur {
