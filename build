@@ -22,9 +22,9 @@ parse() {
     # ]_ end light
     sed -E 's\]_<\/em>g' |
     # ```[ code
-    sed -E 's```\[<div class=code><code>g' |
+    sed -E 's```\[<code>g' |
     # ]``` end code
-    sed -E 's\]```<\/code><\/div>g' |
+    sed -E 's\]```<\/code>g' |
     # #![text](url): video
     sed -E 's#!\[ *([[:alnum:] \&\;\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]) *\] *\( *([^ ]+) *\)<video width="640" height="480" controls><source src="\2" type="\1"><\/video>g' |
     # ?[text](url): open link in new tab
@@ -73,5 +73,6 @@ for file in $(find site -type f -name "*.md"); do
 done
 
 cp style.css docs/
+cp code.css docs/
 cp site/favicon.png docs/favicon.png
 cp -R img docs/
