@@ -14,6 +14,7 @@ last project along with the simulation environment to perform various
 experiments validating the performance of the RL agent.
 
 I am currently pursuing this project under the mentorship of a professor at the
-University of Tennessee Knoxville.
+University of Tennessee Knoxville, and aim to publish this work in a 
+peer-reviewed journal (either IROS or CORL) in the coming months.
 
 [<<< Go back](/projects)
