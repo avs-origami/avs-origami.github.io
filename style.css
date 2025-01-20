@@ -182,3 +182,8 @@ main {
         font-size: 13px;
     }
 }
+
+.mediaflex {
+    display: flex;
+    align-items: center;
+}

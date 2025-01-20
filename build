@@ -9,6 +9,13 @@ parse() {
     # center text in between #[ and ]#
     sed -E 's#\[<pre style="text-align:center">g' |
     sed -E 's\]#<\/pre>g' |
+    # vertical align text on the same line as media using @[ and ]@
+    sed -E 's@\[<div class="mediaflex">g' |
+    sed -E 's\]@<\/div>g' |
+    # %[ open span
+    sed -E 's%\[<span>g' |
+    # ]% close span
+    sed -E 's\]%<\/span>g' |
     # **[ bold
     sed -E 's\*\*\[<b>g' |
     # ]** end bold
@@ -27,6 +34,8 @@ parse() {
     sed -E 's\]```<\/code>g' |
     # #![text](url): video
     sed -E 's#!\[ *([[:alnum:] \&\;\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]) *\] *\( *([^ ]+) *\)<video width="640" height="480" controls><source src="\2" type="\1"><\/video>g' |
+    # #!(url): audio
+    sed -E 's#!\( *([^ ]+) *\)<audio controls src="\1"><\/audio>g' |
     # ?[text](url): open link in new tab
     sed -E 's\?\[ *([[:alnum:] \&\;\.\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]+) *\] *\( *([^ ]+) *\)<a href="\2" target="_blank" rel="noopener noreferrer">\1<\/a>g' |
     # !![image](src)(url): inline clickable image

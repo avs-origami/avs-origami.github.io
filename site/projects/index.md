@@ -5,8 +5,8 @@ This page is a catalog of major projects that I have taken up, both current and
 past. I am still updating this page with more of my past projects.
 
 
-    **[Current Projects
-    ------------------------------------------------------------------------]**
+*[Current Projects
+--------------------------------------------------------------------------------]*
 
 
     [Improving Robotic Exploration Algorithms Using Reinforcement Learning](/projects/robot-graph-pruning.html)
@@ -32,8 +32,8 @@ past. I am still updating this page with more of my past projects.
 
 
 
-    **[Past Projects
-    ------------------------------------------------------------------------]**
+*[Past Projects
+-------------------------------------------------------------------------------]*
 
 
     [Pion: Custom Arduino Design](/projects/pion.html)
@@ -58,8 +58,8 @@ past. I am still updating this page with more of my past projects.
 
 
 
-    **[Mini Projects
-    ------------------------------------------------------------------------]**
+*[Mini Projects
+--------------------------------------------------------------------------------]*
 
 
     [Yeti OS: Bit-Sized Linux Distro for the Raspberry Pi Zero](/wikis/yeti)
