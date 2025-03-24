@@ -17,6 +17,14 @@ one of my original designs. It even has a pouch (formed from what were
 originally the wings on the dragon).
 --------------------------------------------------------------------------------]*
 
+![stag beetle](/img/origami/stag_beetle_1.jpg)
+![stag beetle](/img/origami/stag_beetle_2.jpg)
+*[Stag beetle from Robert Lang's Origami Insects and Their Kin. I folded this to
+try out some new double tissue foil paper I got. The paper was thicker than I
+was expecting, but that gave the model some really nice heft (and saved me from
+ripping it more than once).
+--------------------------------------------------------------------------------]*
+
 ![frog](/img/origami/frog_top.jpg)
 ![frog](/img/origami/frog_perspective.jpg)
 *[This was a really hard model to fold. I spent several hours spread out across
