@@ -20,6 +20,17 @@ past. I am still updating this page with more of my past projects.
     _[________________________________________________________________________]_
 
 
+    [Safe Robotic Control for Autonomous Aircraft Swarms](/projects/safe-control-aircraft.html)
+
+    This project aims to extend an existing approach to safety-guaranteed
+    reinforcement learning control of multi-agent systems to tasks with more
+    complex control dynamics.
+
+    [>>> Read more](/projects/safe-control-aircraft.html)
+
+    _[________________________________________________________________________]_
+
+
     [Tin Can Linux](/projects/tincan.html)
 
     I recently began developing and maintaining a custom Linux distribution
