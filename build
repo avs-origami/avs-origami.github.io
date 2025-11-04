@@ -40,6 +40,8 @@ parse() {
     sed -E 's\?\[ *([[:alnum:] \&\;\.\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]+) *\] *\( *([^ ]+) *\)<a href="\2" target="_blank" rel="noopener noreferrer">\1<\/a>g' |
     # !![image](src)(url): inline clickable image
     sed -E 's!!\[ *([[:alnum:] \&\;\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]) *\] *\( *([^ ]+) *\) *\( *([^ ]+) *\)<a href="\3"><img src="\2" alt="\1" class=inline><\/a>g' |
+    # !![image](src)[width]: inline image with width
+    sed -E 's!!\[ *([[:alnum:] \&\;\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]) *\] *\( *([^ ]+) *\) *\[ *([^ ]+) *\]<a href="\2"><img src="\2" alt="\1" class=inline style="width:\3ch"><\/a>g' |
     # !![image](src): inline image
     sed -E 's!!\[ *([[:alnum:] \&\;\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]) *\] *\( *([^ ]+) *\)<a href="\2"><img src="\2" alt="\1" class=inline><\/a>g' |
     # ![image](src)(url): clickable image

@@ -13,7 +13,7 @@ to call it Pion, after the subatomic particle of the same name, to highlight its
 small size.
 
 #[
-!![pion from top](/img/pion/pion_top_small.jpg)(/img/pion/pion_top.jpg)  !![pion from bottom](/img/pion/pion_bottom_small.jpg)(/img/pion/pion_bottom.jpg)
+!![pion from top](/img/pion/pion_top.jpg)[39]  !![pion from bottom](/img/pion/pion_bottom.jpg)[39]
 ]#
 *[The top and bottom of Pion. Everything here was hand-soldered]* 💀*[
 --------------------------------------------------------------------------------]*
@@ -35,7 +35,7 @@ Uno. To illustrate this, I also made this USB-C shield for Pion since it
 normally doesn't have a USB port for programming:
 
 #[
-!![usb shield](/img/pion/pion_shield_small.jpg)(/img/pion/pion_shield.jpg)  !![usb shield](/img/pion/pion_shield_stack_small.jpg)(/img/pion/pion_shield_stack.jpg)
+!![usb shield](/img/pion/pion_shield.jpg)[39]  !![usb shield](/img/pion/pion_shield_stack.jpg)[39]
 ]#
 *[The USB shield I made for Pion, in action. Soldering was a pain.
 --------------------------------------------------------------------------------]*
