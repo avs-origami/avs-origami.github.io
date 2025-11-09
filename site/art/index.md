@@ -8,3 +8,6 @@ worked on (or am currently working on).
   - [Bonsai](/bonsai): check out my trees (all WIP)
   - [Carnatic Music](/music): some performances that came out particularly well
   - [Pixel Art](/pixart): occasional cure for boredom
+
+Oh look! What's this? !![easteregg](/img/easteregg.png)(/egg)
+I wonder what happens if you click on it.

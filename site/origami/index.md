@@ -51,5 +51,3 @@ the frog, but still really cool nevertheless.
 --------------------------------------------------------------------------------]*
 
 Check out some more art: [~/art](/art)
-Oh look! What's this? !![easteregg](/img/easteregg.png)(/birb)
-I wonder what happens if you click on it.
