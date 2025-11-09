@@ -47,4 +47,9 @@ this case, in a tree, lol).
 !![lizard](/img/origami/lizard_top.jpg)[39]  !![lizard](/img/origami/lizard_perspective.jpg)[39]
 ]#
 *[This was another model from Origami Design Secrets. It's slightly simpler than
-the frog, but still really cool nevertheless.]*
+the frog, but still really cool nevertheless.
+--------------------------------------------------------------------------------]*
+
+Check out some more art: [~/art](/art)
+Oh look! What's this? !![easteregg](/img/easteregg.png)(/birb)
+I wonder what happens if you click on it.
