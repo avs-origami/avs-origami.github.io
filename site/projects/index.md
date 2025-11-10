@@ -1,4 +1,4 @@
-**[My current and past major projects.                                 [~/projects]
+**[My current and past major projects.                                 [&[~/projects](/rocks.html)]
 --------------------------------------------------------------------------------]**
 
 This page is a catalog of major projects that I have taken up, both current and

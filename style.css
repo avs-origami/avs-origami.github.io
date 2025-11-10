@@ -194,6 +194,11 @@ main {
     color: #d33682;
 }
 
+.invislink {
+    text-decoration: none;
+    color: inherit;
+}
+
 @media (max-width: 1689.98px) {
     body {
         font-size: 11px;
