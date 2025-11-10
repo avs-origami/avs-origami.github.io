@@ -5,6 +5,8 @@ I picked up origami at a really early age, and since then I've folded hundreds
 of models and designed a few of my own. On this page, I've posted some pictures
 of the models I'm most proud of.
 
+I also have a few [ongoing projects](/origami/ongoing/). Status updates coming soon™!
+
 #[
 !![stag beetle](/img/origami/stag_beetle_1.jpg)[39]  !![stag beetle](/img/origami/stag_beetle_2.jpg)[39]
 ]#
