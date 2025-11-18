@@ -11,7 +11,8 @@ backyard. It's not very green right now because of the weather, but the moss is
 surprisingly green at this time of year. There's also a patch of grass in the
 pot that came with the tree when I dug it out of the ground, and I've been
 maintaining it ever since. The tree isn't very refined though, mostly because
-it has sentimental value and so I'm too scared to touch it.
+it has sentimental value and so I'm too scared to touch it. I am considering
+potentially turning this one into a literati-style bonsai at some point.
 --------------------------------------------------------------------------------]*
 
 ![golden mop cypress](/img/bonsai/gold_mop.jpg)
@@ -24,6 +25,17 @@ material to begin with, which certainly helped.
 *[A close up of the same tree that I took right after styling. I was trying to
 show off the nebari but it turned out to just be a really nice picture.
 --------------------------------------------------------------------------------]*
+
+#[
+!![golden mop cypress](/img/bonsai/gold_mop_new1.jpg)[39]  !![golden mop cypress](/img/bonsai/gold_mop_new2.jpg)[39]
+!![golden mop cypress](/img/bonsai/gold_mop_new3.jpg)[80]
+]#
+*[More photos of the mop cypress, taken just after we got a light dusting of
+snow. Unusually early in the year for snow around here, but makes for nice
+pictures. I had repotted earlier in the year, around May, and since then the
+moss has grown into a nice patchwork carpet.
+--------------------------------------------------------------------------------]*
+
 
 ![mugo pine](/img/bonsai/mugo.jpg)
 *[This was also a shrub I picked up from a local nursery. I haven't started
