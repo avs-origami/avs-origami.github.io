@@ -55,6 +55,8 @@ parse() {
     sed -E 's\[ *([[:alnum:] \&\;\.\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]+) *\] *\( *([^ ]+) *\)<a href="\2">\1<\/a>g' |
     # ?[url]: open in new tab
     sed -E "s([^\"\'\>=])(\?\[)(http[s]?://[^[:space:]]*)(\])\1<a href=\3 target=\"_blank\" rel=\"noopener noreferrer\">\3</a>g" |
+    # ?>[url]: redirect
+    sed -E "s([^\"\'\>=])(\?>\[)(http[s]?://[^[:space:]]*)(\])\1<meta http-equiv=\"refresh\" content=\"0; URL=\3\">g" |
     # [url]
     sed -E "s([^\"\'\>=])(\[)(http[s]?://[^[:space:]]*)(\])\1<a href=\3>\3</a>g" |
     # url
