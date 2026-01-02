@@ -22,6 +22,14 @@ was one of the rare times that experimenting with random variations of the
 traditional origami bases led to something recognizable.
 --------------------------------------------------------------------------------]*
 
+#[!![helmet beetle](/img/origami/helmet_beetle.jpg)]#
+*[Samurai Helmet Beetle from Robert Lang's Origami Insects Vol. 2. Shaping
+certain parts of the model was extremely difficult due to the thickness of the
+paper (how does he expect me to make a sharp crease through twenty layers of
+paper??!?) but it eventually worked out. Not my cleanest fold, but I'm pretty
+happy with it nonetheless.
+--------------------------------------------------------------------------------]*
+
 #[!![kangaroo](/img/origami/kangaroo.jpg)[80]]#
 *[Based off ?[this dragon by Jo Nakashima](https://jonakashima.com.br/2015/07/24/origami-dragons), this kangaroo is in some ways also
 one of my original designs. It even has a pouch (formed from what were
