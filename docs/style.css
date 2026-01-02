@@ -77,6 +77,12 @@ th, td {
     border-radius: 3px 3px;
 }
 
+.place-content {
+    display: table-cell;
+    width: 80ch;
+    border-radius: 3px 3px;
+}
+
 .p {
     display: table-cell;
     width: 42ch;

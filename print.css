@@ -90,6 +90,7 @@ th, td {
     user-select: none;
     top: 96px;
     position: sticky;
+    display: none;
 }
 
 .t {
@@ -147,6 +148,8 @@ th, td {
         text-decoration: none;
         font-style: italic;
     }
+
+    display: none;
 }
 
 .bannerback {
@@ -165,6 +168,8 @@ background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox=
         text-decoration: none;
         font-style: italic;
     }
+
+    display: none;
 }
 
 .footer {
@@ -182,6 +187,8 @@ background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox=
         text-decoration: none;
         font-style: italic;
     }
+
+    display: none;
 }
 
 .container {
