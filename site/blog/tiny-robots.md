@@ -42,9 +42,9 @@ making a tiny smart robot. And robots of this scale seem to be garnering more
 attention recently.
 
 Many of the recent innovations solve one of my issues with these original
-origmai robots: no matter how they're controlled, many of the newer innovations,
-like the ?[aerial robots at MIT's Soft and Micro Robotics Laboratory](https://smrl.mit.edu/research/aerial-robot-powered-by-soft-actuators) or the
-?[amphibious millirobots at Stanford's Zhao Lab](https://zhaolab.stanford.edu/publications/spinning-enabled-wireless-amphibious-origami-millirobot) actually take advantage of their
+origmai robots: no matter how they're controlled, many newer robots, like the
+?[aerial robots at MIT's Soft and Micro Robotics Laboratory](https://smrl.mit.edu/research/aerial-robot-powered-by-soft-actuators) or the ?[amphibious](https://zhaolab.stanford.edu/publications/spinning-enabled-wireless-amphibious-origami-millirobot)
+?[millirobots at Stanford's Zhao Lab](https://zhaolab.stanford.edu/publications/spinning-enabled-wireless-amphibious-origami-millirobot) actually take advantage of their
 flexibility for locomotion. But they still don't have brains of their own.
 They're either tethered with wires or controlled magnetically -- which is fine
 for some applications like surgery, where tasks can be performed in a relatively
