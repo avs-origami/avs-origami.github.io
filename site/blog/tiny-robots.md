@@ -1,0 +1,56 @@
+**[Tiny robots                                                           01/08/2026
+--------------------------------------------------------------------------------]**
+
+*[I wrote parts of this blog post sometime last year but never published it. Just
+rediscovered it a few days ago and decided to finish it.]*
+
+Sometime in 2017, I came across this video.
+
+#[
+$[ site/blog/mit-robot-video-embed.html
+]#
+This was at the height of my (first) obsession with origami, and it was also
+right around the time I discovered what Arduino was, so naturally, I started
+digging into it a bit more.
+
+I spent some time trying to understand how the origami design worked, how they
+got it to self fold, but most of all, how they made it move around and perform
+tasks. Of course, I knew from the video ?[(and the article that went with the](https://news.mit.edu/2015/centimeter-long-origami-robot-0612)
+?[video)](https://news.mit.edu/2015/centimeter-long-origami-robot-0612) that it had a little magnet on its back and that was their way of
+controlling its motion, but I figured maybe there was something about the
+origami structure that allowed them to control it, like bending the joints to
+propel it forward or pick up the little red cubes.
+
+But after a while, I came to the conclusion that the origami structure just
+allowed it to waddle from side to side. Nothing was actually bending, which
+seemed to defeat the purpose of an origami robot. Why make it foldable, why have
+so many joints, when none of them actually help the robot do things?
+
+Plus, not knowing the first thing about magnetism, part of my brain was
+convinced there was someone dragging a powerful magnet along the underside of
+the table. Even though I knew this wasn't what they were doing, I decided in
+that they were cheating by using a magnet, and valiantly decided I would
+improve their robot by giving it brains and controlling it by flexing the joints
+rather than relying on the waddling motion their robot exhibited.
+
+I've had a lot of passing fancies like this over the years, but somehow this one
+has managed to stick around nearly nine years later. And tiny, insect-scale
+robots seem to be garnering more attention recently.
+
+Many of the recent innovations solve one of my issues with these original
+origmai robots: no matter how they're controlled, many of the newer innovations,
+like the ?[aerial robots at MIT's Soft and Micro Robotics Laboratory](https://smrl.mit.edu/research/aerial-robot-powered-by-soft-actuators) or the
+?[amphibious millirobots at Stanford's Zhao Lab](https://zhaolab.stanford.edu/publications/spinning-enabled-wireless-amphibious-origami-millirobot) actually take advantage of their
+flexibility for locomotion. But they still don't have brains of their own.
+They're either tethered with wires or controlled magnetically -- which is fine
+for some applications like surgery, where tasks can be performed in a relatively
+controlled environment, but definitely doesn't work for tasks that involve
+dynamic or uncertain environments.
+
+I've always thought it would be cool to work with fingertip-sized robots. The
+origami robot video from nine years ago convinced me of that. The idea that it
+might be possible to squeeze everything -- computational power, sensing
+capabilities, and more -- into a fully-functional robot no larger than a few
+centimeters at most. That's exciting.
+
+And also really difficult, but that's where the excitement comes from.

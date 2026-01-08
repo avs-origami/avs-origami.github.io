@@ -88,6 +88,7 @@ for file in $(find site -type f -name "*.md"); do
 done
 
 cp style.css docs/
+cp print.css docs/
 cp code.css docs/
 cp site/favicon.png docs/favicon.png
 cp -R img docs/

@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang=en>
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" media="print" href="/print.css">
+</head>
+<title>AVS Origami - blog/tiny-robots</title>
+<meta charset=utf-8>
+<meta name=Description content="A personal website">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<a id="top"></a>
+
+<!-- Flex container. -->
+<div class="container">
+
+<!-- The top banner with navigation links. -->
+<!-- <div class="bannerback"><div class=t><pre style="text-align:center;"> -->
+<!-- <table style="font-weight:600;margin:0 auto;"><tr> -->
+<!--     <td>.</td> -->
+<!-- </tr></table></pre></div></div> -->
+
+<div class="banner"><div class=t><pre style="text-align:center;margin-top:16px;margin-bottom:16px;">
+<table style="font-weight:600;margin:0 auto;"><tr>
+    <td><a href=/><img src="/img/home.png"></a></td>
+    <td><a href=/ style="color:#cb4b16">Home</a></td>
+    <td><a href=/projects>Projects</a></td>
+    <td><a href=/blog>Blog</a></td>
+    <td><a href=/art>Art</a></td>
+    <td><a href=/projects/tincan.html>Tin Can Linux</a></td>
+    <td><a href=/wikis>Wikis</a></td>
+    <td><a href=https://github.com/avs-origami target="_blank" rel="noopener noreferrer">GitHub</a></td>
+    <td><a href=https://github.com/avs-origami target="_blank" rel="noopener noreferrer"><img src="/img/octo.png"></a></td>
+</tr></table></pre></div></div>
+
+<!-- Main body table div. -->
+<div style="display:table;margin:16px auto;min-height:100%;position:relative;top:96px;">
+
+<!-- The left column with picture and quick info. -->
+<div class=p style="padding-right:6ch"><pre class=prebox style="text-align:center;">
+
+<img src="/img/me.jpg" class=pfp>
+
+<b>Adithya V. Sastry</b>
+
+Robotics + Origami
+Creator of <a href=/projects/tincan.html>Tin Can Linux</a>
+<a href=https://www.cee.org/programs/research-science-institute target="_blank" rel="noopener noreferrer">Research Science Institute 2025</a>
+Lover of all things tiny
+
+
+<i>"A dream is not that which you see while
+sleeping, it is that which does not let
+you sleep."</i>
+
+-- Dr. APJ Abdul Kalam
+
+</pre></div>
+
+<!-- The main body text. -->
+<div class=place-content><pre class=prebox>
+<b>Tiny robots                                                           01/08/2026
+--------------------------------------------------------------------------------</b>
+
+<i>I wrote parts of this blog post sometime last year but never published it. Just
+rediscovered it a few days ago and decided to finish it.</i>
+
+Sometime in 2017, I came across this video.
+
+<pre style="text-align:center">
+<iframe style="width:80ch;height:45ch;" src="https://www.youtube.com/embed/ZVYz7g-qLjs?si=i8vvQhfznTwH-fHb"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</pre>
+This was at the height of my (first) obsession with origami, and it was also
+right around the time I discovered what Arduino was, so naturally, I started
+digging into it a bit more.
+
+I spent some time trying to understand how the origami design worked, how they
+got it to self fold, but most of all, how they made it move around and perform
+tasks. Of course, I knew from the video <a href="https://news.mit.edu/2015/centimeter-long-origami-robot-0612" target="_blank" rel="noopener noreferrer">(and the article that went with the</a>
+<a href="https://news.mit.edu/2015/centimeter-long-origami-robot-0612" target="_blank" rel="noopener noreferrer">video)</a> that it had a little magnet on its back and that was their way of
+controlling its motion, but I figured maybe there was something about the
+origami structure that allowed them to control it, like bending the joints to
+propel it forward or pick up the little red cubes.
+
+But after a while, I came to the conclusion that the origami structure just
+allowed it to waddle from side to side. Nothing was actually bending, which
+seemed to defeat the purpose of an origami robot. Why make it foldable, why have
+so many joints, when none of them actually help the robot do things?
+
+Plus, not knowing the first thing about magnetism, part of my brain was
+convinced there was someone dragging a powerful magnet along the underside of
+the table. Even though I knew this wasn't what they were doing, I decided in
+that they were cheating by using a magnet, and valiantly decided I would
+improve their robot by giving it brains and controlling it by flexing the joints
+rather than relying on the waddling motion their robot exhibited.
+
+I've had a lot of passing fancies like this over the years, but somehow this one
+has managed to stick around nearly nine years later. And tiny, insect-scale
+robots seem to be garnering more attention recently.
+
+Many of the recent innovations solve one of my issues with these original
+origmai robots: no matter how they're controlled, many of the newer innovations,
+like the <a href="https://smrl.mit.edu/research/aerial-robot-powered-by-soft-actuators" target="_blank" rel="noopener noreferrer">aerial robots at MIT's Soft and Micro Robotics Laboratory</a> or the
+<a href="https://zhaolab.stanford.edu/publications/spinning-enabled-wireless-amphibious-origami-millirobot" target="_blank" rel="noopener noreferrer">amphibious millirobots at Stanford's Zhao Lab</a> actually take advantage of their
+flexibility for locomotion. But they still don't have brains of their own.
+They're either tethered with wires or controlled magnetically -- which is fine
+for some applications like surgery, where tasks can be performed in a relatively
+controlled environment, but definitely doesn't work for tasks that involve
+dynamic or uncertain environments.
+
+I've always thought it would be cool to work with fingertip-sized robots. The
+origami robot video from nine years ago convinced me of that. The idea that it
+might be possible to squeeze everything -- computational power, sensing
+capabilities, and more -- into a fully-functional robot no larger than a few
+centimeters at most. That's exciting.
+
+And also really difficult, but that's where the excitement comes from.
+</pre></div>
+
+<!-- Invisible right column so that the body is centered. -->
+<div class=p style="padding-left:6ch;"><pre class=prebox>
+<div class=ctr>==============   Updates   ==============</div>
+
+<em>News - 03/08/2025</em>
+<a href=https://github.com/tincan-linux target="_blank" rel="noopener noreferrer">Tin Can: 32 followers + 19 stars on GitHub</a>
+
+<em>News - 12/01/2024</em>
+<a href=https://github.com/avs-origami/arc/releases/tag/v0.0.4 target="_blank" rel="noopener noreferrer">Arc: first release candidate</a>
+
+<em>Post - 11/19/2024</em>
+<a href=/blog/torch-rust-cxx.html>LibTorch in Rust using FFIs</a>
+
+<em>News - 11/07/2024</em>
+<a href=https://github.com/avs-origami/arc target="_blank" rel="noopener noreferrer">Arc: rusty package manager for Linux</a>
+
+<em>Post - 06/23/2024</em>
+<a href=/blog/shmem-ipc.html>Shared Memory IPC in Rust</a>
+
+</pre></div>
+
+<!-- End main body table div. -->
+</div>
+
+<!-- Fill remaining space if any left. -->
+<main></main>
+
+<!-- Footer. -->
+<footer><div class=footer>
+
+<!-- Left spacer. -->
+<div class=t></div>
+
+<!-- Left side footer text. -->
+<div class=tt><pre>
+
+AVS Origami (C) 2023-2025
+
+</pre></div>
+
+<!-- Right side footer text. -->
+<div class=tt style="text-align:right;"><pre style="text-align:right;">
+
+<a href="#top">Back to top</a>
+
+</pre></div>
+
+<!-- Right spacer. -->
+<div class=t></div>
+
+<!-- End footer. -->
+</div></footer>
+
+<!-- End container. -->
+</div>
+
+<link rel="stylesheet" href=/code.css>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
