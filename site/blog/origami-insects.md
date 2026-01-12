@@ -1,7 +1,8 @@
 **[Folding some origami insects                                          04/15/2025
 --------------------------------------------------------------------------------]**
 
-I recently bought some new origami paper to try.
+I recently bought some new types of origami paper to try, and used them to fold
+some insects.
 
 #[
 !![tissue foil](/img/origami/tissuefoil_small.jpg)[39]  !![tissue foil](/img/origami/tissuefoil_kraft_large.jpg)[39]
@@ -11,3 +12,50 @@ Right: larger 12in by 12in squares of tissue foil (copper-colored sheets) and
 Kraft paper (natural-colored sheets) from ?[Origami-shop](https://www.origami-shop.com/en/).
 --------------------------------------------------------------------------------]*
 
+Insects were unfortunately not really the best subjects to test my new paper on,
+as it turns out. I used a square of the small tissue foil to fold Robert Lang's
+Stag Beetle from Origami Insects and Their Kin, which I would say was the best
+result of them all:
+
+#[
+!![stag beetle](/img/origami/stag_beetle_1.jpg)[39]  !![stag beetle](/img/origami/stag_beetle_2.jpg)[39]
+]#
+*[These photos are also on the origami showcase page: [/origami]
+--------------------------------------------------------------------------------]*
+
+The paper was actually a bit thick -- I was expecting tissue foil to be thinner.
+But in this case the added heft and the slightly shiny finish made it turn out
+really clean and added some extra dimension to the finished model.
+
+I wasn't so lucky with the larger paper though, because I decided I would tackle
+the Samurai Helmet Beetle from Origami Insects Vol. 2.
+
+Wrong choice.
+
+I started with the Kraft paper because that was the thinnest, but quickly gave
+up because it was WAY too slippery and didn't hold creases. Apparently, it works
+best when it's treated with methyl cellulose (MC) to make the paper more stiff.
+I didn't know this. Oh well.
+
+#[!![unfinished kraft paper model](/img/origami/kraft_unfinished.jpg)]
+*[The unfinished Kraft paper attempt at the Samurai Helmet Beetle.
+--------------------------------------------------------------------------------]*
+
+I then tried folding it with the large tissue foil, which was a bit thicker but
+held the creases much nicer. So far it's gotten pretty thich in many places, so
+hopefully it thins out once I start folding out some of the flaps.
+
+#[!![unfinished helmet beetle](/img/origami/helmet_beetle_unfinished.jpg)]
+*[The in-progress tissue foil paper attempt at the Samurai Helmet Beetle.
+--------------------------------------------------------------------------------]*
+
+Update 12/28/2025: it did not thin out. The final product looks nice from some
+angles, but isn't nearly as clean as Lang's rendition. I have no idea how he
+folded it so cleanly.
+
+#[!![helmet beetle](/img/origami/helmet_beetle.jpg)]#
+*[This photo is also on the origami showcase page: [/origami]
+--------------------------------------------------------------------------------]*
+
+I'll probably have to get some new thinner paper (and some MC) before I try
+folding any more insects though.
