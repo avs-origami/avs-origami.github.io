@@ -48,6 +48,8 @@ parse() {
     sed -E 's!\[ *([[:alnum:] \&\;\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]) *\] *\( *([^ ]+) *\) *\( *([^ ]+) *\)<a href="\3"><img src="\2" alt="\1"><\/a>g' |
     # ![image](src)
     sed -E 's!\[ *([[:alnum:] \&\;\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]) *\] *\( *([^ ]+) *\)<a href="\2"><img src="\2" alt="\1"><\/a>g' |
+    # &&[width][height](url) Youtube embed
+    sed -E 's\&\&\[ *([[:alnum:] \&\;\.\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]+) *\]\[ *([[:alnum:] \&\;\.\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]+) *\] *\( *([^ ]+) *\)<iframe style="width:\1ch;height:\2ch;" src="\3" title="" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>g' |
     # &[text](url) invisible link (no blue/underline)
     sed -E 's\&\[ *([[:alnum:] \&\;\.\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]+) *\] *\( *([^ ]+) *\)<a class=invislink href="\2">\1<\/a>g' |
     # [text](url)

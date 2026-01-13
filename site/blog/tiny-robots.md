@@ -51,6 +51,13 @@ for some applications like surgery, where tasks can be performed in a relatively
 controlled environment, but definitely doesn't work for tasks that involve
 dynamic or uncertain environments.
 
+#[
+&&[39][22](https://www.youtube.com/embed/50_kK9phHy8?si=WkIvJbXAXVv5ShRg) &&[39][22](https://www.youtube.com/embed/2oNFiMwQWyA?si=hPMtR9PzRfLjun0E)
+]#
+*[Left: MIT's soft-actuated aerial robots (Soft and Micro Robotics Lab).
+Right: Stanford's amphibious origami millirobots (Zhao Lab).
+--------------------------------------------------------------------------------]*
+
 I've always thought it would be cool to work with fingertip-sized robots. The
 origami robot video from nine years ago convinced me of that. The idea that it
 might be possible to squeeze everything -- computational power, sensing
