@@ -1,4 +1,4 @@
-**[Heart on my sleeve - a place for my thoughts.                                [~]
+**["A personal website! How interesting." -- a friend, sometime in 2025         [~]
 --------------------------------------------------------------------------------]**
 
 My name is Adithya V. Sastry. I am a high school student pursuing research in

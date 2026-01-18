@@ -1,4 +1,4 @@
-**[When I just need to write my thoughts about a topic.                    [~/blog]
+**[A collection of random thoughts and things I find interesting.          [~/blog]
 --------------------------------------------------------------------------------]**
 
     
