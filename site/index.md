@@ -1,11 +1,11 @@
-**["A personal website! How interesting." -- a friend, sometime in 2025         [~]
+**[Heart on my sleeve.                                                          [~]
 --------------------------------------------------------------------------------]**
 
-My name is Adithya V. Sastry. I am a high school student pursuing research in
-the fields of robotics and computer science. I am most interested in designing
-tiny, self-contained, autonomous robots that take inspiration from the
-morphology of insects. I am also intrigued by robotic exploration algorithms,
-machine learning, and operating systems (specifically Linux).
+I am a high school student pursuing research in the fields of robotics and
+computer science. I am most interested in designing tiny, self-contained,
+autonomous robots that take inspiration from the morphology of insects. I am
+also intrigued by robotic exploration algorithms, machine learning, and
+operating systems (specifically Linux).
 
 My current research involves the use of reinforcement learning to prune dynamic
 graphs that are used as part of robotic exploration algorithms, in order to
