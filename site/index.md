@@ -34,4 +34,4 @@ borrowed the idea from the [Kiss Linux website](https://github.com/kisslinux/kis
 Contact
 =======
 
-You can reach me over email at [avs.origami@gmail.com](mailto:avs.origami@gmail.com).  !![snail](/img/snail.png)(mailto:avs.origami@gmail.com)
+$[ email.html

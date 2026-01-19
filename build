@@ -89,8 +89,7 @@ for file in $(find site -type f -name "*.md"); do
     sed -i "s(TITLE)$home" docs/$base.html
 done
 
-cp style.css docs/
-cp print.css docs/
-cp code.css docs/
+cp *.css docs/
+cp *.js docs/
 cp site/favicon.png docs/favicon.png
 cp -R img docs/
