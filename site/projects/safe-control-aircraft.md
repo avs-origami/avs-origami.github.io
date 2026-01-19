@@ -1,4 +1,4 @@
-**[Improving Robotic Exploration via RL Graph Pruning             06/2025 - present
+**[Safe Robotic Control for Autonomous Aircraft Swarms            06/2025 - present
 --------------------------------------------------------------------------------]**
 
 This work aims to extend an existing approach to safety-guaranteed reinforcement
