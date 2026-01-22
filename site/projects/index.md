@@ -31,14 +31,14 @@ past. I am still updating this page with more of my past projects.
     _[________________________________________________________________________]_
 
 
-    [Tin Can Linux](/projects/tincan.html)
+    [Tin Can Linux](/projects/tincan)
 
     I recently began developing and maintaining a custom Linux distribution
     with an emphasis on compactness, understandability, and hackability.
     This talks a bit about why, how I got there, and the future direction
     for the distribution.
 
-    [>>> Read more](/projects/tincan.html)
+    [>>> Read more](/projects/tincan)
     ?[>>> Official website](https://tincan-linux.github.io/)
 
 
@@ -78,7 +78,7 @@ past. I am still updating this page with more of my past projects.
     This was one of my experiments in developing a custom Linux distribution
     that eventually led me to create Tin Can Linux.
 
-    [>>> Read more](/wikis/yeti)
+    [>>> Read more](/wikis/yeti.html)
     [>>> Repository](https://github.com/avs-origami/yeti)
 
     _[________________________________________________________________________]_
@@ -89,7 +89,7 @@ past. I am still updating this page with more of my past projects.
     This was an experiment in creating a custom window manager that I made
     while playing around with Kiss Linux.
 
-    [>>> Read more](/wikis/turtle)
+    [>>> Read more](/wikis/turtle.html)
     [>>> Repository](https://github.com/avs-origami/turtle)
 
     _[________________________________________________________________________]_
@@ -99,6 +99,6 @@ past. I am still updating this page with more of my past projects.
 
     I made this 100-ish line C++ program to go along with Turtle.
 
-    [>>> Read more](/wikis/ubar)
+    [>>> Read more](/wikis/ubar.html)
     [>>> Repository](https://github.com/avs-origami/ubar)
 

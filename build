@@ -89,6 +89,10 @@ for file in $(find site -type f -name "*.md"); do
     cp template.html docs/$base.html
     sed -i "s(CONTENT)$output" docs/$base.html
     sed -i "s(TITLE)$home" docs/$base.html
+
+    pd=$(dirname $file)
+    tab=$(cat "$pd/tab.txt")
+    sed -i "s>$tab</a></td> style="color:#cb4b16">$tab</a></td>" docs/$base.html
 done
 
 cp *.css docs/
