@@ -12,6 +12,8 @@ parse() {
     # vertical align text on the same line as media using @[ and ]@
     sed -E 's@\[<div class="mediaflex">g' |
     sed -E 's\]@<\/div>g' |
+    # *in-text italics*
+    sed -E 's\* *([^ ]+) *\*<i class="ii">\1</i>g' |
     # %[ open span
     sed -E 's%\[<span>g' |
     # ]% close span
