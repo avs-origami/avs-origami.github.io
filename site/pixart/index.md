@@ -1,11 +1,17 @@
 **[Itty bitty character sprites (mostly).                                [~/pixart]
 --------------------------------------------------------------------------------]**
 
-What, you thought I was just going to give them to you?!?
+Time for an easter egg hunt!
 
-My creations are scattered across this website. Some are more obvious than
-others. Try to find them all! 
+My creations can be found all across this website, from the navigation icons to
+some more fun additions.
 
-Hint: there are currently five (5). The github octocat in the top bar doesn't
-count because I yoinked that design off one of the github loading pages. All the
-others are fair game though!
+Some of my more interesting creations on this site include:
+  - The Great Penguin Mage (penguin in a wizard hat, my profile picture)
+  - Mailman Snail (the snail that lets you email me)
+  - The Easter Egg (a literal easter egg with a baby chicken hatching from it)
+  - Wise Master Frog (the one who guides you back home if you get lost)
+  - The Rock (a very well-dressed pet rock)
+
+Including all icons, there are a total of eight (8) pixel art creations on this
+website. Try to find them all!
