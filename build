@@ -12,8 +12,6 @@ parse() {
     # vertical align text on the same line as media using @[ and ]@
     sed -E 's@\[<div class="mediaflex">g' |
     sed -E 's\]@<\/div>g' |
-    # *in-text italics*
-    sed -E 's\* *([^ ]+) *\*<i class="ii">\1</i>g' |
     # %[ open span
     sed -E 's%\[<span>g' |
     # ]% close span
@@ -34,6 +32,8 @@ parse() {
     sed -E 's```\[<code>g' |
     # ]``` end code
     sed -E 's\]```<\/code>g' |
+    # *in-text italics*
+    sed -E 's\* *([^ ]+) *\*<i class="ii">\1</i>g' |
     # #![text](url): video
     sed -E 's#!\[ *([[:alnum:] \&\;\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]) *\] *\( *([^ ]+) *\)<video width="640" height="480" controls><source src="\2" type="\1"><\/video>g' |
     # #!(url): audio
