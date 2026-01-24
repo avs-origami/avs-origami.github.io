@@ -22,11 +22,11 @@ At the moment, I have added enough packages the to repositories to start a
 graphical session with a terminal and web browser (NetSurf). Here's some
 screenshots of Tin Can in action:
 
-![sysfetch](/img/tincan-1.png)(/img/tincan-1.png)
+![sysfetch](/img/tincan-1.png)
 
-![browser](/img/tincan-2.png)(/img/tincan-2.png)
+![browser](/img/tincan-2.png)
 
-![editor](/img/tincan-3.png)(/img/tincan-3.png)
+![editor](/img/tincan-3.png)
 
 
 I am continuing to work on adding a few more packages, completing the transition

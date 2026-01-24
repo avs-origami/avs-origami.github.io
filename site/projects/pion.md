@@ -18,11 +18,11 @@ small size.
 *[The top and bottom of Pion. Everything here was hand-soldered]* 💀*[
 --------------------------------------------------------------------------------]*
 
-![pion by quarter](/img/pion/pion_quarter.jpg)(/img/pion/pion_quarter.jpg)
+![pion by quarter](/img/pion/pion_quarter.jpg)
 *[Pion is about the size of a US quarter.
 --------------------------------------------------------------------------------]*
 
-![size comparison](/img/pion/pion_comparison.jpg)(/img/pion/pion_comparison.jpg)
+![size comparison](/img/pion/pion_comparison.jpg)
 *[Pion next to a bunch of other popular Arduinos. It's the smallest of them all!
 --------------------------------------------------------------------------------]*
 
