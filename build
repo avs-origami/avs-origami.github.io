@@ -45,9 +45,9 @@ parse() {
     sed -E 's\?\[ *([[:alnum:] \&\;\.\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]+) *\] *\( *([^ ]+) *\)<a href="\2" target="_blank" rel="noopener noreferrer">\1<\/a>g' |
 
     # !![#noclick](src): inline non-clickable image
-    sed -E 's!\[#noclick\] *\( *([^ ]+) *\)<img src="\1">g' |
-    # ![#noclick](src): vanilla non-clickable image
     sed -E 's!!\[#noclick\] *\( *([^ ]+) *\)<img src="\1" class=inline>g' |
+    # ![#noclick](src): vanilla non-clickable image
+    sed -E 's!\[#noclick\] *\( *([^ ]+) *\)<img src="\1">g' |
 
     # !![image](src)(url): inline clickable image
     sed -E 's!!\[ *([[:alnum:] \&\;\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]) *\] *\( *([^ ]+) *\) *\( *([^ ]+) *\)<a href="\3"><img src="\2" alt="\1" class=inline><\/a>g' |
