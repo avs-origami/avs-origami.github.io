@@ -16,6 +16,7 @@ parse() {
     sed -E 's%\[<span>g' |
     # ]% close span
     sed -E 's\]%<\/span>g' |
+
     # **[ bold
     sed -E 's\*\*\[<b>g' |
     # ]** end bold
@@ -34,24 +35,29 @@ parse() {
     sed -E 's\]```<\/code>g' |
     # *in-text italics*
     sed -E 's\* *([^ ]+) *\*<i class="ii">\1</i>g' |
+
     # #![text](url): video
     sed -E 's#!\[ *([[:alnum:] \&\;\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]) *\] *\( *([^ ]+) *\)<video width="640" height="480" controls><source src="\2" type="\1"><\/video>g' |
     # #!(url): audio
     sed -E 's#!\( *([^ ]+) *\)<audio controls src="\1"><\/audio>g' |
+
     # ?[text](url): open link in new tab
     sed -E 's\?\[ *([[:alnum:] \&\;\.\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]+) *\] *\( *([^ ]+) *\)<a href="\2" target="_blank" rel="noopener noreferrer">\1<\/a>g' |
+
     # !![image](src)(url): inline clickable image
     sed -E 's!!\[ *([[:alnum:] \&\;\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]) *\] *\( *([^ ]+) *\) *\( *([^ ]+) *\)<a href="\3"><img src="\2" alt="\1" class=inline><\/a>g' |
-    # !![image](src)[width]: inline image with width
-    sed -E 's!!\[ *([[:alnum:] \&\;\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]) *\] *\( *([^ ]+) *\) *\[ *([^ ]+) *\]<a href="\2"><img src="\2" alt="\1" class=inline style="width:\3ch"><\/a>g' |
-    # !![image](src): inline image
-    sed -E 's!!\[ *([[:alnum:] \&\;\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]) *\] *\( *([^ ]+) *\)<a href="\2"><img src="\2" alt="\1" class=inline><\/a>g' |
+    # !![image](src)[width]: inline image with width (uses lightbox)
+    sed -E 's!!\[ *([[:alnum:] \&\;\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]) *\] *\( *([^ ]+) *\) *\[ *([^ ]+) *\]<img class="cssbox_thumb inline" tabindex=1 src="\2" alt="\1" style="width:\3ch"><span class="cssbox_full"><img src="\2" alt="\1"></span>g' |
+    # !![image](src): inline image (uses lightbox)
+    sed -E 's!!\[ *([[:alnum:] \&\;\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]) *\] *\( *([^ ]+) *\)<img class="cssbox_thumb inline" tabindex=1 src="\2" alt="\1"><span class="cssbox_full"><img src="\2" alt="\1"></span>g' |
     # ![image](src)(url): clickable image
     sed -E 's!\[ *([[:alnum:] \&\;\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]) *\] *\( *([^ ]+) *\) *\( *([^ ]+) *\)<a href="\3"><img src="\2" alt="\1"><\/a>g' |
-    # ![image](src)
-    sed -E 's!\[ *([[:alnum:] \&\;\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]) *\] *\( *([^ ]+) *\)<a href="\2"><img src="\2" alt="\1"><\/a>g' |
+    # ![image](src): image (uses lightbox)
+    sed -E 's!\[ *([[:alnum:] \&\;\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]) *\] *\( *([^ ]+) *\)<img class="cssbox_thumb" tabindex=1 src="\2" alt="\1"><span class="cssbox_full"><img src="\2" alt="\1"></span>g' |
+
     # &&[width][height](url) Youtube embed
     sed -E 's\&\&\[ *([[:alnum:] \&\;\.\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]+) *\]\[ *([[:alnum:] \&\;\.\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]+) *\] *\( *([^ ]+) *\)<iframe style="width:\1ch;height:\2ch;" src="\3" title="" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>g' |
+
     # &[text](url) invisible link (no blue/underline)
     sed -E 's\&\[ *([[:alnum:] \&\;\.\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]+) *\] *\( *([^ ]+) *\)<a class=invislink href="\2">\1<\/a>g' |
     # [text](url)
@@ -66,8 +72,10 @@ parse() {
     # url
     sed -E "s([^\"\'\>=])(http[s]?://[^[:space:]]*)\1<a href=\2>\2</a>g" |
     sed -E "s^(http[s]?://[^[:space:]]*)<a href=\1>\1</a>g" |
+    
     # $[section]
     sed -E 's\$\[ *([[:alnum:] \&\;\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]) *\]<span id=\1>\[<a class=t href=#\1>\1</a>\]</span>g' |
+
     # include html files with $[ file.html
     sed 's\$\[ cat e' |
 
