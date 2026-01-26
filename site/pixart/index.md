@@ -13,5 +13,5 @@ Some of my more interesting creations on this site include:
   - Wise Master Frog (the one who guides you back home if you get lost)
   - The Rock (a very well-dressed pet rock)
 
-Including all icons, there are a total of eight (8) pixel art creations on this
+Including all icons, there are a total of nine (9) pixel art creations on this
 website. Try to find them all!
