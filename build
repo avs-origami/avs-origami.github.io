@@ -106,5 +106,6 @@ done
 
 cp *.css docs/
 cp *.js docs/
+cp *.xml docs/
 cp site/favicon.png docs/favicon.png
 cp -R img docs/
