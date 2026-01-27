@@ -82,7 +82,7 @@ parse() {
     sed -E 's\$\[ *([[:alnum:] \&\;\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]) *\]<span id=\1>\[<a class=t href=#\1>\1</a>\]</span>g' |
 
     # include html files with $[ file.html
-    sed 's\$\[ cat e' |
+    sed 's@@CAT cat e' |
 
     # Hacky fix for sed \n errors
     sed ':a $!{N; ba}; s\n\\ng'
