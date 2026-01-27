@@ -59,8 +59,7 @@ you sleep."</i>
 <a href=https://github.com/avs-origami target="_blank" rel="noopener noreferrer"><img src="/img/octo.png"
         class=inline loading="lazy"></a> <a href=https://www.linkedin.com/in/adithya-v-sastry/ target="_blank"
     rel="noopener noreferrer"><img src="/img/linkedin.png" class=inline loading="lazy"></a> <a class="href-obfu" href="to-gmail/"><img
-        src="/img/email.png" alt="snail" class=inline loading="lazy"></a> <a href=/blog.xml target="_blank"
-    rel="noopener noreferrer"><img src=/img/rss2.png class=inline loading="lazy"></a>
+        src="/img/email.png" alt="snail" class=inline loading="lazy"></a>
 </pre></div>
 
 <!-- The main body text. -->
@@ -86,14 +85,14 @@ honestly overkill. Instead, we use good ol' Unix Sockets along with <a href="htt
 memory pipeline.
 
 Start by creating a new project the usual way:
---------------------------------------------------------------------------------
+<em>--------------------------------------------------------------------------------</em>
   $ cargo new shmem-test
   $ cd shmem-test
---------------------------------------------------------------------------------
+<em>--------------------------------------------------------------------------------</em>
 
 You will also need to modify Cargo.toml to include the two crates previously
 mentioned and create separate client and server binaries:
---------------------------------------------------------------------------------
+<em>--------------------------------------------------------------------------------</em>
 <code>[package]
 name = "shmem-test"
 version = "0.1.0"
@@ -110,7 +109,7 @@ path = "src/client.rs"
 
 [[bin]]
 name = "server"
-path = "src/server.rs"</code>--------------------------------------------------------------------------------
+path = "src/server.rs"</code><em>--------------------------------------------------------------------------------</em>
 
 Now that the setup is done, we can start doing some interesting things.
 
@@ -121,7 +120,7 @@ Let's modify the example from the shmem-ipc repo to use sockets and passfd
 instead of dbus.
 
 Starting with server.rs:
---------------------------------------------------------------------------------
+<em>--------------------------------------------------------------------------------</em>
 <code>use std::fs::{self, File};
 use std::os::unix::io::AsRawFd;
 use std::os::unix::net::UnixListener;
@@ -216,10 +215,10 @@ fn main() -> Result&lt;()> {
             println!("Sum: {}", sum);
         }
     }
-}</code>--------------------------------------------------------------------------------
+}</code><em>--------------------------------------------------------------------------------</em>
 
 And client.rs:
---------------------------------------------------------------------------------
+<em>--------------------------------------------------------------------------------</em>
 <code>use std::fs::File;
 use std::os::unix::net::UnixStream;
 use std::os::unix::io::FromRawFd;
@@ -277,11 +276,11 @@ fn main() -> Result&lt;()> {
         items += 100000;
         sleep(Duration::from_millis(1000));
     }
-}</code>--------------------------------------------------------------------------------
+}</code><em>--------------------------------------------------------------------------------</em>
 
 If you open two terminals and run these commands in separate terminals (starting
 the server first), you should see some things start to happen.
---------------------------------------------------------------------------------
+<em>--------------------------------------------------------------------------------</em>
   # Run this first, in terminal 1
   $ cargo run --release --bin server
 
@@ -303,7 +302,7 @@ the server first), you should see some things start to happen.
   Sum: 8.7110550074603
   Sum: 9.044532340793014
   Sum: 9.35716734079175
---------------------------------------------------------------------------------
+<em>--------------------------------------------------------------------------------</em>
   # Run this after the server starts, in terminal 2:
   $ cargo run --release --bin client
 
@@ -325,11 +324,11 @@ the server first), you should see some things start to happen.
   Sending 500216 items of 0.0000007142857142857143, in total 0.35729714285714287
   Sending 500216 items of 0.0000006666666666666667, in total 0.33347733333333335
   Sending 500216 items of 0.000000625, in total 0.31263500000000005
---------------------------------------------------------------------------------
+<em>--------------------------------------------------------------------------------</em>
 
 Cool!
 
-<a href="/blog">&lt;&lt;&lt; Go back</a>
+<a href="/blog">&lt;&lt;&lt; Go back</a>                                                <a href="/blog.xml">Subscribe via RSS >>></a>
 </pre></div>
 
 <!-- Invisible right column so that the body is centered. -->
