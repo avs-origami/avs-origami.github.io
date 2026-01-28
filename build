@@ -33,6 +33,10 @@ parse() {
     sed -E 's```\[<code>g' |
     # ]``` end code
     sed -E 's\]```<\/code>g' |
+    # ~~[ strikethrough
+    sed -E 's~~\[<s>g' |
+    # ]~~ end strikethrough
+    sed -E 's\]~~<\/s>g' |
     # *in-text italics*
     sed -E 's\* *([^ ]+) *\*<i class="ii">\1</i>g' |
 
