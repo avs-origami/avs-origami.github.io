@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+<title>AVS Origami's Blog</title>
+<link>https://avs-origami.github.io/blog/</link>
+<description>The latest blog posts from avs-origami.github.io</description>
+    <item>
+        <title>Snow</title>
+        <link>https://avs-origami.github.io/blog/2026-01-27.html</link>
+        <description>Or rather, a distinct absence of the stuff.</description>
+    </item>
+    <item>
+        <title>Tiny robots</title>
+        <link>https://avs-origami.github.io/blog/2026-01-08.html</link>
+        <description>A bit of a rant on why tiny robots are so great (or at least why I think they're so great).</description>
+    </item>
+    <item>
+        <title>Folding some origami insects</title>
+        <link>https://avs-origami.github.io/blog/2025-04-15.html</link>
+        <description>What to do with new origami paper? That's right, bugs.</description>
+    </item>
+    <item>
+        <title>Shared memory IPC in Rust</title>
+        <link>https://avs-origami.github.io/blog/2024-06-23.html</link>
+        <description>A foray into unsafe Rust using shared memory for ultra-fast interprocess communication. Complete with examples!</description>
+    </item>
+    <item>
+        <title>Installing Kiss Linux</title>
+        <link>https://avs-origami.github.io/blog/2024-01-14.html</link>
+        <description>A bit about my journey into installing Kiss Linux for the first time in the form of an annotated installation guide.</description>
+    </item>
+</channel>
+</rss>

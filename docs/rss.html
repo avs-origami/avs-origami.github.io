@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" media="print" href="/print.css">
     <link rel="stylesheet" type="text/css" href="/cssbox.css">
     <script src="email.js" defer></script>
-    <title>avs origami - projects/pion</title>
+    <title>avs origami - rss</title>
     <meta charset=utf-8>
     <meta name=description content="A personal website">
     <meta name=viewport content="width=device-width,initial-scale=1">
@@ -66,59 +66,42 @@ you sleep."</i>
 
 <!-- The main body text. -->
 <div class=place-content><pre class=prebox>
-<b>Pion: Custom Arduino Design                                    08/2019 - 03/2022
+<b>Updates! Fresh Updates! Get yours today!                                 [~/rss]
 --------------------------------------------------------------------------------</b>
 
-When I was working on an Arduino project several years back, one of the biggest
-issues was the footprint of the device I had created. Because I was using an
-Arduino Uno, the only way to supply power portably was to connect a pack of AA
-batteries to the Uno's power jack, which unfortunately resulted in the device
-being both large and heavy. The alternative was to use a 3.3V board with a LiPo
-battery, but at the time the only one I had was an ESP32 based board, which I
-had trouble programming. Frustrated by this, I decided to make my own. After
-numerous failed attempts, I finally succeeded, and this was the result. I chose
-to call it Pion, after the subatomic particle of the same name, to highlight its
-small size.
+This site uses RSS feeds to let you subscribe to new blog posts (and possibly
+other things at some point). There are two main ways you can utilize this.
 
-<pre style="text-align:center">
-<img class="cssbox_thumb inline" tabindex=1 src="/img/pion/pion_top.jpg" alt="pion from top" style="width:39ch"><span class="cssbox_full"><img src="/img/pion/pion_top.jpg" alt="pion from top"></span>  <img class="cssbox_thumb inline" tabindex=1 src="/img/pion/pion_bottom.jpg" alt="pion from bottom" style="width:39ch"><span class="cssbox_full"><img src="/img/pion/pion_bottom.jpg" alt="pion from bottom"></span>
-</pre>
-<i>The top and bottom of Pion. Everything here was hand-soldered</i> 💀<i>
---------------------------------------------------------------------------------</i>
+<b>Email updates
+-------------</b>
 
-<img class="cssbox_thumb" tabindex=1 src="/img/pion/pion_quarter.jpg" alt="pion by quarter"><span class="cssbox_full"><img src="/img/pion/pion_quarter.jpg" alt="pion by quarter"></span>
-<i>Pion is about the size of a US quarter.
---------------------------------------------------------------------------------</i>
+Thanks to a nifty service called feedrabbit, you can sign up to receive updates
+via email. Just head on over to this link:
 
-<img class="cssbox_thumb" tabindex=1 src="/img/pion/pion_comparison.jpg" alt="size comparison"><span class="cssbox_full"><img src="/img/pion/pion_comparison.jpg" alt="size comparison"></span>
-<i>Pion next to a bunch of other popular Arduinos. It's the smallest of them all!
---------------------------------------------------------------------------------</i>
+<a href="https://feedrabbit.com/subscriptions/new?url=https%3A%2F%2Favs-origami.github.io%2Frss.xml" target="_blank" rel="noopener noreferrer">https://feedrabbit.com/subscriptions/new?url=https%3A%2F%2Favs-origami.github.io</a>
+<a href="https://feedrabbit.com/subscriptions/new?url=https%3A%2F%2Favs-origami.github.io%2Frss.xml" target="_blank" rel="noopener noreferrer">%2Frss.xml</a>
 
-Being based off the AtMega328, Pion is functionally equivalent to an Uno, Nano,
-or Pro Mini, while being smaller, and in my opinion more versatile. The battery
-connector allows you to power it with a rechargeable LiPo, and the female header
-pins make it easy to connect short breadboard wires or design shields (expansion
-boards that plug into the top) which are traditionally only available for the
-Uno. To illustrate this, I also made this USB-C shield for Pion since it
-normally doesn't have a USB port for programming:
+Click the green subscribe button, enter your email, complete the captcha, and
+you're on your way. Yipee!
 
-<pre style="text-align:center">
-<img class="cssbox_thumb inline" tabindex=1 src="/img/pion/pion_shield.jpg" alt="usb shield" style="width:39ch"><span class="cssbox_full"><img src="/img/pion/pion_shield.jpg" alt="usb shield"></span>  <img class="cssbox_thumb inline" tabindex=1 src="/img/pion/pion_shield_stack.jpg" alt="usb shield" style="width:39ch"><span class="cssbox_full"><img src="/img/pion/pion_shield_stack.jpg" alt="usb shield"></span>
-</pre>
-<i>The USB shield I made for Pion, in action. Soldering was a pain.
---------------------------------------------------------------------------------</i>
+<b>The usual RSS way
+-----------------</b>
 
-Making this was a tedious yet rewarding process; I learned a lot about how
-Arduinos work, gained experience with designing custom PCBs, and refined my
-soldering skills (those 0402 capacitors were the worst). And in the process, I
-made a tiny, cool-looking board to show off and use in projects.
+If you've never used RSS before, you'll probably find email more convenient. But
+if you <i class="ii">want</i> to learn about it, check out <a href="https://aboutfeeds.com/" target="_blank" rel="noopener noreferrer">this page</a> for a nice quick-start guide.
+Here's a (not very good) TLDR in case you're lazy to read it:
 
-By the time I finally got this working, I had moved on from the project that
-inspired its creation. But having made it, I had to use it:
-<video width="640" height="480" controls><source src="/img/pion/pion_car.mp4" type="video/mp4"></video>
-<video width="640" height="480" controls><source src="/img/pion/pion_flappy.mp4" type="video/mp4"></video>
+  - Get an RSS reader / newsreader,
+  - Copy the feed URL,
+  - And stick that in your RSS reader.
 
-<a href="/projects">&lt;&lt;&lt; Go back</a>
+Great! Now that you know how RSS works, here's the feed URL:
+
+<a href="/rss.xml">https://avs-origami.github.io/rss.xml</a>
+
+Paste that in your reader, and you can see when I make a new blog post. Enjoy!
+
+<a href="/blog">&lt;&lt;&lt; Blog home</a>
 </pre></div>
 
 <!-- Invisible right column so that the body is centered. -->
