@@ -63,21 +63,28 @@ em {
     display: inline;
 }
 
+.ma {
+    vertical-align: middle;
+}
+
 .c {
     display: table-cell;
     width: 80ch;
-    max-height: 85vh;
+    max-height: 75vh;
     overflow-y: scroll;
+    vertical-align: top;
     /* border-radius: 3px 3px; */ 
 }
 
 .p {
     display: table-cell;
     width: 32ch;
+    max-height: 75vh;
     /* border-radius: 3px 3px; */
     user-select: none;
     /* top: 96px; */
     position: sticky;
+    vertical-align: top;
 }
 
 .prebox {
@@ -87,11 +94,12 @@ em {
     /* top: 108px; */
     padding: 2ch;
     background-color: #fdfaf6;
-    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
-    border: 1px solid #073642;
-    box-shadow: 2px 2px 0px 0px #073642;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    /* border: 1px solid #073642; */
+    /* box-shadow: 2px 2px 0px 0px #073642; */
     max-height: inherit;
     overflow-y: inherit;
+    vertical-align: inherit;
 }
 
 .invbox {
