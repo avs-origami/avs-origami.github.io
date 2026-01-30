@@ -3,29 +3,29 @@
 body {
     margin: 0;
     padding-top: 0;
-    overflow-y: scroll;
+    overflow-y: hidden;
     font: 14px monospace, monospace;
     font-family: "Courier Prime", monospace;
     font-weight: 400;
     line-height: 28px;
     background-color: #eae6e0;
-background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2H0v-2h20v-2H0V8h20V6H0V4h20V2H0V0h22v20h2V0h2v20h2V0h2v20h2V0h2v20h2V0h2v20h2v2H20v-1.5zM0 20h2v20H0V20zm4 0h2v20H4V20zm4 0h2v20H8V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zm4 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2z' fill='%23faf6f0' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2H0v-2h20v-2H0V8h20V6H0V4h20V2H0V0h22v20h2V0h2v20h2V0h2v20h2V0h2v20h2V0h2v20h2v2H20v-1.5zM0 20h2v20H0V20zm4 0h2v20H4V20zm4 0h2v20H8V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zm4 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2z' fill='%23faf6f0' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
     color: #073642;
     min-height: 100vh;
 }
 
 pre {
-    font-family: "Courier Prime", monospace;
-    font-weight: 400;
-    line-height: 24px;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: inherit;
     margin: 0;
     overflow-x: hidden;
 }
 
 code {
-    font-family: "Courier Prime", monospace;
-    font-weight: 400;
-    line-height: 24px;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: inherit;
     margin: 0;
     overflow-x: scroll;
 }
@@ -38,129 +38,40 @@ img {
     margin-right: auto;
 }
 
-a {
-    /* text-decoration: none; */
-    color: #2aa198;
+a { color: #2aa198; }
+i { color: #859900; }
+b { color: #6c71c4; }
+em { color: #93a1a1; }
+
+.ii { color: inherit; }
+.inline { display: inline; }
+.ctr { text-align: center; color: #cb4b16; }
+.invislink { text-decoration: none; color: inherit; }
+.mediaflex { display: flex; align-items: center; }
+
+.nav {
+    display: table;
+    width: 80ch;
+    margin: auto;
+    user-select: none;
+    background-color: #f7f4ee;
+    border: 1px solid #677682;
+    box-shadow: 2px 2px 0px 0px #677682;
 }
 
-i {
-    color: #859900;
-}
-
-b {
-    color: #6c71c4;
-}
-
-em {
-    color: #93a1a1;
-}
-
-.ii {
-    color: #073642;
-}
-
-.inline {
-    display: inline;
-}
-
-.ma {
+.tt {
+    display: table-cell;
+    width: 40ch;
     vertical-align: middle;
 }
 
 .c {
-    display: table-cell;
     width: 80ch;
-    max-height: 75vh;
+    margin: auto;
+    max-height: 80vh;
     overflow-y: scroll;
-    vertical-align: top;
-    /* border-radius: 3px 3px; */ 
-}
-
-.p {
-    display: table-cell;
-    width: 32ch;
-    max-height: 75vh;
-    /* border-radius: 3px 3px; */
-    user-select: none;
-    /* top: 96px; */
-    position: sticky;
-    vertical-align: top;
-}
-
-.prebox {
-    width: inherit;
-    border-radius: inherit;
-    position: inherit;
-    /* top: 108px; */
+    background-color: #f7f4ee;
+    border: 1px solid #677682;
+    box-shadow: 2px 2px 0px 0px #677682;
     padding: 2ch;
-    background-color: #fdfaf6;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    /* border: 1px solid #073642; */
-    /* box-shadow: 2px 2px 0px 0px #073642; */
-    max-height: inherit;
-    overflow-y: inherit;
-    vertical-align: inherit;
-}
-
-.invbox {
-    width: inherit;
-    border-radius: inherit;
-    position: inherit;
-    /* top: 108px; */
-    padding: 2ch;
-    background-color: #fdfaf6;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    display: none;
-}
-
-.pfp {
-    width: 16ch;
-    height: auto;
-    border-radius: 3px 3px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-main {
-    min-height: 192px;
-    flex: 1;
-}
-
-.ctr {
-    text-align: center;
-    /* color: #d33682; */
-    color: #cb4b16;
-}
-
-.invislink {
-    text-decoration: none;
-    color: inherit;
-}
-
-@media (max-width: 1689.98px) {
-    body {
-        font-size: 11px;
-    }
-
-    .banner {
-        font-size: 13px;
-    }
-
-    th, td {
-        padding-left: 32px;
-        padding-right: 32px;
-        vertical-align: middle;
-    }
-}
-
-.mediaflex {
-    display: flex;
-    align-items: center;
 }
