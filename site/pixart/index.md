@@ -7,7 +7,7 @@ My creations can be found all across this website, from the navigation icons to
 some more fun additions.
 
 Some of my more interesting creations on this site include:
-  - The Great Penguin Mage (penguin in a wizard hat, my profile picture)
+  - Sir Pinguino (penguin in a wizard hat, my profile picture)
   - Mr. Snail Mail (the snail that lets you email me)
   - The Easter Egg (a literal easter egg with a baby chicken hatching from it)
   - Wise Master Frog (the one who guides you back home if you get lost)
