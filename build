@@ -29,6 +29,8 @@ parse() {
     sed -E 's_\[<em>g' |
     # ]_ end light
     sed -E 's\]_<\/em>g' |
+    # ```[(lang) code
+    sed -E 's```\[ *\( *([^ ]+) *\)<code class="\1">g' |
     # ```[ code
     sed -E 's```\[<code>g' |
     # ]``` end code

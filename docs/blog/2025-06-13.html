@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang=en>
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" media="print" href="/print.css">
+    <link rel="stylesheet" type="text/css" href="/cssbox.css">
+    <script src="/email.js" defer></script>
+    <script src="/mathjax.js"></script>
+    <title>avs origami - blog/2025-06-13</title>
+    <meta charset=utf-8>
+    <meta name=description content="A personal website">
+    <meta name=viewport content="width=device-width,initial-scale=1">
+</head>
+
+<div class=container>
+<div class=nav>
+<div class="tt"><pre><a href= /><img src="/img/home.png" class="inline" style="display:table-cell;vertical-align:middle"></a>  <b><a
+href=/ style="color: #cb4b16">AVS ORIGAMI</a></b></pre></div>
+
+<div class="tt" style="text-align:right"><pre><a href=/projects>PROJECTS</a> <em>/</em> <a href=/blog>BLOG</a> <em>/</em> <a
+href=/art>ART</a> <em>/</em> <a href=/rss.html>RSS</a> <em>/</em> <a
+href=https://github.com/avs-origami target="_blank" rel="noopener noreferrer">GITHUB</a></pre></div>
+</div>
+
+<div class=lc><pre class=p style="text-align:center;flex-shrink:0;">
+
+<img src="/img/me.jpg" class=pfp>
+
+<b>Adithya V. Sastry</b>
+
+Robotics + Origami
+Creator of <a href=/projects/tincan.html>Tin Can Linux</a>
+<a href=https://www.cee.org/programs/research-science-institute target="_blank" rel="noopener noreferrer">Research Science Institute 2025</a>
+Lover of all things tiny
+
+<i>"A dream is not that which
+you see while sleeping, it
+is that which does not let
+you sleep."</i>
+
+-- Dr. APJ Abdul Kalam
+
+<a href=https://github.com/avs-origami target="_blank" rel="noopener noreferrer"><img src="/img/octo.png"
+        class=inline loading="lazy"></a> <a href=https://www.linkedin.com/in/adithya-v-sastry/ target="_blank"
+    rel="noopener noreferrer"><img src="/img/linkedin.png" class=inline loading="lazy"></a> <a class="href-obfu" href="to-gmail/"><img
+        src="/img/email.png" alt="snail" class=inline loading="lazy"></a>
+</pre>
+
+<pre class=p style="overflow-y:scroll">
+<div class=ctr>=========   Updates   =========</div>
+<em>Post - 01/27/2026</em>
+<a href=/blog/2026-01-27.html>Snow</a>
+
+<em>News - 01/19/2026</em>
+<a href=https://github.com/tincan-linux target="_blank" rel="noopener noreferrer">Tin Can: 43 followers + 26 stars</a>
+
+<em>Post - 01/08/2026</em>
+<a href=/blog/2026-01-08.html>Tiny robots</a>
+
+<em>News - 06/11/2025</em>
+<a href=https://tincan-linux.github.io/news/2025-06-11 target="_blank" rel="noopener noreferrer">Tin Can Linux on Repology</a>
+
+<em>Post - 04/15/2025</em>
+<a href=/blog/2025-04-15.html>Folding some origami insects</a>
+
+<em>Post - 06/23/2024</em>
+<a href=/blog/2024-06-23.html>Shared Memory IPC in Rust</a>
+</pre>
+
+<div class="spacer"></div>
+
+</div>
+
+<pre class=c>
+<b>Random notes on JAX                                                   06/13/2025
+--------------------------------------------------------------------------------</b>
+
+So my mentor asked me to learn JAX before showing up to RSI.
+
+What is JAX? Well, it's a goofy python library that allows you to do some
+pretty interesting things. Seems pretty nifty on the surface, just looking at
+the descriptions -- but the one time I saw JAX code, I didn't realize it was
+python. Seemed like its own programming language or something.
+
+Anyways, here's some stuff I found by reading through the tutorials. This also
+functions as my notes so I don't forget everything I read.
+
+<b>Some basic stuff
+----------------</b>
+
+A few intro things that seemed useful to know.
+
+<b># Arrays</b>
+
+You can make arrays in JAX just like numpy arrays, torch tensors, etc. One
+interesting thing though is that they can be split across multiple devices (so
+part of the array could be on GPU #1, another part can be on GPU #2, etc). This
+is called sharding. Hopefully I won't have to worry about this too much (but it
+relates to parallelizing computations, so maybe).
+
+<b># Tracing</b>
+
+JAX has this construct called a tracer that allows it to track the operations
+that occur within a python function. It seems crazy that python code can
+actually do this, but I suppose there are ways. Interesting to keep in mind.
+
+<b># Jaxprs</b>
+
+So apparently JAX is kind of its own programming language, in a way. It can
+convert python functions into a goofy looking language called jaxpr. I guess
+this probably also relates to how tracing works (although still kind of beats me
+how they manage to pull this off).
+
+<b># RNG</b>
+
+JAX uses something called RNG keys. They seem similar to seeds -- if you use a
+certain random key for a random function, the output is always the same. However
+you can get a different output by splitting the key into two new keys. The docs
+recommend deleting the original key once you split it in order to keep
+generating random values.
+
+<b>JIT compiling
+-------------</b>
+
+Ok so this kind of explains where the jaxpr language comes into play. You can
+use JIT compiling to take a python function and pre-compute a series of
+transformations (which makes subsequent calls to the function execute much
+faster). However there are some things to note:
+
+- JIT compiled functions are re-compiled on first use and afterwards any time
+the input shape changes. When the function is re-compiled it essentially runs
+the raw python code.
+- The JIT compiler requires pure functions, which essentially means they have to
+produce the same output every time for a given input and cannot use or modify
+anything outside the function body. In a sense it's like a function from math.
+Things that would count as impure functions produce side effects, such as:
+  - Uses or modifies a global variable. Whenever the function is compiled the
+  current value of the global is cached. Attempting to save a global will
+  replace the global with a JAX object.
+  - Prints out a value. The print statement will be executed when the function
+  is compiled, but not any other time. Useful to know for debugging.
+  - Uses an iterator (these create global states apparently. I also didn't know
+  that these really existed in python in the first place). This can cause an
+  error, or it might just do something unexpected.
+- If the function contains a conditional, only the branch that is taken when
+the function is compiled is saved. All the other branches of the if/else are not
+compiled. There is a different way to use conditionals in JIT functions. Also,
+conditionals will fail to compile in JIT if they read the value.
+- You can JIT compile part of a function: just isolate it into its own function,
+JIT it, and call it, for example if the whole function isn't pure:
+
+<em>--------------------------------------------------------------------------------</em>
+<code class="py">import jax
+import jax.numpy as jnp
+
+@jax.jit
+def inner(x: jax.Array, y: float):
+    return x.at[0].add(y)
+
+def conditional_fn(x):
+    if jnp.all(jnp.greater(x, 0)):
+        inner(x, 7.0)
+    else:
+        inner(x, -7.0)
+
+print(outer(jnp.array([1.0, 2.0])))  # prints [8.0, 2.0]
+print(outer(jnp.array([1.0, -2.0]))) # prints [-6.0, 2.0]</code><em>--------------------------------------------------------------------------------</em>
+
+There was some other stuff but I kind of skimmed over it for now.
+
+<b>Vectorization
+-------------</b>
+
+JAX allows you to automatically vectorize a function that takes array inputs by
+allowing parallel computation for batched inputs. This is another transform that
+takes advantage of jaxprs and tracing. They provide the example of computing the
+convolution of two vectors, but since I was confused by it, here's a simpler
+example (multiplies the [0][0] element of each matrix):
+
+<em>--------------------------------------------------------------------------------</em>
+<code class="py">import jax
+import jax.numpy as jnp
+
+def thing(x, y):
+    a.at[0, 0].multiply(b.at[0, 0].get())
+
+# If we had two 2x2 matrices, this is easy:
+a = jnp.array([[1, 2], [3, 4]])
+b = jnp.array([[5, 6], [7, 8]])
+print(thing(a, b))
+
+# Output:
+# Array([[5, 2],
+#        [3, 4]], dtype=int32)
+
+# But if we wanted to compute this for a batch:
+c = jnp.tile(a, (3, 1, 1))
+d = jnp.tile(b, (3, 1, 1))
+
+# We can vectorize our function:
+thing_vec = jax.vmap(thing)
+print(thing_vec(c, d))
+
+# Output:
+# Array([[[5, 2],
+#         [3, 4]],
+# 
+#        [[5, 2],
+#         [3, 4]],
+# 
+#        [[5, 2],
+#         [3, 4]]], dtype=int32)</code><em>--------------------------------------------------------------------------------</em>
+
+It uses 0 as the batch dimension by default, but you can specify a different one
+for eithr the input or the output (or both).
+
+You can also chain `jax.jit()` with `jax.vmap()`.
+
+<b>Autodiff
+--------</b>
+
+Ok, this is the cool stuff. You can use JAX to compute the gradient of a python
+function.
+
+For example, let's say we have a function `$f(x) = x^2 + 7^x$`. We then know that:
+`$$
+\begin{align}
+f'(x) &= 2x + 7^x (\ln 7) \\
+f''(x) &= 2 + 7^x (\ln 7)^2
+\end{align}
+$$`and so on. We can do this in python with JAX:
+
+<em>--------------------------------------------------------------------------------</em>
+<code class="py">import jax
+
+def f(x):
+    return x ** 2 + 7 ** x
+
+fp = jax.grad(f)
+fpp = jax.grad(fp)
+
+# and so on.</code><em>--------------------------------------------------------------------------------</em>
+
+Of course the real utility is for computing gradients of more complex functions.
+Pretty cool stuff!
+
+<a href="/blog">&lt;&lt;&lt; Go back</a>                                                <a href="/rss.html">Subscribe via RSS >>></a>
+</pre>
+
+<div class=nav>
+<div class=tt><pre>AVS Origami (C) 2023-2026</pre></div>
+<div class=tt style="text-align:right"><pre>Boink!</pre></div>
+</div>
+
+<div class="spacer"></div>
+
+</div>
+<link rel="stylesheet" href=/code.css>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</html>
