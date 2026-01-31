@@ -57,6 +57,8 @@ em { color: #93a1a1; }
     background-color: #f7f4ee;
     border: 1px solid #677682;
     box-shadow: 4px 4px 0px 0px #677682b0;
+    padding: 2ch;
+    flex-shrink: 0;
 }
 
 .nav a {
@@ -72,25 +74,35 @@ em { color: #93a1a1; }
 .c {
     width: 80ch;
     margin: auto;
-    max-height: 80vh;
     overflow-y: scroll;
     background-color: #f7f4ee;
     border: 1px solid #677682;
     box-shadow: 4px 4px 0px 0px #677682b0;
     padding: 2ch;
+    min-height: 0;
+    max-height: 100%;
+}
+
+.spacer {
+    flex: 1;
 }
 
 .container {
     position: relative;
     width: 80ch;
     margin: auto;
+    height: 96vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    top: 1em;
 }
 
 .lc {
     position: absolute;
     right: calc(100% + 2ch);
     top: 0;
-    height: 100%;
+    height: calc(100% - 1em);
     display: flex;
     flex-direction: column;
     gap: 1em;
