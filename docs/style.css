@@ -91,7 +91,7 @@ em { color: #93a1a1; }
     position: relative;
     width: 80ch;
     margin: auto;
-    height: 96vh;
+    height: 98vh;
     display: flex;
     flex-direction: column;
     gap: 1em;
