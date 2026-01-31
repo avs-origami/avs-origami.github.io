@@ -7,7 +7,7 @@ body {
     font: 14px monospace, monospace;
     font-family: "Courier Prime", monospace;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 24px;
     background-color: #eae6e0;
     background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2H0v-2h20v-2H0V8h20V6H0V4h20V2H0V0h22v20h2V0h2v20h2V0h2v20h2V0h2v20h2V0h2v20h2v2H20v-1.5zM0 20h2v20H0V20zm4 0h2v20H4V20zm4 0h2v20H8V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zm4 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2z' fill='%23faf6f0' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
     color: #073642;
@@ -56,7 +56,11 @@ em { color: #93a1a1; }
     user-select: none;
     background-color: #f7f4ee;
     border: 1px solid #677682;
-    box-shadow: 2px 2px 0px 0px #677682;
+    box-shadow: 4px 4px 0px 0px #677682b0;
+}
+
+.nav a {
+    text-decoration: none;
 }
 
 .tt {
@@ -72,6 +76,65 @@ em { color: #93a1a1; }
     overflow-y: scroll;
     background-color: #f7f4ee;
     border: 1px solid #677682;
-    box-shadow: 2px 2px 0px 0px #677682;
+    box-shadow: 4px 4px 0px 0px #677682b0;
     padding: 2ch;
+}
+
+.container {
+    position: relative;
+    width: 80ch;
+    margin: auto;
+}
+
+.lc {
+    position: absolute;
+    right: calc(100% + 2ch);
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.rc {
+    position: absolute;
+    left: calc(100% + 6ch + 4px);
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.p {
+    background-color: #f7f4ee;
+    border: 1px solid #677682;
+    box-shadow: 4px 4px 0px 0px #677682b0;
+    width: 32ch;
+    padding: 2ch;
+    user-select: none;
+}
+
+.x {
+    background-color: #f7f4ee;
+    border: 1px solid #677682;
+    box-shadow: 4px 4px 0px 0px #677682b0;
+    width: 12ch;
+    padding: 2ch;
+    user-select: none;
+    flex: 1;
+}
+
+.p.scroll {
+    flex: 1;
+    overflow-y: scroll;
+}
+
+.pfp {
+    width: 16ch;
+    height: auto;
+    border-radius: 6px 6px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

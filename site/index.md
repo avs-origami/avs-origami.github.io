@@ -19,9 +19,8 @@ over ten years. I've folded hundreds of models and also designed a few of my
 own. I have also recently picked up bonsai. You can check out some of my
 creations via the tabs at the top.
 
-
-About this site
-===============
+**[About this site
+---------------]**
 
 This website is primarily meant to be a place to showcase my projects, write
 about my interests and hobbies, and collect my thoughts in one place.
@@ -30,8 +29,7 @@ The site itself is built using 'sed' ~~[regex]~~ magic to insert plaintext / mar
 ish documents into an HTML template using <pre> tags to preserve formatting. I
 borrowed the idea from the ?[Kiss Linux website](https://github.com/kisslinux/kisslinux.github.io), and it works quite nicely.
 
-
-Contact
-=======
+**[Contact
+-------]**
 
 @@CAT email.html
