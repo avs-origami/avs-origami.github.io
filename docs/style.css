@@ -102,7 +102,7 @@ em { color: #93a1a1; }
     position: absolute;
     right: calc(100% + 2ch);
     top: 0;
-    height: 100%;
+    height: calc(100% - 1em);
     display: flex;
     flex-direction: column;
     gap: 1em;
