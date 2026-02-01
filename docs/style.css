@@ -220,13 +220,9 @@ main {
         font-size: 11px;
     }
 
-    .banner {
-        font-size: 13px;
-    }
-
     th, td {
-        padding-left: 32px;
-        padding-right: 32px;
+        padding-left: 40px;
+        padding-right: 40px;
         vertical-align: middle;
     }
 }
