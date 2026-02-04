@@ -47,3 +47,5 @@ wiring in the spring.
 ![potential specimen](/img/bonsai/specimen.jpg)
 *[A potential specimen I found in the backyard. Might start on this one soon!
 --------------------------------------------------------------------------------]*
+
+Check out some more art: [~/art](/art)

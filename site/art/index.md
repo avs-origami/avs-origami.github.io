@@ -9,5 +9,4 @@ worked on (or am currently working on).
   - [Carnatic Music](/music): some performances that came out particularly well
   - [Pixel Art](/pixart): occasional cure for boredom
 
-Oh look! What's this? !![easteregg](/img/easteregg.png)(/egg.html)
-I wonder what happens if you click on it.
+![tree](/img/garden_tree.png)(/easter.html)
