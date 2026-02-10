@@ -5,7 +5,7 @@ This summer I began working on a custom Linux package manager, and soon after
 began to design a custom distribution using this package manager. This is a
 place for me to write about how I got here and write about the process. For
 specifics about the distribution and installation instructions, see the official
-website at ?[https://tincan-linux.github.io].
+website at [https://tincan-linux.github.io].
 
 
 === A Brief Overview
@@ -64,11 +64,11 @@ this curiosity.
 And finally, I've been inspired by various other really cool and unique projects
 from the community, including:
 
-  - Kiss Linux (?[https://kisslinux.github.io])
-  - StaLi (?[https://sta.li])
-  - Glaucus (?[https://glaucuslinux.org])
-  - Oasis Linux (?[https://github.com/oasislinux])
-  - Linux From Scratch (?[https://www.linuxfromscratch.org])
+  - Kiss Linux ([https://kisslinux.github.io])
+  - StaLi ([https://sta.li])
+  - Glaucus ([https://glaucuslinux.org])
+  - Oasis Linux ([https://github.com/oasislinux])
+  - Linux From Scratch ([https://www.linuxfromscratch.org])
 
 to name a few of the most direct influences.
 

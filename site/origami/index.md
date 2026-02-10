@@ -31,7 +31,7 @@ happy with it nonetheless.
 --------------------------------------------------------------------------------]*
 
 #[!![kangaroo](/img/origami/kangaroo.jpg)[80]]#
-*[Based off ?[this dragon by Jo Nakashima](https://jonakashima.com.br/2015/07/24/origami-dragons), this kangaroo is in some ways also
+*[Based off [this dragon by Jo Nakashima](https://jonakashima.com.br/2015/07/24/origami-dragons), this kangaroo is in some ways also
 one of my original designs. It even has a pouch (formed from what were
 originally the wings on the dragon).
 --------------------------------------------------------------------------------]*
@@ -43,13 +43,13 @@ really love how it turned out.
 --------------------------------------------------------------------------------]*
 
 #[!![dragon](/img/origami/dragon.jpg)[80]]#
-*[The ?[Devil Dragon by Jo Nakashima](https://jonakashima.com.br/2021/02/17/devil-dragon-v3). I regret not starting with a bigger piece of
+*[The [Devil Dragon by Jo Nakashima](https://jonakashima.com.br/2021/02/17/devil-dragon-v3). I regret not starting with a bigger piece of
 paper, the eyes were really hard and I ended up accidentally ripping the paper
 in a few places including the eye on the other side of the head.
 --------------------------------------------------------------------------------]*
 
 #[!![chameleon](/img/origami/chameleon.jpg)[80]]#
-*[Another ?[Jo Nakashima design](https://jonakashima.com.br/2021/11/10/origami-chameleon). It sits perfectly on the edge of my desk (or in
+*[Another [Jo Nakashima design](https://jonakashima.com.br/2021/11/10/origami-chameleon). It sits perfectly on the edge of my desk (or in
 this case, in a tree, lol).
 --------------------------------------------------------------------------------]*
 

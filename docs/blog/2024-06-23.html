@@ -14,16 +14,16 @@
 </head>
 
 <div class=container>
-<div class=nav>
+<div class=nav style="border-bottom:1px solid #93a1a1;">
 <div class="tt"><pre><a href= /><img src="/img/home.png" class="inline" style="display:table-cell;vertical-align:middle"></a>  <b><a
-href=/ style="color: #cb4b16">AVS ORIGAMI</a></b></pre></div>
+href=/ class=n>AVS ORIGAMI</a></b></pre></div>
 
 <div class="tt" style="text-align:right"><pre><a href=/projects>PROJECTS</a> <em>/</em> <a href=/blog>BLOG</a> <em>/</em> <a
 href=/art>ART</a> <em>/</em> <a href=/rss.html>RSS</a> <em>/</em> <a
 href=https://github.com/avs-origami target="_blank" rel="noopener noreferrer">GITHUB</a></pre></div>
 </div>
 
-<div class=lc><pre class="p f" style="text-align:center;">
+<div class=lc><pre class=p style="text-align:center;vertical-align:middle;">
 
 <img src="/img/me.jpg" class=pfp>
 <b>Adithya V. Sastry</b>
@@ -33,7 +33,7 @@ Creator of <a href=/projects/tincan.html>Tin Can Linux</a>
 <a href=https://www.cee.org/programs/research-science-institute target="_blank" rel="noopener noreferrer">Research Science Institute</a>
 Lover of all things tiny
 
-<i>"A dream is not that which
+<i class=ii>"A dream is not that which
 you see while sleeping, it
 is that which does not let
 you sleep."</i>
@@ -44,39 +44,13 @@ you sleep."</i>
         class=inline loading="lazy"></a> <a href=https://www.linkedin.com/in/adithya-v-sastry/ target="_blank"
     rel="noopener noreferrer"><img src="/img/linkedin.png" class=inline loading="lazy"></a> <a class="href-obfu" href="to-gmail/"><img
         src="/img/email.png" alt="snail" class=inline loading="lazy"></a>
-</pre>
-
-<pre class=p style="overflow-y:scroll">
-<div class=ctr>=======   Updates   =======</div>
-<em>Post - 01/27/2026</em>
-<a href=/blog/2026-01-27.html>Snow</a>
-
-<em>News - 01/19/2026</em>
-<a href=https://github.com/tincan-linux target="_blank" rel="noopener noreferrer">Tin Can: 43 followers + 26
-stars on Github</a>
-
-<em>Post - 01/08/2026</em>
-<a href=/blog/2026-01-08.html>Tiny robots</a>
-
-<em>News - 06/11/2025</em>
-<a href=https://tincan-linux.github.io/news/2025-06-11 target="_blank" rel="noopener noreferrer">Tin Can Linux on Repology</a>
-
-<em>Post - 04/15/2025</em>
-<a href=/blog/2025-04-15.html>Folding some origami insects</a>
-
-<em>Post - 06/23/2024</em>
-<a href=/blog/2024-06-23.html>Shared Memory IPC in Rust</a>
-</pre>
-
-<div class="spacer"></div>
-
-</div>
+</pre></div>
 
 <pre class=c>
 <b>Shared Memory IPC in Rust                                             06/23/2024
 --------------------------------------------------------------------------------</b>
 
-I recently came across <a href="https://crates.io/crates/shmem-ipc" target="_blank" rel="noopener noreferrer">an interesting crate for Rust</a> that enables interprocess
+I recently came across <a href="https://crates.io/crates/shmem-ipc">an interesting crate for Rust</a> that enables interprocess
 communication via shared memory. At the time I was looking for a faster method
 of transferring large amounts of data between different processes, and this
 crate proved to be an effective solution.
@@ -89,8 +63,8 @@ PSA: this involves the use of unsafe Rust. Yipee!
 Besides just this crate, you need a few other things to make this work. There
 needs to be a way to transfer file descriptors between the two programs. The
 examples provided in the repository use DBUS to achieve this, but this is
-honestly overkill. Instead, we use good ol' Unix Sockets along with <a href="https://crates.io/crates/passfd" target="_blank" rel="noopener noreferrer">a nifty</a>
-<a href="https://crates.io/crates/passfd" target="_blank" rel="noopener noreferrer">crate called passfd</a> to transfer the file descriptors and set up the shared
+honestly overkill. Instead, we use good ol' Unix Sockets along with <a href="https://crates.io/crates/passfd">a nifty</a>
+<a href="https://crates.io/crates/passfd">crate called passfd</a> to transfer the file descriptors and set up the shared
 memory pipeline.
 
 Start by creating a new project the usual way:
@@ -340,15 +314,13 @@ Cool!
 <a href="/blog">&lt;&lt;&lt; Go back</a>                                                <a href="/rss.html">Subscribe via RSS >>></a>
 </pre>
 
-<div class=nav>
+<div class=nav style="border-top:1px solid #93a1a1;">
 <div class=tt><pre>AVS Origami (C) 2023-2026</pre></div>
 <div class=tt style="text-align:right"><pre>Boink!</pre></div>
 </div>
 
-<div class="spacer"></div>
-
 </div>
 <link rel="stylesheet" href=/code.css>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
 </html>

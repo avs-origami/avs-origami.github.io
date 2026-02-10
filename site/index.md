@@ -27,7 +27,7 @@ about my interests and hobbies, and collect my thoughts in one place.
 
 The site itself is built using 'sed' ~~[regex]~~ magic to insert plaintext / markdown-
 ish documents into an HTML template using <pre> tags to preserve formatting. I
-borrowed the idea from the ?[Kiss Linux website](https://github.com/kisslinux/kisslinux.github.io), and it works quite nicely.
+borrowed the idea from the [Kiss Linux website](https://github.com/kisslinux/kisslinux.github.io), and it works quite nicely.
 
 **[Contact
 -------]**
