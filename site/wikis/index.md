@@ -1,5 +1,4 @@
-**[Wiki pages for some mini projects.                                     [~/wikis]
---------------------------------------------------------------------------------]**
+**[Wiki pages for some mini projects.                                     [~/wikis]]**
 
   - [Turtle](/wikis/turtle): tiny xorg window manager in rust
   - [Ubar](/wikis/ubar): tiny status bar for xorg

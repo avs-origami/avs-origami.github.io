@@ -1,5 +1,4 @@
-**[Itty bitty character sprites (mostly).                                [~/pixart]
---------------------------------------------------------------------------------]**
+**[Itty bitty character sprites (mostly).                                [~/pixart]]**
 
 Time for an easter egg hunt!
 

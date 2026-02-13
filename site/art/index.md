@@ -1,5 +1,4 @@
-**[Various random art things that I enjoy.                                  [~/art]
---------------------------------------------------------------------------------]**
+**[Various random art things that I enjoy.                                  [~/art]]**
 
 I enjoy creating art of various forms. Check out some of the things I have
 worked on (or am currently working on).

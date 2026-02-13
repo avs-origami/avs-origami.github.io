@@ -1,5 +1,4 @@
-**[Tin Can Linux: A Custom Linux Distribution                     07/2024 - present
---------------------------------------------------------------------------------]**
+**[Tin Can Linux: A Custom Linux Distribution                     07/2024 - present]**
 
 This summer I began working on a custom Linux package manager, and soon after
 began to design a custom distribution using this package manager. This is a

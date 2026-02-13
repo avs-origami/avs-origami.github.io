@@ -1,5 +1,4 @@
-**[Heart on my sleeve.                                                          [~]
---------------------------------------------------------------------------------]**
+**[The ever-shifting pile of thoughts and stuff.                                [~]]**
 
 I am a high school student pursuing research in the fields of robotics and
 computer science. I am most interested in designing tiny, self-contained,

@@ -1,5 +1,4 @@
-**[My current and past major projects.                                 [[~/projects](/rocks.html)]
---------------------------------------------------------------------------------]**
+**[My current and past major projects.                                 [[~/projects](/rocks.html)]]**
 
 This page is a catalog of major projects that I have taken up, both current and
 past. I am still updating this page with more of my past projects.

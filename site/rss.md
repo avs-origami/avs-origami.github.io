@@ -1,5 +1,4 @@
-**[Updates! Fresh Updates! Get yours today!                                 [~/rss]
---------------------------------------------------------------------------------]**
+**[Updates! Fresh Updates! Get yours today!                                 [~/rss]]**
 
 This site uses RSS feeds to let you subscribe to new blog posts (and possibly
 other things at some point). There are two main ways you can utilize this.

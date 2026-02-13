@@ -1,5 +1,4 @@
-**[A collection of random thoughts and things I find interesting.          [~/blog]
---------------------------------------------------------------------------------]**
+**[A collection of random thoughts and things I find interesting.          [~/blog]]**
 
     
     [Snow](2026-01-27.html) (01/27/2026)
