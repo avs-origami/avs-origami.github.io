@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" media="print" href="/print.css">
     <link rel="stylesheet" type="text/css" href="/cssbox.css">
     <script src="/email.js" defer></script>
-    <script src="/mathjax.js"></script>
+    <script src="/katex.js"></script>
     <title>avs origami - blog/2025-06-13</title>
     <meta charset=utf-8>
     <meta name=description content="A personal website">
@@ -225,10 +225,10 @@ function.
 
 For example, let's say we have a function `$f(x) = x^2 + 7^x$`. We then know that:
 `$$
-\begin{align}
+\begin{align*}
 f'(x) &= 2x + 7^x (\ln 7) \\
 f''(x) &= 2 + 7^x (\ln 7)^2
-\end{align}
+\end{align*}
 $$`and so on. We can do this in python with JAX:
 
 <em>--------------------------------------------------------------------------------</em>
