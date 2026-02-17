@@ -7,7 +7,7 @@ four. Over the years, I've refined my skills through learning various songs
 thillanas) in several languages (Kannada, Telegu, Tamil, and Sanskrit).
 
 
-*[Songs I've learned recently (and performed at the local cultural center)
+*[Recent performances. Take a listen!
 ________________________________________________________________________________]*
 
 @[#!(/img/music/pavanatanaya.m4a)%[  Pavana Tanaya Paalisayya, raagam Behag]%]@
