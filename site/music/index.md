@@ -13,6 +13,14 @@ ________________________________________________________________________________
 @[#!(/img/music/pavanatanaya.m4a)%[  Pavana Tanaya Paalisayya, raagam Behag]%]@
 
 @[#!(/img/music/sarasasaamadhana.mp3)%[  Sarasa Saamadhana, raagam Kaapi Narayani]%]@
+
+@[#!(/img/music/ranjani.m4a)%[  Ranjani Mala, a raagamalika consisting of
+  several flavors of the raagam Ranjani]%]@
+
+@[#!(/img/music/englishnote.mp3)%[  English Note, a nottuswara in Shankarabhar-
+  anam blending Carnatic and Western styles,
+  which I performed with a friend who accom-
+  panied me on viola for the RSI talent show]%]@
 *[________________________________________________________________________________]*
 
 Check out some more art: [~/art](/art)
