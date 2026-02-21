@@ -10,10 +10,6 @@ thillanas) in several languages (Kannada, Telegu, Tamil, and Sanskrit).
 *[Recent performances. Take a listen!
 ________________________________________________________________________________]*
 
-@[#!(/img/music/pavanatanaya.m4a)%[  Pavana Tanaya Paalisayya, raagam Behag]%]@
-
-@[#!(/img/music/sarasasaamadhana.mp3)%[  Sarasa Saamadhana, raagam Kaapi Narayani]%]@
-
 @[#!(/img/music/ranjani.m4a)%[  Ranjani Mala, a raagamalika consisting of
   several flavors of the raagam Ranjani]%]@
 
@@ -21,6 +17,10 @@ ________________________________________________________________________________
   anam blending Carnatic and Western styles,
   which I performed with a friend who accom-
   panied me on viola for the RSI talent show]%]@
+
+@[#!(/img/music/pavanatanaya.m4a)%[  Pavana Tanaya Paalisayya, raagam Behag]%]@
+
+@[#!(/img/music/sarasasaamadhana.mp3)%[  Sarasa Saamadhana, raagam Kaapi Narayani]%]@
 *[________________________________________________________________________________]*
 
 Check out some more art: [~/art](/art)
