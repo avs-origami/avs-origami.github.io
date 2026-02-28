@@ -2,6 +2,15 @@
 --------------------------------------------------------------------------------]**
 
 
+    [Origami: Whimsical Edition](2026-02-28.html) (02/28/2026)
+
+    I folded some different origami than I usually do, and it was quite fun.
+
+    [>>> Read more](2026-02-28.html)
+
+    _[________________________________________________________________________]_
+
+
     [Personal websites](2026-02-15.html) (02/15/2026)
 
     A meta-post. Hmmmm...
