@@ -92,7 +92,7 @@ em { color: #93a1a1; }
     position: relative;
     width: 80ch;
     margin: auto;
-    height: min(98vh, 63em);
+    height: min(96vh, 56em);
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -129,6 +129,7 @@ em { color: #93a1a1; }
     display: block;
     margin-left: auto;
     margin-right: auto;
+    vertical-align: bottom;
 }
 
 /* @media screen and (max-height: 700px) {
