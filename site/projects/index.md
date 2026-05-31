@@ -8,8 +8,8 @@ past. I am still updating this page with more of my past projects.
 --------------------------------------------------------------------------------]*
 
 
-    [Improving Robotic Exploration Algorithms Using Reinforcement Learning](/projects/robot-graph-pruning.html)
-    [Graph Pruning Techniques](/projects/robot-graph-pruning.html)
++4[/projects/robot-graph-pruning.html]Improving Robotic Exploration Algorithms Using Reinforcement Learning
+Graph Pruning Techniques+[endurl]
 
     This project aims to improve existing graph based robotic exploration
     algorithms through the use of a novel RL-based graph pruning technique.
@@ -57,8 +57,8 @@ past. I am still updating this page with more of my past projects.
     _[________________________________________________________________________]_
 
 
-    [Frontier-Based Approach Utilizing the RRT Algorithm for Autonomous](/projects/robot-exploration-rrt.html)
-    [Exploration of Unknown Environments](/projects/robot-exploration-rrt.html)
++4[/projects/robot-exploration-rrt.html]Frontier-Based Approach Utilizing the RRT Algorithm for Autonomous
+Exploration of Unknown Environments+[endurl]
 
     This project aimed to design a frontier-based exploration algorithm
     using RRTs to aid in the path planning process and identify regions in

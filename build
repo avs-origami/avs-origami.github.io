@@ -69,6 +69,13 @@ parse() {
     # $[section]
     sed -E 's\$\[ *([[:alnum:] \&\;\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]) *\]<span id=\1>\[<a class=t href=#\1>\1</a>\]</span>g' |
 
+    # +[endurl]: close link
+    sed -E 's\+\[endurl\]<\/a>g' |
+    # +[url]: open link
+    sed -E 's\+\[ *([^ ]+) *\]<a href="\1">g' |
+    # +N[url]: open link indented by N spaces
+    sed -E 's\+([0-9]+)\[ *([^ ]+) *\]<a href="\2" class=ident style="margin-left:\1ch;">g' |
+
     # [text](url)
     sed -E 's\[ *([[:alnum:] \&\;\.\?!,\)\+\>\.%=\/:]*.{0,10}[[:alnum:] \&\;\?!,\)\+-\>\.%=\/:]) *\] *\( *([^ ]+) *"([^"]+)"\)<a href="\2" title="\3">\1<\/a>g' |
     sed -E 's\[ *([[:alnum:] \&\;\.\?!,\)\+\>\.%=\/:]*.{0,10}[[:alnum:] \&\;\?!,\)\+\>\.%=\/:]+) *\] *\( *([^ ]+) *\)<a href="\2">\1<\/a>g' |

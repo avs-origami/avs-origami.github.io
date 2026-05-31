@@ -48,10 +48,16 @@ a.n:hover:not(:has(img)) { background-color: #cb4b16; color: #f7f4ee; text-decor
 
 /* .ii { color: inherit; }
 .bb { color: inherit; } */
+.nu { text-decoration-color: transparent; }
 .inline { display: inline; }
 .ctr { text-align: center; color: #cb4b16; }
 .invislink { text-decoration: none; color: inherit; }
 .mediaflex { display: flex; align-items: center; }
+
+a.ident {
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
 
 .nav {
     display: table;
@@ -87,9 +93,9 @@ a.n:hover:not(:has(img)) { background-color: #cb4b16; color: #f7f4ee; text-decor
 }
 
 .lc {
-    position: absolute;
-    right: calc(100% + 2ch);
-    top: 0;
+    position: fixed;
+    left: calc(50vw - 40ch - 2ch - 32ch);
+    top: 1em;
 }
 
 .p {

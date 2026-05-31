@@ -10,8 +10,8 @@ My current research involves the use of reinforcement learning to prune dynamic
 graphs that are used as part of robotic exploration algorithms, in order to
 reduce the amount of information that must be stored and thereby improve the
 performance of exploration. [Read more about it here](/projects/robot-graph-pruning.html). I have also recently
-started working on a second project involving [safe intelligent control for](/projects/safe-control-aircraft.html)
-[multi-agent systems](/projects/safe-control-aircraft.html).
+started working on a second project involving +[/projects/safe-control-aircraft.html]safe intelligent control for
+multi-agent systems+[endurl].
 
 Besides these academic interests, I have been an avid origami enthusiast for
 over ten years. I've folded hundreds of models and also designed a few of my
