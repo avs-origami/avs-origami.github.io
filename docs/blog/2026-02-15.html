@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang=en>
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" media="print" href="/print.css">
+    <link rel="stylesheet" type="text/css" href="/cssbox.css">
+    <script src="/email.js" defer></script>
+    <script src="/katex.js"></script>
+    <title>avs origami - blog/2026-02-15</title>
+    <meta charset=utf-8>
+    <meta name=description content="A personal website">
+    <meta name=viewport content="width=device-width,initial-scale=1">
+</head>
+
+<div class=container>
+<div class=nav style="border-bottom:1px solid #93a1a1;">
+<div class="tt"><pre><a href= /><img src="/img/home.png" class="inline" style="display:table-cell;vertical-align:middle"></a>  <b><a
+href=/ class=n>AVS ORIGAMI</a></b></pre></div>
+
+<div class="tt" style="text-align:right"><pre><a href=/projects>PROJECTS</a> <em>/</em> <a href=/blog>BLOG</a> <em>/</em> <a
+href=/art>ART</a> <em>/</em> <a href=/rss.html>RSS</a> <em>/</em> <a
+href=https://github.com/avs-origami target="_blank" rel="noopener noreferrer">GITHUB</a></pre></div>
+</div>
+
+<div class=lc><pre class=p style="text-align:center;vertical-align:middle;">
+
+<img src="/img/me.jpg" class=pfp>
+<b>Adithya V. Sastry</b>
+
+Robotics + Origami
+Creator of <a href=/projects/tincan.html>Tin Can Linux</a>
+<a href=https://www.cee.org/programs/research-science-institute target="_blank" rel="noopener noreferrer">Research Science Institute</a>
+Lover of all things tiny
+
+<i class=ii>"A dream is not that which
+you see while sleeping, it
+is that which does not let
+you sleep."</i>
+
+-- Dr. APJ Abdul Kalam
+
+<a href=https://github.com/avs-origami target="_blank" rel="noopener noreferrer"><img src="/img/octo.png"
+        class=inline loading="lazy"></a> <a href=https://www.linkedin.com/in/adithya-v-sastry/ target="_blank"
+    rel="noopener noreferrer"><img src="/img/linkedin.png" class=inline loading="lazy"></a> <a class="href-obfu" href="to-gmail/"><img
+        src="/img/email.png" alt="snail" class=inline loading="lazy"></a>
+</pre></div>
+
+<pre class=c>
+<b>Personal Websites                                                     02/15/2026
+--------------------------------------------------------------------------------</b>
+
+So creative, I know. A blog post on my personal website about personal websites.
+
+I promise though, this is a real post. I've been tweaking the format of this
+site because I feel like it's strayed too far from the minimalism I was going
+for in the beginning. (just look at it -- doesn't it all feel a bit cluttered?
+maybe it's just me. but either way, it needs a change.)
+
+<b>Stylistic Changes
+-----------------</b>
+
+So far, I have a few different designs in the works. Mostly inspired by sites
+I've found while poking around ?<a href="https://deadsimplesites.com">Dead Simple Sites</a>, Neocities, and random Reddit
+posts about minimal websites.
+
+My first thought was that I needed to ditch the fancy round corners and
+subtle shadows for something more boxy that sticks out. So I came up with this.
+
+<img class="cssbox_thumb" tabindex=1 src="/img/redesign-jan26.png" alt="v1"><span class="cssbox_full"><img src="/img/redesign-jan26.png" alt="v1"></span>
+
+It looks a little weird on pages without much content, like the pixel art page
+and some of the easter eggs. Either there's a bunch of white space, or the
+columns are different heights.
+
+<img class="cssbox_thumb inline" tabindex=1 src="/img/jan26-whitespace.png" alt="v1" style="width:39ch"><span class="cssbox_full"><img src="/img/jan26-whitespace.png" alt="v1"></span> <img class="cssbox_thumb inline" tabindex=1 src="/img/jan26-diffheight.png" alt="v2" style="width:39ch"><span class="cssbox_full"><img src="/img/jan26-diffheight.png" alt="v2"></span>
+
+I also felt weird having the updates section on the left, and eventually decided
+keeping an updates section was contributing to the clutter. So I ditched it
+completely and tried to set the whole thing to a fixed box region, like on some
+older or retro-style websites.
+
+<img class="cssbox_thumb" tabindex=1 src="/img/feb26-v2.png" alt="v2"><span class="cssbox_full"><img src="/img/feb26-v2.png" alt="v2"></span>
+
+I need to move the whole thing down a bit though, and I also need to find a way
+to vertically center the left column content. Otherwise, if I were to size the
+body section to the left column's natural height, the body is much too short for
+my liking.
+
+<img class="cssbox_thumb" tabindex=1 src="/img/feb26-short-body.png" alt="v2"><span class="cssbox_full"><img src="/img/feb26-short-body.png" alt="v2"></span>
+
+Then at some point, I thought it's just better to keep it <i class="ii">really</i> simple. Like
+the style of the ?<a href="https://tincan-linux.github.io/">Tin Can Linux website</a>. So I stripped out the boxes, and the
+tiling pattern background, and muted the colors for bold and italic font. I also
+added a style for hovering over a link, which is probably much nicer visually
+than what I have now.
+
+<img class="cssbox_thumb" tabindex=1 src="/img/redesign-feb26.png" alt="v3"><span class="cssbox_full"><img src="/img/redesign-feb26.png" alt="v3"></span>
+
+Something looks a bit off though. Can't tell what exactly. But I'm leaning
+towards taking some of the styles from this version and merging it with the box
+layout of the previous version.
+
+I could also come up with something completely different, so keep an eye out!
+
+<b>Technical changes
+-----------------</b>
+
+Beyond the website style itself though, I've made more technical changes to keep
+the website actually lightweight -- in the sense of loading faster and
+downloading less stuff every time you click on a new page. These have actually
+been brought over to the version of the website you're looking at now.
+
+I'm using WebsiteCarbon as the metric for how lightweight my website is. Before
+messig with anything, it was sitting at a solid 80%.
+
+<img class="cssbox_thumb" tabindex=1 src="/img/webcarbon-80.png" alt="website carbon 80"><span class="cssbox_full"><img src="/img/webcarbon-80.png" alt="website carbon 80"></span>
+
+I've added highlight.js to this site to colorize code blocks. I originally had
+pulled it from cdnjs, but that pulls in more than I need. After selecting the
+languages I actually use and storing it locally, it improved by 1%.
+
+<img class="cssbox_thumb" tabindex=1 src="/img/webcarbon-81.png" alt="website carbon 81"><span class="cssbox_full"><img src="/img/webcarbon-81.png" alt="website carbon 81"></span>
+
+Not really worth it, but not terrible either.
+
+Next up: MathJAX. That's probably somewhat heavy. I swapped it out for KaTeX and
+it improved by 11%.
+
+<img class="cssbox_thumb" tabindex=1 src="/img/webcarbon-92.png" alt="website carbon 92"><span class="cssbox_full"><img src="/img/webcarbon-92.png" alt="website carbon 92"></span>
+
+And my profile picture is also way larger than it needs to be, so shrinking that
+helped by another 5%.
+
+<img class="cssbox_thumb" tabindex=1 src="/img/webcarbon-97.png" alt="website carbon 97"><span class="cssbox_full"><img src="/img/webcarbon-97.png" alt="website carbon 97"></span>
+
+That's probably good enough for now. Could be lighter, though. The website for
+Tin Can Linux is at 100%.
+
+<a href="/blog">&lt;&lt;&lt; Go back</a>                                                <a href="/rss.html">Subscribe via RSS >>></a>
+</pre>
+
+<div class=nav style="border-top:1px solid #93a1a1;">
+<div class=tt><pre>AVS Origami © 2023-2026</pre></div>
+<div class=tt style="text-align:right"><pre>Boink!</pre></div>
+</div>
+
+</div>
+<link rel="stylesheet" href=/code.css>
+<script src="/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</html>

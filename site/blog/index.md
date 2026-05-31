@@ -1,6 +1,24 @@
 **[A collection of random thoughts and things I find interesting.          [~/blog]]**
 
-    
+
+    [Origami: Whimsical Edition](2026-02-28.html) (02/28/2026)
+
+    I folded some different origami than I usually do, and it was quite fun.
+
+    [>>> Read more](2026-02-28.html)
+
+    _[________________________________________________________________________]_
+
+
+    [Personal websites](2026-02-15.html) (02/15/2026)
+
+    A meta-post. Hmmmm...
+
+    [>>> Read more](2026-02-15.html)
+
+    _[________________________________________________________________________]_
+
+
     [Snow](2026-01-27.html) (01/27/2026)
 
     Or rather, a distinct absence of the stuff.
@@ -10,7 +28,7 @@
     _[________________________________________________________________________]_
 
 
-    [Tiny Robots](2026-01-08.html) (01/08/2026)
+    [Tiny robots](2026-01-08.html) (01/08/2026)
 
     A bit of a rant on why tiny robots are so great (or at least why I think
     they're so great).

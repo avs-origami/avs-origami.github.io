@@ -6,8 +6,16 @@ four. Over the years, I've refined my skills through learning various songs
 thillanas) in several languages (Kannada, Telegu, Tamil, and Sanskrit).
 
 
-*[Songs I've learned recently (and performed at the local cultural center)
+*[Recent performances. Take a listen!
 ________________________________________________________________________________]*
+
+@[#!(/img/music/ranjani.m4a)%[  Ranjani Mala, a raagamalika consisting of
+  several flavors of the raagam Ranjani]%]@
+
+@[#!(/img/music/englishnote.mp3)%[  English Note, a nottuswara in Shankarabhar-
+  anam blending Carnatic and Western styles,
+  which I performed with a friend who accom-
+  panied me on viola for the RSI talent show]%]@
 
 @[#!(/img/music/pavanatanaya.m4a)%[  Pavana Tanaya Paalisayya, raagam Behag]%]@
 

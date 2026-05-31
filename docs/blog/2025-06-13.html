@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" media="print" href="/print.css">
     <link rel="stylesheet" type="text/css" href="/cssbox.css">
     <script src="/email.js" defer></script>
-    <script src="/mathjax.js"></script>
+    <script src="/katex.js"></script>
     <title>avs origami - blog/2025-06-13</title>
     <meta charset=utf-8>
     <meta name=description content="A personal website">
@@ -102,26 +102,32 @@ transformations (which makes subsequent calls to the function execute much
 faster). However there are some things to note:
 
 - JIT compiled functions are re-compiled on first use and afterwards any time
-the input shape changes. When the function is re-compiled it essentially runs
-the raw python code.
+  the input shape changes. When the function is re-compiled it essentially runs
+  the raw python code.
+
 - The JIT compiler requires pure functions, which essentially means they have to
-produce the same output every time for a given input and cannot use or modify
-anything outside the function body. In a sense it's like a function from math.
-Things that would count as impure functions produce side effects, such as:
+  produce the same output every time for a given input and cannot use or modify
+  anything outside the function body. In a sense it's like a function from math.
+  Things that would count as impure functions produce side effects, such as:
+
   - Uses or modifies a global variable. Whenever the function is compiled the
-  current value of the global is cached. Attempting to save a global will
-  replace the global with a JAX object.
+    current value of the global is cached. Attempting to save a global will
+    replace the global with a JAX object.
+
   - Prints out a value. The print statement will be executed when the function
-  is compiled, but not any other time. Useful to know for debugging.
+    is compiled, but not any other time. Useful to know for debugging.
+
   - Uses an iterator (these create global states apparently. I also didn't know
-  that these really existed in python in the first place). This can cause an
-  error, or it might just do something unexpected.
+    that these really existed in python in the first place). This can cause an
+    error, or it might just do something unexpected.
+
 - If the function contains a conditional, only the branch that is taken when
-the function is compiled is saved. All the other branches of the if/else are not
-compiled. There is a different way to use conditionals in JIT functions. Also,
-conditionals will fail to compile in JIT if they read the value.
+  the function is compiled is saved. All the other branches of the if/else are
+  not compiled. There is a different way to use conditionals in JIT functions.
+  Also, conditionals will fail to compile in JIT if they read the value.
+
 - You can JIT compile part of a function: just isolate it into its own function,
-JIT it, and call it, for example if the whole function isn't pure:
+  JIT it, and call it, for example if the whole function isn't pure:
 
 <em>--------------------------------------------------------------------------------</em>
 <code class="py">import jax
@@ -198,10 +204,10 @@ function.
 
 For example, let's say we have a function `$f(x) = x^2 + 7^x$`. We then know that:
 `$$
-\begin{align}
+\begin{align*}
 f'(x) &= 2x + 7^x (\ln 7) \\
 f''(x) &= 2 + 7^x (\ln 7)^2
-\end{align}
+\end{align*}
 $$`and so on. We can do this in python with JAX:
 
 <em>--------------------------------------------------------------------------------</em>
