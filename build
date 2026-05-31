@@ -5,6 +5,8 @@ parse() {
     
     # Replace < with &lt;
     sed 's<\\\&lt;g' |
+    # Replace \[ with &lsqb;
+    sed 's\\\[\\\&lsqb;g' |
 
     # center text in between #[ and ]#
     sed -E 's#\[<pre style="text-align:center">g' |
