@@ -1,5 +1,4 @@
-**[Turning trees into living artwork.                                    [~/bonsai]
---------------------------------------------------------------------------------]**
+**[Turning trees into living artwork.                                    [~/bonsai]]**
 
 Bonsai is a hobby that I've been slowly developing in more recent years. It's
 not very well established at the moment since trees grow really slowly, but I

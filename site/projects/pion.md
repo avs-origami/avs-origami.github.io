@@ -1,5 +1,4 @@
-**[Pion: Custom Arduino Design                                    08/2019 - 03/2022
---------------------------------------------------------------------------------]**
+**[Pion: Custom Arduino Design                                    08/2019 - 03/2022]**
 
 When I was working on an Arduino project several years back, one of the biggest
 issues was the footprint of the device I had created. Because I was using an

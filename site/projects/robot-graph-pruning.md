@@ -1,5 +1,4 @@
-**[Improving Robotic Exploration via RL Graph Pruning             04/2024 - present
---------------------------------------------------------------------------------]**
+**[Improving Robotic Exploration via RL Graph Pruning             04/2024 - present]**
 
 This work aims to improve the efficiency of graph-based robotic exploration
 algorithms by designing a novel reinforcement learning agent to prune the graphs

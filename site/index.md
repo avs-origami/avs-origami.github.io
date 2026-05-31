@@ -1,5 +1,4 @@
-**[Heart on my sleeve.                                                          [~]
---------------------------------------------------------------------------------]**
+**[The ever-shifting pile of thoughts and stuff.                                [~]]**
 
 I am a high school student pursuing research in the fields of robotics and
 computer science. I am most interested in designing tiny, self-contained,
@@ -11,8 +10,8 @@ My current research involves the use of reinforcement learning to prune dynamic
 graphs that are used as part of robotic exploration algorithms, in order to
 reduce the amount of information that must be stored and thereby improve the
 performance of exploration. [Read more about it here](/projects/robot-graph-pruning.html). I have also recently
-started working on a second project involving [safe intelligent control for](/projects/safe-control-aircraft.html)
-[multi-agent systems](/projects/safe-control-aircraft.html).
+started working on a second project involving +[/projects/safe-control-aircraft.html]safe intelligent control for
+multi-agent systems+[endurl].
 
 Besides these academic interests, I have been an avid origami enthusiast for
 over ten years. I've folded hundreds of models and also designed a few of my
@@ -27,7 +26,7 @@ about my interests and hobbies, and collect my thoughts in one place.
 
 The site itself is built using 'sed' ~~[regex]~~ magic to insert plaintext / markdown-
 ish documents into an HTML template using <pre> tags to preserve formatting. I
-borrowed the idea from the ?[Kiss Linux website](https://github.com/kisslinux/kisslinux.github.io), and it works quite nicely.
+borrowed the idea from the [Kiss Linux website](https://github.com/kisslinux/kisslinux.github.io), and it works quite nicely.
 
 **[Contact
 -------]**

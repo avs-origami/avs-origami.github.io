@@ -1,5 +1,4 @@
-**[My musical ventures.                                                   [~/music]
---------------------------------------------------------------------------------]**
+**[My musical ventures.                                                   [~/music]]**
 
 I've been learning Carnatic music (South Indian classical music) since I was
 four. Over the years, I've refined my skills through learning various songs

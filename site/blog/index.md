@@ -1,5 +1,4 @@
-**[A collection of random thoughts and things I find interesting.          [~/blog]
---------------------------------------------------------------------------------]**
+**[A collection of random thoughts and things I find interesting.          [~/blog]]**
 
 
     [Origami: Whimsical Edition](2026-02-28.html) (02/28/2026)
