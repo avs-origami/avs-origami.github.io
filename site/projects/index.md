@@ -7,9 +7,7 @@ past. I am still updating this page with more of my past projects.
 *[Current Projects
 --------------------------------------------------------------------------------]*
 
-
-+4[/projects/robot-graph-pruning.html]Improving Robotic Exploration Algorithms Using Reinforcement Learning
-Graph Pruning Techniques+[endurl]
+    [Learning-Guided Sparsification of Dynamic Graphs in Robotic Exploration](/projects/robot-graph-pruning.html)
 
     This project aims to improve existing graph based robotic exploration
     algorithms through the use of a novel RL-based graph pruning technique.
