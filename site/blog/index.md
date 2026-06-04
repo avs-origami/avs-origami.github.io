@@ -1,5 +1,11 @@
 **[A collection of random thoughts and things I find interesting.          [~/blog]]**
 
+Irregularly maintained blog. I write here whenever I feel like it. There's all
+sorts of things on here, from rants about snow (seriously, why can't we get some
+consistent weather??), to cool Rust things, to origami.
+
+*[Recent Posts
+--------------------------------------------------------------------------------]*
 
     [Origami: Whimsical Edition](2026-02-28.html) (02/28/2026)
 
