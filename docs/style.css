@@ -7,8 +7,9 @@ body {
     overflow-y: scroll;
     font: 14px monospace, monospace;
     font-family: "Courier Prime", monospace;
+    font-size: clamp(6.5px, 1.8vw, 14px);
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.7;
     background-color: #f7f4ee;
     color: #073642;
     min-height: 100vh;
@@ -72,6 +73,11 @@ a.ident {
     text-decoration: none;
 }
 
+.nav img {
+    display: inline-block !important;
+    vertical-align: middle;
+}
+
 .tt {
     display: table-cell;
     width: 40ch;
@@ -86,7 +92,7 @@ a.ident {
 
 .container {
     position: relative;
-    width: 80ch;
+    width: fit-content;
     margin: auto;
     height: 98vh;
     gap: 1em;
@@ -94,9 +100,12 @@ a.ident {
 }
 
 .lc {
-    position: fixed;
-    left: calc(50vw - 40ch - 2ch - 32ch);
-    top: 1em;
+    width: fit-content;
+    margin: 0 auto 2em;
+    padding-bottom: 1ch;
+    padding-left: 4ch;
+    padding-right: 4ch;
+    border-bottom: 1px solid #93a1a1;
 }
 
 .p {
@@ -112,4 +121,17 @@ a.ident {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media(min-width: 80em) {
+    .lc {
+        position: fixed;
+        left: calc(50vw - 40ch - 2ch - 32ch);
+        top: 1em;
+        margin: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
