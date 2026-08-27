@@ -6,11 +6,13 @@ microprocessor architectures and software paradigms can enable the creation of
 small-scale, power-efficient, yet robust robotic systems.
 
 My current and past research has covered areas including reinforcement learning,
-low-power electronics, and energy-harvesting systems. You can read more about
-some of my relevant experience at the following links:
-  - [projects/robot-graph-pruning](/projects/robot-graph-pruning.html)
-  - [projects/safe-control-aircraft](/projects/safe-control-aircraft.html)
-  - [projects/neuromorphic-sensing](/projects/neuromorphic-sensing.html)
+robotic control theory, low-power electronics, and energy-harvesting systems.
+Read more about some of my relevant experience at the following links:
+
+  - [projects/robot-graph-pruning](/projects/robot-graph-pruning.html) (robotic exploration, RL, transformers)
+  - [projects/safe-control-aircraft](/projects/safe-control-aircraft.html) (control theory, safe RL)
+  - [projects/neuromorphic-sensing](/projects/neuromorphic-sensing.html) (low-power electronics, energy harvesting,
+    neuromorphic sensing, supervised ML)
 
 Besides these academic interests, I have been an avid origami enthusiast for
 over ten years. I've folded hundreds of models and also designed a few of my
