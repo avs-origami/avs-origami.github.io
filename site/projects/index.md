@@ -4,7 +4,7 @@ This page is a catalog of major projects that I have taken up, both current and
 past. I am still updating this page with more of my past projects.
 
 
-*[Current Projects
+*[Research
 --------------------------------------------------------------------------------]*
 
     [Learning-Guided Sparsification of Dynamic Graphs in Robotic Exploration](/projects/robot-graph-pruning.html)
@@ -19,13 +19,28 @@ past. I am still updating this page with more of my past projects.
 
     [Safe Robotic Control for Autonomous Aircraft Swarms](/projects/safe-control-aircraft.html)
 
-    This project aims to extend an existing approach to safety-guaranteed
+    This project aimed to extend an existing approach to safety-guaranteed
     reinforcement learning control of multi-agent systems to tasks with more
     complex control dynamics.
 
     [>>> Read more](/projects/safe-control-aircraft.html)
 
     _[________________________________________________________________________]_
+
++4[/projects/neuromorphic-sensing.html]NeuroCamTags: Long-Range, Battery-free, Wireless Sensing with
+Neuromorphic Cameras+[endurl]
+
+    This project developed a set of a set of low-power remote sensing
+    devices that are powered exclusively by solar energy harvesting and
+    are able to encode and transmit a wide variety of data through the use
+    of a neuromorphic camera to process visible-light signals.
+
+    [>>> Read more](/projects/neuromorphic-sensing.html)
+
+
+
+*[Personal Projects
+-------------------------------------------------------------------------------]*
 
 
     [Tin Can Linux](/projects/tincan.html)
@@ -38,10 +53,7 @@ past. I am still updating this page with more of my past projects.
     [>>> Read more](/projects/tincan.html)
     [>>> Official website](https://tincan-linux.github.io/)
 
-
-
-*[Past Projects
--------------------------------------------------------------------------------]*
+    _[________________________________________________________________________]_
 
 
     [Pion: Custom Arduino Design](/projects/pion.html)

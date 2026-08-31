@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang=en>
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" media="print" href="/print.css">
+    <link rel="stylesheet" type="text/css" href="/cssbox.css">
+    <script src="/email.js" defer></script>
+    <script src="/katex.js"></script>
+    <title>avs origami - projects/neuromorphic-sensing</title>
+    <meta charset=utf-8>
+    <meta name=description content="A personal website">
+    <meta name=viewport content="width=device-width,initial-scale=1">
+</head>
+
+<div class=container>
+<div class=nav style="border-bottom:1px solid #93a1a1;">
+<div class="tt"><pre><a href= /><img src="/img/home.png" class="inline" style="display:table-cell;vertical-align:middle"></a>  <b><a
+href=/ class=n>AVS ORIGAMI</a></b></pre></div>
+
+<div class="tt" style="text-align:right"><pre><a href=/projects>PROJECTS</a> <em>/</em> <a href=/blog>BLOG</a> <em>/</em> <a
+href=/art>ART</a> <em>/</em> <a href=/rss.html>RSS</a> <em>/</em> <a
+href=https://github.com/avs-origami target="_blank" rel="noopener noreferrer">GITHUB</a></pre></div>
+</div>
+
+<div class=lc><pre class=p style="text-align:center;vertical-align:middle;">
+
+<img src="/img/8814.jpg" class=pfp>
+<b>Adithya V. Sastry</b>
+
+Robotics + Origami
+Creator of <a href=/projects/tincan.html>Tin Can Linux</a>
+<a href=https://www.cee.org/programs/research-science-institute target="_blank" rel="noopener noreferrer">Research Science Institute</a>
+Lover of all things tiny
+
+<i class=ii>"A dream is not that which
+you see while sleeping, it
+is that which does not let
+you sleep."</i>
+
+-- Dr. APJ Abdul Kalam
+
+<a href=https://github.com/avs-origami target="_blank" rel="noopener noreferrer"><img src="/img/octo.png"
+        class=inline loading="lazy"></a> <a href=https://www.linkedin.com/in/adithya-v-sastry/ target="_blank"
+    rel="noopener noreferrer"><img src="/img/linkedin.png" class=inline loading="lazy"></a> <a class="href-obfu" href="to-gmail/"><img
+        src="/img/email.png" alt="snail" class=inline loading="lazy"></a>
+</pre></div>
+
+<pre class=c>
+<b>Battery-Free Wireless Sensing with Neuromorphic Cameras        05/2023 - 09/2023</b>
+
+This project developed a set of a set of low-power remote sensing devices that
+are powered exclusively by solar energy harvesting and are able to encode and
+transmit a wide variety of data through the use of a neuromorphic camera to
+process visible-light signals.
+
+The contributions presented in the paper are roughly divided into two distinct
+components: digital sensing tags, which use a microprocessor to transmit
+binary encoded signals, and analong sensing tags, which operate without a
+microprocessor to directly convert analog signals into signals via frequency
+modulation. My work consisted primarily of developing the design of the analog
+sensing tags, including the mechanism for encoding and transmitting various
+types of sensor data as well as refining some parts of the energy harvesting
+circuit that was used in the final design of both the analog and digital sensing
+tags. I additionally began the experiments with the microphone sensor option
+that was presented for the analog tags, and first confirmed that the captured
+spectral data from the microphone was rich enough to perform machine learning
+inference to distinguish between various classes of sounds, and further
+experimented with reconstructing the original audio from the transmitted data.
+
+I worked alongside a team of graduate researchers, and they published the final
+draft of the paper in the September 2024 issue of ACM IMWUT. The PDF can be
+found at <a href=https://epic.eecs.utk.edu/files/NeuroCamTag_Final_ACM_IMWUT.pdf>https://epic.eecs.utk.edu/files/NeuroCamTag_Final_ACM_IMWUT.pdf</a>, and my
+contributions specifically can be found in the following places:
+
+  - Most of the hardware design presented in <a href="https://epic.eecs.utk.edu/files/NeuroCamTag_Final_ACM_IMWUT.pdf#section.5">Section 5</a> (the analog NeuroCamTags)
+    including the circuit design (<a href="https://epic.eecs.utk.edu/files/NeuroCamTag_Final_ACM_IMWUT.pdf#page=9">Fig. 7</a>), which contains few modifications from
+    the design I originally developed
+
+  - The specific choice of solar panels (<a href="https://epic.eecs.utk.edu/files/NeuroCamTag_Final_ACM_IMWUT.pdf#subsection.4.1">Section 4.1</a>) and timer IC (<a href="https://epic.eecs.utk.edu/files/NeuroCamTag_Final_ACM_IMWUT.pdf#subsection.5.1">Section 5.1</a>)
+    that effectively balance size constraints with providing a consistent power
+    source that is effective for both the digital and analog sensing devices
+
+  - Initial experimentation with using machine learning to classify different
+    sounds captured by the microphone sensor, which was later refined by other
+    team members (<a href="https://epic.eecs.utk.edu/files/NeuroCamTag_Final_ACM_IMWUT.pdf#page=17">Fig. 15</a> and <a href="https://epic.eecs.utk.edu/files/NeuroCamTag_Final_ACM_IMWUT.pdf#subsection.7.2">Section 7.2</a>)
+
+I additionally made several contributions that were not included in the paper,
+but were still pivotal in driving the paper in the direction it eventually took:
+
+  - Preliminary PCB design of the analog sensing tags
+
+  - Experiments with the analog tags to mitigate the impacts of fluctuating
+    light levels on the effective operation of the devices
+
+  - Testing various low-power LEDs to reduce the minimum power requirements
+    while ensuring that the signal was bright enough to be detected
+
+This work was performed under the mentorship of Prof. Sai Swaminathan at the
+EPIC Lab in the EECS department at the University of Tennessee, Knoxville.
+</pre>
+
+<div class=nav style="border-top:1px solid #93a1a1;">
+<div class=tt><pre>AVS Origami © 2023-2026</pre></div>
+<div class=tt style="text-align:right"><pre><a href="#top">Back to Top</a></pre></div>
+</div>
+
+</div>
+<link rel="stylesheet" href=/code.css>
+<script src="/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</html>
