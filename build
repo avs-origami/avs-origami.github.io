@@ -118,4 +118,5 @@ cp *.js docs/
 cp *.xml docs/
 cp site/favicon.png docs/favicon.png
 cp -R img docs/
-cp -R misc docs/
+cp -R uploads docs/
+cp -R misc/* docs/
