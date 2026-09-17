@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function ()
 		.replace(' ', '@')
 		.replaceAll(' ', '.')
 		.replaceAll(new RegExp('[zuy]', 'g'), '')
-		.replace('example', 'gmail');
+		.replace('example', 'thundermail');
 });
 
 document.addEventListener('DOMContentLoaded', function ()
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function ()
     
     for (var i = 0; i < a.length; i++) {
 	    a[i].setAttribute('href', a[i].getAttribute('href')
-		    .replace('-', 'vs.origami@')
+		    .replace('-', 'vs@')
 		    .replace('/', '.com')
 		    .replace('to', 'mailto:a')
 	    );
