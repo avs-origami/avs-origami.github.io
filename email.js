@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function ()
 	const email = document.getElementById('text-obfu').firstChild;
 
 	email.nodeValue = email.nodeValue
+		.split("").reverse().join("")
 		.replace(' ', '@')
 		.replaceAll(' ', '.')
 		.replaceAll(new RegExp('[zuy]', 'g'), '')
@@ -17,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function ()
     
     for (var i = 0; i < a.length; i++) {
 	    a[i].setAttribute('href', a[i].getAttribute('href')
+			.split("").reverse().join("")
 		    .replace('-', 'vs@')
 		    .replace('/', '.com')
 		    .replace('to', 'mailto:a')
@@ -28,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	const email = document.getElementById('itext-obfu').firstChild;
 
 	email.nodeValue = email.nodeValue
+		.split("").reverse().join("")
 		.replace(' ', '@')
 		.replaceAll(' ', '.')
 		.replaceAll(new RegExp('[zoy]', 'g'), '')
@@ -39,6 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	for (var i = 0; i < a.length; i++) {
 		a[i].setAttribute('href', a[i].getAttribute('href')
+			.split("").reverse().join("")
 			.replace('-', 'di.vs@')
 			.replace('/', '.edu')
 			.replace('to', 'mailto:a')
