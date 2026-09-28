@@ -7,7 +7,8 @@ small-scale, power-efficient, yet robust robotic systems.
 
 My current and past research has covered areas including reinforcement learning,
 robotic control theory, low-power electronics, and energy-harvesting systems.
-Read more about some of my relevant experience at the following links:
+I've also worked extensively with embedded systems, both at the hardware and
+software level. Read more about some of my relevant experience:
 
   - [projects/robot-graph-pruning](/projects/robot-graph-pruning.html) (robotic exploration, RL, transformers)
   - [projects/safe-control-aircraft](/projects/safe-control-aircraft.html) (control theory, safe RL)
