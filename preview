@@ -1,0 +1,4 @@
+#!/bin/sh -e
+
+cd docs
+python -m http.server 8100

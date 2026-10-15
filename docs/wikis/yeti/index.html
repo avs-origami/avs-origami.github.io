@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang=en>
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" media="print" href="/print.css">
+    <link rel="stylesheet" type="text/css" href="/cssbox.css">
+    <script src="/email.js" defer></script>
+    <script src="/katex.js"></script>
+    <title>avs origami - wikis/yeti</title>
+    <meta charset=utf-8>
+    <meta name=description content="A personal website">
+    <meta name=viewport content="width=device-width,initial-scale=1">
+</head>
+
+<div class=container>
+<div class=nav style="border-bottom:1px solid #93a1a1;">
+<div class="tt"><pre><a href= /><img src="/img/home.png" class="inline" style="display:table-cell;vertical-align:middle"></a>  <b><a
+href=/ class=n>AVS ORIGAMI</a></b></pre></div>
+
+<div class="tt" style="text-align:right"><pre><a href=/projects>PROJECTS</a> <em>/</em> <a href=/blog>BLOG</a> <em>/</em> <a
+href=/art>ART</a> <em>/</em> <a href=/rss.html>RSS</a> <em>/</em> <a
+href=https://github.com/avs-origami target="_blank" rel="noopener noreferrer">GITHUB</a></pre></div>
+</div>
+
+<div class=lc><pre class=p style="text-align:center;vertical-align:middle;">
+
+<img src="/img/8814.jpg" class=pfp>
+<b>Adithya V. Sastry</b>
+
+Robotics, microprocessors,
+origami, tiny things, and
+everything in between!
+
+<a href=https://www.cee.org/programs/research-science-institute target="_blank" rel="noopener noreferrer">RSI @ MIT</a> alumnus
+ECE @ Duke University
+Creator of <a href=/projects/tincan.html>Tin Can Linux</a>
+
+<i class=ii>"A dream is not that which
+you see while sleeping, it
+is that which does not let
+you sleep."
+
+-- Dr. APJ Abdul Kalam</i>
+
+<a href=https://github.com/avs-origami target="_blank" rel="noopener noreferrer"><img src="/img/octo.png"
+        class=inline loading="lazy"></a> <a href=https://www.linkedin.com/in/adithya-v-sastry/ target="_blank"
+    rel="noopener noreferrer"><img src="/img/linkedin.png" class=inline loading="lazy"></a> <a class="href-obfu" href="/liamrednuht-ot"><img
+        src="/img/email.png" alt="snail" class=inline loading="lazy"></a>
+</pre></div>
+
+<pre class=c>
+|-------------------------|     ,_____,
+| YETI OS                 |     | . . |
+|-------------------------|     | ._, |
+| A bit-sized linux       |     |-----|
+| distro for RPi zero     |    / ,   , \
+|-------------------------|    |_'   '_|
+|=~=~=~=~=~=~=~=~=~=~=~=~=|     '--^--'
+
+This is the webpage for Yeti OS. For general information on building and
+installing, see <a href="https://github.com/avs-origami/yeti">the github repo</a>.
+
+=== INSTALLED PACKAGES
+======================
+
+Yeti OS comes with the following packages installed:
+  - musl
+  - binutils
+  - gcc
+  - busybox
+  - linux
+  - ypm
+  - make
+  - wpa_supplicant
+
+None of the binaries are stripped during the build process. Stripping binaries
+can reduce the size of the final system. Additionally, any binaries beginning
+with `armv6zk-linux-musleabihf-` can be safely removed. These are binaries used
+in cross-compilation and are not useful on the final system.
+
+=== PACKAGE MAANGEMENT
+======================
+
+<a href="/projects/ypm">The Yeti Package Manager (YPM)</a> is used for package management and is built into
+the system by the build script.
+
+Basic usage:
+ypm -i [PACKAGE] to install [PACKAGE]
+ypm -r [PACKAGE] to uninstall [PACKAGE]
+
+See the YPM page and github repo for more detailed explanations.
+
+=== FILESYSTEM
+==============
+
+The filesystem is based on the Static Linux filesystem
+(<a href=https://sta.li/filesystem).>https://sta.li/filesystem).</a> The directories are as follows:
+
+/bin - executables
+/dev - devices
+/etc - system config and packages
+/home - user dirs
+/include - headers
+/lib - libraries
+/opt - weird packages
+/proc - proc files
+/run - run files
+/sbin -> bin
+/share - share stuff
+/sys - sys files
+/usr -> /
+/var - var stuff
+
+This could change in future. Fewer directories = simpler system.
+
+If new directories or files start popping up in / it's probably because they
+were going to be installed to /usr. If you want you can make /usr a directory
+instead of symlinking to / but this was done for simplicity.
+
+=== RESOURCES
+=============
+
+Resources used throughout this project:
+  - Linux From Scratch (<a href=https://www.linuxfromscratch.org)>https://www.linuxfromscratch.org)</a>
+  - Cross Linux From Scratch (<a href=https://clfs.org)>https://clfs.org)</a>
+  - Mussel (<a href=https://github.com/firasuke/mussel)>https://github.com/firasuke/mussel)</a>
+  - Diy Linux Guide (<a href=https://github.com/AgentD/diy-linux-guide)>https://github.com/AgentD/diy-linux-guide)</a>
+  - PiLFS (<a href=https://intestinate.com/pilfs)>https://intestinate.com/pilfs)</a>
+  - Static Linux (<a href=https://sta.li)>https://sta.li)</a>
+</pre>
+
+<div class=nav style="border-top:1px solid #93a1a1;">
+<div class=tt><pre>AVS Origami © 2023-2026</pre></div>
+<div class=tt style="text-align:right"><pre><a href="#top">Back to Top</a></pre></div>
+</div>
+
+</div>
+<link rel="stylesheet" href=/code.css>
+<script src="/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</html>

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang=en>
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" media="print" href="/print.css">
+    <link rel="stylesheet" type="text/css" href="/cssbox.css">
+    <script src="/email.js" defer></script>
+    <script src="/katex.js"></script>
+    <title>avs origami - blog/2026-01-08</title>
+    <meta charset=utf-8>
+    <meta name=description content="A personal website">
+    <meta name=viewport content="width=device-width,initial-scale=1">
+</head>
+
+<div class=container>
+<div class=nav style="border-bottom:1px solid #93a1a1;">
+<div class="tt"><pre><a href= /><img src="/img/home.png" class="inline" style="display:table-cell;vertical-align:middle"></a>  <b><a
+href=/ class=n>AVS ORIGAMI</a></b></pre></div>
+
+<div class="tt" style="text-align:right"><pre><a href=/projects>PROJECTS</a> <em>/</em> <a href=/blog>BLOG</a> <em>/</em> <a
+href=/art>ART</a> <em>/</em> <a href=/rss.html>RSS</a> <em>/</em> <a
+href=https://github.com/avs-origami target="_blank" rel="noopener noreferrer">GITHUB</a></pre></div>
+</div>
+
+<div class=lc><pre class=p style="text-align:center;vertical-align:middle;">
+
+<img src="/img/8814.jpg" class=pfp>
+<b>Adithya V. Sastry</b>
+
+Robotics, microprocessors,
+origami, tiny things, and
+everything in between!
+
+<a href=https://www.cee.org/programs/research-science-institute target="_blank" rel="noopener noreferrer">RSI @ MIT</a> alumnus
+ECE @ Duke University
+Creator of <a href=/projects/tincan.html>Tin Can Linux</a>
+
+<i class=ii>"A dream is not that which
+you see while sleeping, it
+is that which does not let
+you sleep."
+
+-- Dr. APJ Abdul Kalam</i>
+
+<a href=https://github.com/avs-origami target="_blank" rel="noopener noreferrer"><img src="/img/octo.png"
+        class=inline loading="lazy"></a> <a href=https://www.linkedin.com/in/adithya-v-sastry/ target="_blank"
+    rel="noopener noreferrer"><img src="/img/linkedin.png" class=inline loading="lazy"></a> <a class="href-obfu" href="/liamrednuht-ot"><img
+        src="/img/email.png" alt="snail" class=inline loading="lazy"></a>
+</pre></div>
+
+<pre class=c>
+<b>Tiny robots                                                           01/08/2026</b>
+
+<i>I wrote parts of this blog post sometime last year but never published it. Just
+rediscovered it a few days ago and decided to finish it.</i>
+
+Sometime in 2017, I came across this video.
+
+<pre style="text-align:center">
+<iframe style="width:80ch;height:45ch;" src="https://www.youtube.com/embed/ZVYz7g-qLjs?si=i8vvQhfznTwH-fHb" title="" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</pre>
+This was at the height of my (first) obsession with origami, and it was also
+right around the time I discovered what Arduino was, so naturally, I started
+digging into it a bit more.
+
+I spent some time trying to understand how the origami design worked, how they
+got it to self fold, but most of all, how they made it move around and perform
+tasks. Of course, I knew from the video <a href="https://news.mit.edu/2015/centimeter-long-origami-robot-0612">(and the article that went with the
+video)</a> that it had a little magnet on its back and that was their way of
+controlling its motion, but I figured maybe there was something about the
+origami structure that allowed them to control it, like bending the joints to
+propel it forward or pick up the little red cubes.
+
+But after a while, I came to the conclusion that the origami structure just
+allowed it to waddle from side to side. Nothing was actually bending, which
+seemed to defeat the purpose of an origami robot. Why make it foldable, why have
+so many joints, when none of them actually help the robot do things?
+
+Plus, not knowing the first thing about magnetism, part of my brain was
+convinced there was someone dragging a powerful magnet along the underside of
+the table. Even though I knew this wasn't what they were doing, I decided they
+were cheating by using a magnet, and valiantly set out to improve their robot by
+giving it brains and controlling it by flexing the joints rather than relying on
+the waddling motion their robot exhibited. I never was able to get anywhere with
+it and did move on to other, more attainable quests, but not before I spent
+quite a lot of time thinking about it and trying to fold various origami designs
+that could function as an improved robot body.
+
+I've had a lot of passing fancies like this over the years, but somehow this one
+has managed to stick around. Nearly nine years later, I'm still pretty set on
+making a tiny smart robot. And robots of this scale seem to be garnering more
+attention recently.
+
+Many of the recent innovations solve one of my issues with these original
+origmai robots: no matter how they're controlled, many newer robots, like the
+<a href="https://smrl.mit.edu/research/aerial-robot-powered-by-soft-actuators">aerial robots at MIT's Soft and Micro Robotics Laboratory</a> or the <a href="https://zhaolab.stanford.edu/publications/spinning-enabled-wireless-amphibious-origami-millirobot">amphibious
+millirobots at Stanford's Zhao Lab</a> actually take advantage of their
+flexibility for locomotion. But they still don't have brains of their own.
+They're either tethered with wires or controlled magnetically -- which is fine
+for some applications like surgery, where tasks can be performed in a relatively
+controlled environment, but definitely doesn't work for tasks that involve
+dynamic or uncertain environments.
+
+<pre style="text-align:center">
+<iframe style="width:39ch;height:22ch;" src="https://www.youtube.com/embed/50_kK9phHy8?si=WkIvJbXAXVv5ShRg" title="" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <iframe style="width:39ch;height:22ch;" src="https://www.youtube.com/embed/2oNFiMwQWyA?si=hPMtR9PzRfLjun0E" title="" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</pre>
+<i>Left: MIT's soft-actuated aerial robots (Soft and Micro Robotics Lab).
+Right: Stanford's amphibious origami millirobots (Zhao Lab).
+--------------------------------------------------------------------------------</i>
+
+I've always thought it would be cool to work with fingertip-sized robots. The
+origami robot video from nine years ago convinced me of that. The idea that it
+might be possible to squeeze everything -- computational power, sensing
+capabilities, and more -- into a fully-functional robot no larger than a few
+centimeters at most. That's exciting.
+
+And also really difficult. But hey, it can't be exciting if it <i class="ii">isn't</i> really
+difficult. That is the best part, after all.
+
+<a href="/blog">&lt;&lt;&lt; Go back</a>                                                <a href="/rss.html">Subscribe via RSS >>></a>
+</pre>
+
+<div class=nav style="border-top:1px solid #93a1a1;">
+<div class=tt><pre>AVS Origami © 2023-2026</pre></div>
+<div class=tt style="text-align:right"><pre><a href="#top">Back to Top</a></pre></div>
+</div>
+
+</div>
+<link rel="stylesheet" href=/code.css>
+<script src="/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</html>

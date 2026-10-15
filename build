@@ -1,0 +1,14 @@
+#!/bin/sh -e
+
+file=$1
+out=$2
+
+base=${file#site/}
+base=${base%.md}
+name=${base%/index}
+home=${name/index/home}
+
+output=$(./parse < "$file")
+cp template.html "$out"
+sed -i "s(CONTENT)$output" "$out"
+sed -i "s(TITLE)$home" "$out"

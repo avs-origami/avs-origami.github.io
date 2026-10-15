@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang=en>
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" media="print" href="/print.css">
+    <link rel="stylesheet" type="text/css" href="/cssbox.css">
+    <script src="/email.js" defer></script>
+    <script src="/katex.js"></script>
+    <title>avs origami - wikis/ypm</title>
+    <meta charset=utf-8>
+    <meta name=description content="A personal website">
+    <meta name=viewport content="width=device-width,initial-scale=1">
+</head>
+
+<div class=container>
+<div class=nav style="border-bottom:1px solid #93a1a1;">
+<div class="tt"><pre><a href= /><img src="/img/home.png" class="inline" style="display:table-cell;vertical-align:middle"></a>  <b><a
+href=/ class=n>AVS ORIGAMI</a></b></pre></div>
+
+<div class="tt" style="text-align:right"><pre><a href=/projects>PROJECTS</a> <em>/</em> <a href=/blog>BLOG</a> <em>/</em> <a
+href=/art>ART</a> <em>/</em> <a href=/rss.html>RSS</a> <em>/</em> <a
+href=https://github.com/avs-origami target="_blank" rel="noopener noreferrer">GITHUB</a></pre></div>
+</div>
+
+<div class=lc><pre class=p style="text-align:center;vertical-align:middle;">
+
+<img src="/img/8814.jpg" class=pfp>
+<b>Adithya V. Sastry</b>
+
+Robotics, microprocessors,
+origami, tiny things, and
+everything in between!
+
+<a href=https://www.cee.org/programs/research-science-institute target="_blank" rel="noopener noreferrer">RSI @ MIT</a> alumnus
+ECE @ Duke University
+Creator of <a href=/projects/tincan.html>Tin Can Linux</a>
+
+<i class=ii>"A dream is not that which
+you see while sleeping, it
+is that which does not let
+you sleep."
+
+-- Dr. APJ Abdul Kalam</i>
+
+<a href=https://github.com/avs-origami target="_blank" rel="noopener noreferrer"><img src="/img/octo.png"
+        class=inline loading="lazy"></a> <a href=https://www.linkedin.com/in/adithya-v-sastry/ target="_blank"
+    rel="noopener noreferrer"><img src="/img/linkedin.png" class=inline loading="lazy"></a> <a class="href-obfu" href="/liamrednuht-ot"><img
+        src="/img/email.png" alt="snail" class=inline loading="lazy"></a>
+</pre></div>
+
+<pre class=c>
+|----------------------------|     ,_____,
+| Yeti Package Manager (YPM) |     | . . |
+|----------------------------|     | ._, |
+| A linux package manager    |     |-----|
+| written in Rust.           |    / ,   , \
+|----------------------------|    |_'   '_|
+=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~     '--^--'
+
+This is the webpage for YPM. For general information on building and
+installing, see <a href="https://github.com/avs-origami/ypm">the github repo</a>.
+
+=== USAGE
+=========
+
+ypm [OPTIONS] [ARGUMENTS]
+
+Available options:
+  -c => Clear the package cache
+  -d => Download the sources for a package
+  -e => Exit immediately on fail
+  -g => Generate a package template using the package generator utility
+  -h => Show this help
+  -i => Install a package
+  -o => Set offline mode (may be removed in future)
+  -r => Remove a package
+  -v => Get version information
+
+You could also view the man page by running `man ypm`.
+
+=== PACKAGE GENERATOR
+=====================
+
+The package generator is a utility that can be used to easily add your own
+packages to your local repositories.
+
+Usage:
+ypm -g [name] [ver] [repo] [src] [no_src] [has_install] [deps] [mkdeps] [extras]
+
+name: package name
+ver: package version
+repo: core or extra
+src: URL of source tarball
+no_src: set true if there is no source tarball
+has_install: set true if this package should have an install script
+deps: comma separated list of dependencies, use "" for none
+mkdeps: comma separated list of make dependencies, use "" for none
+extras: URLs of additional sources (comma separated), use "" for none
+
+A text editor will open to modify the build and install scripts. If $EDITOR is
+set that program will be used, otherwise vim will be used.
+
+In future there may be an interactive mode, for now all arguments have to be
+supplied at the command line.
+
+=== AVAILABLE PACKAGES
+======================
+
+The following packages are already in the repo for ypm:
+
+acl, attr, autoconf, automake, bash, bc, binutils, bison, busybox, bzip2, check,
+coreutils, dbus, dejagnu, diffutils, e2fsprogs, expat, expect, file, findutils,
+flex, gawk, gcc, gdbm, gettext, glibc, gmp, gperf, grep, groff, grub, gzip,
+iana-etc, inetutils, intltool, iproute, jinja, kbd, kernel, kmod, less, libcap,
+libelf, libffi, libpipeline, libtasn, libtool, m4, make, make-ca, man-db,
+man-pages, markupsafe, meson, mpc, mpfr, ncurses, ninja, openssl, p11-kit,
+patch, perl, pkg-config, procps-ng, psmisc, python, readline, rust, sed, shadow,
+sudo, tar, tcl, texinfo, util-linux, vim, wget, wheel, wpa_supplicant,
+xml-parser, xz, ypm, zlib, zstd
+</pre>
+
+<div class=nav style="border-top:1px solid #93a1a1;">
+<div class=tt><pre>AVS Origami © 2023-2026</pre></div>
+<div class=tt style="text-align:right"><pre><a href="#top">Back to Top</a></pre></div>
+</div>
+
+</div>
+<link rel="stylesheet" href=/code.css>
+<script src="/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</html>

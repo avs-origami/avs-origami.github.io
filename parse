@@ -1,0 +1,96 @@
+#!/bin/sh -e
+
+# Transform plain-text/markdown-ish input into HTML and insert it into the template.
+    
+# Replace < with &lt;
+sed 's<\\\&lt;g' |
+# Replace \[ with &lsqb;
+sed 's\\\[\\\&lsqb;g' |
+
+# center text in between #[ and ]#
+sed -E 's#\[<pre style="text-align:center">g' |
+sed -E 's\]#<\/pre>g' |
+# vertical align text on the same line as media using @[ and ]@
+sed -E 's@\[<div class="mediaflex">g' |
+sed -E 's\]@<\/div>g' |
+# %[ open span
+sed -E 's%\[<span>g' |
+# ]% close span
+sed -E 's\]%<\/span>g' |
+
+# **[ bold
+sed -E 's\*\*\[<b>g' |
+# ]** end bold
+sed -E 's\]\*\*<\/b>g' |
+# *[ italics
+sed -E 's\*\[<i>g' |
+# ]* end italics
+sed -E 's\]\*<\/i>g' |
+# _[ light
+sed -E 's_\[<em>g' |
+# ]_ end light
+sed -E 's\]_<\/em>g' |
+# ```[(lang) code
+sed -E 's```\[ *\( *([^ ]+) *\)<code class="\1">g' |
+# ```[ code
+sed -E 's```\[<code>g' |
+# ]``` end code
+sed -E 's\]```<\/code>g' |
+# ~~[ strikethrough
+sed -E 's~~\[<s>g' |
+# ]~~ end strikethrough
+sed -E 's\]~~<\/s>g' |
+# *in-text italics*
+sed -E 's\* *([^ ]+) *\*<i class="ii">\1</i>g' |
+
+# #![filetype](url): video
+sed -E 's#!\[ *([[:alnum:] \&\;\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]) *\] *\( *([^ ]+) *\)<video width="640" height="480" controls><source src="\2" type="\1"><\/video>g' |
+# #!(url): audio
+sed -E 's#!\( *([^ ]+) *\)<audio controls src="\1"><\/audio>g' |
+
+# !![#noclick](src): inline non-clickable image
+sed -E 's!!\[#noclick\] *\( *([^ ]+) *\)<img src="\1" class=inline>g' |
+# ![#noclick](src): vanilla non-clickable image
+sed -E 's!\[#noclick\] *\( *([^ ]+) *\)<img src="\1">g' |
+
+# !![image](src)(url): inline clickable image
+sed -E 's!!\[ *([[:alnum:] \&\;\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]) *\] *\( *([^ ]+) *\) *\( *([^ ]+) *\)<a href="\3"><img src="\2" alt="\1" class=inline><\/a>g' |
+# !![image](src)[width]: inline image with width (uses lightbox)
+sed -E 's!!\[ *([[:alnum:] \&\;\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]) *\] *\( *([^ ]+) *\) *\[ *([^ ]+) *\]<img class="cssbox_thumb inline" tabindex=1 src="\2" alt="\1" style="width:\3ch"><span class="cssbox_full"><img src="\2" alt="\1"></span>g' |
+# !![image](src): inline image (uses lightbox)
+sed -E 's!!\[ *([[:alnum:] \&\;\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]) *\] *\( *([^ ]+) *\)<img class="cssbox_thumb inline" tabindex=1 src="\2" alt="\1"><span class="cssbox_full"><img src="\2" alt="\1"></span>g' |
+# ![image](src)(url): clickable image
+sed -E 's!\[ *([[:alnum:] \&\;\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]) *\] *\( *([^ ]+) *\) *\( *([^ ]+) *\)<a href="\3"><img src="\2" alt="\1"><\/a>g' |
+# ![image](src): image (uses lightbox)
+sed -E 's!\[ *([[:alnum:] \&\;\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]) *\] *\( *([^ ]+) *\)<img class="cssbox_thumb" tabindex=1 src="\2" alt="\1"><span class="cssbox_full"><img src="\2" alt="\1"></span>g' |
+
+# &&[width][height](url) Youtube embed
+sed -E 's\&\&\[ *([[:alnum:] \&\;\.\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]+) *\]\[ *([[:alnum:] \&\;\.\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]+) *\] *\( *([^ ]+) *\)<iframe style="width:\1ch;height:\2ch;" src="\3" title="" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>g' |
+
+# $[section]
+sed -E 's\$\[ *([[:alnum:] \&\;\?!,\)\+]*.{0,10}[[:alnum:] \&\;\?!,\)\+]) *\]<span id=\1>\[<a class=t href=#\1>\1</a>\]</span>g' |
+
+# +[endurl]: close link
+sed -E 's\+\[endurl\]<\/a>g' |
+# +[url]: open link
+sed -E 's\+\[ *([^ ]+) *\]<a href="\1">g' |
+# +N[url]: open link indented by N spaces
+sed -E 's\+([0-9]+)\[ *([^ ]+) *\]<a href="\2" class=ident style="margin-left:\1ch;">g' |
+
+# [text](url)! fix for when a URL is in parentheses
+sed -E 's\[ *([[:alnum:] \&\;\.\?!,\)\+\>\.%=\/:]*.{0,10}[[:alnum:] \&\;\?!,\)\+\>\.%=\/:]+) *\] *\( *([^ ]+) *\)!<a href="\2">\1<\/a>g' |
+
+# [text](url)
+sed -E 's\[ *([[:alnum:] \&\;\.\?!,\)\+\>\.%=\/:]*.{0,10}[[:alnum:] \&\;\?!,\)\+-\>\.%=\/:]) *\] *\( *([^ ]+) *"([^"]+)"\)<a href="\2" title="\3">\1<\/a>g' |
+sed -E 's\[ *([[:alnum:] \&\;\.\?!,\)\+\>\.%=\/:]*.{0,10}[[:alnum:] \&\;\?!,\)\+\>\.%=\/:]+) *\] *\( *([^ ]+) *\)<a href="\2">\1<\/a>g' |
+# [url]
+sed -E "s([^\"\'\>=])(\[)(http[s]?://[^[:space:]]*)(\])\1<a href=\3>\3</a>g" |
+# url
+sed -E "s([^\"\'\>=])(http[s]?://[^[:space:]]*)\1<a href=\2>\2</a>g" |
+sed -E "s^(http[s]?://[^[:space:]]*)<a href=\1>\1</a>g" |
+
+# include html files with $[ file.html
+sed 's@@CAT cat e' |
+
+# Hacky fix for sed \n errors
+sed ':a $!{N; ba}; s\n\\ng'

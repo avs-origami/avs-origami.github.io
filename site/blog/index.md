@@ -1,0 +1,81 @@
+**[A collection of random thoughts and things I find interesting.          [~/blog]]**
+
+Irregularly maintained blog. I write here whenever I feel like it. There's all
+sorts of things on here, from rants about snow (seriously, why can't we get some
+consistent weather??), to cool Rust things, to origami.
+
+*[Recent Posts
+--------------------------------------------------------------------------------]*
+
+    [Origami: Whimsical Edition](2026-02-28.html) (02/28/2026)
+
+    I folded some different origami than I usually do, and it was quite fun.
+
+    [>>> Read more](2026-02-28.html)
+
+    _[________________________________________________________________________]_
+
+
+    [Personal websites](2026-02-15.html) (02/15/2026)
+
+    A meta-post. Hmmmm...
+
+    [>>> Read more](2026-02-15.html)
+
+    _[________________________________________________________________________]_
+
+
+    [Snow](2026-01-27.html) (01/27/2026)
+
+    Or rather, a distinct absence of the stuff.
+
+    [>>> Read more](2026-01-27.html)
+
+    _[________________________________________________________________________]_
+
+
+    [Tiny robots](2026-01-08.html) (01/08/2026)
+
+    A bit of a rant on why tiny robots are so great (or at least why I think
+    they're so great).
+
+    [>>> Read more](2026-01-08.html)
+
+    _[________________________________________________________________________]_
+    
+
+    [Random notes on JAX](2025-06-13.html) (06/13/2025)
+
+    Learning JAX for my new research project.
+
+    [>>> Read more](2025-06-13.html)
+
+    _[________________________________________________________________________]_
+
+    
+    [Folding some origami insects](2025-04-15.html) (04/15/2025)
+
+    What to do with new origami paper? That's right, bugs.
+
+    [>>> Read more](2025-04-15.html)
+
+    _[________________________________________________________________________]_
+
+
+    [Shared Memory IPC in Rust](2024-06-23.html) (06/23/2024)
+
+    A foray into unsafe Rust using shared memory for ultra-fast interprocess
+    communication. Complete with examples!
+
+    [>>> Read more](2024-06-23.html)
+
+    _[________________________________________________________________________]_
+
+
+    [Installing Kiss Linux](2024-01-14.html) (01/14/2024)
+
+    A bit about my journey into installing Kiss Linux for the first time in
+    the form of an annotated installation guide.
+
+    [>>> Read more](2024-01-14.html)
+
